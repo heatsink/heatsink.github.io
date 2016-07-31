@@ -1,0 +1,6 @@
+TODO:
+Digital Design Fundamentals
+using xc7a35tcpg236-1 FPGA
+vivado experience (garbage software RIP)
+Put in my ~20 labs with black boxes
+boom done

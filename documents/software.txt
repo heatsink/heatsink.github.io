@@ -1,0 +1,22 @@
+TODO:
+Computer science fundamentals
+Sorting
+    Insertion, Selection, Bubble I guess..
+    HeapSort
+    MergeSort
+    QuickSort
+Recursion
+Analysis of Algorithms
+Basic Algorithms & Time Complexity Analysis (eh)
+ADT Stack
+ADT Queue
+Applications of Stack
+Heaps (Min or Max)
+Binary Search Tree (ADT & AVL Implementation)
+Hash Tables (Separate Chaining & Open Addressing)
+GRAPHS ARE REAL IMPORTANT M8
+    Adjacency list & mx representation
+    Topological Sort
+    Single Source Shortest Paths
+        Breadth First Search, Dijkstra's Algorithm
+    Depth First Search

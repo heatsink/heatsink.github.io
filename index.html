@@ -1,0 +1,185 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<!--body ng-app="resumeApp" ng-cloak layout="row" layout-align="center-start"-->
+  <body ng-app = "resumeApp" ng-cloak layout= "row" layout-align="center start">
+<!---
+    <div ng-controller="sideNavController" layout="column" style="height:215px;" ng-cloak>
+  <section layout="row" flex>
+    <md-sidenav
+        class="md-sidenav-left"
+        md-component-id="left"
+        md-is-locked-open="$mdMedia('gt-md')"
+        md-disable-backdrop
+        md-whiteframe="4">
+      <md-toolbar class="md-theme-indigo">
+        <h1 class="md-toolbar-tools">Sidenav Left</h1>
+      </md-toolbar>
+      <md-content layout-padding ng-controller="LeftCtrl">
+        <md-button ng-click="close()" class="md-primary" hide-gt-md>
+          Close Sidenav Left
+        </md-button>
+        <p hide show-gt-md>
+          Sidenav locked. 
+        </p>
+      </md-content>
+    </md-sidenav>
+  </section>
+</div>
+-->
+
+
+
+
+    
+
+
+
+
+
+  <md-content id="mainBody">
+  <!-- HEADER START -->
+
+    <!--header layout="row"-->
+    <header>
+      <md-button id="resume_banner" href="documents/resume.pdf" download="Sean-Wallace-Resume">Download My Resume</md-button>
+      <md-button id="forkme_banner" href="https://github.com/heatsink">Visit My GitHub Page</md-button>
+      <div id="header" >
+        <img id = "portrait" height = "auto" width="200px" img src="images/portrait.png" alt="Test Image" align="right"/> 
+        <h1 id = "title"> Sean Wallace </h1>
+        <h2 id = "tagline"> Cal Poly, San Luis Obispo </h2>
+        <h2 id = "tagline"> Computer Engineering </h2>
+        
+      <!--/div>
+
+      <div id = "header" flex layout="row"layout-align="center center">
+      
+      </div-->
+    <!-- HEADER END -->
+
+    </header>
+    <md-tabs md-dynamic-height md-border-bottom id = "bodyText">
+      <md-tab label="Home">
+        <md-content class="md-padding">
+          <!-- <h1 class="md-display-2">Data Structures</h1> -->
+          <h3>Home</h3>
+          <p>Since you may be pressed for time, I'll keep this short. I'm a college sophomore, and I write software for the Cal Poly Robotics Club.</p>
+            <h3>
+               <a id="elevator-pitch" class="anchor" href="#elevator-pitch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Engineering Background
+            </h3>
+            <p>Java is my strongest programming language followed closely by Python, which is what my robotics team primarily utilizes.</p>
+            <p>In terms of hardware, VHDL is currently the only hardware description language I am familiar with. I know enough of Vivado to design basic components such as subtractors, multipliers, and the like.</p>
+            <p>I'm a huge fan of ROS, VIM, and OSX. TDD is still growing on me.</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Projects">
+        <md-content class="md-padding">
+          <!-- <h1 class="md-display-2">Tab Two</h1> -->
+          <h3>Projects</h3>
+          <p>These are some projects I've most recently been involved in!</p>
+            <p>TODO: Robotics.</p>
+            <p>TODO: Chess AI.</p>
+            <p>TODO: Ninja Fighter.</p>
+            <p>TODO: Power Supply.</p>
+            <p>TODO: Start designing the speed controller PCB already for next quarter already dang it sean.</p>
+          <script src="https://gist.github.com/heatsink/00719c6f5bc7262e5d8e8c30f62ff1f0.js"></script>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
+          <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis. Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Programming Fundamentals">
+        <md-content class="md-padding">
+          <!-- <h1 class="md-display-2">Tab Three</h1> -->
+          <h3>Programming Fundamentals</h3>
+          <p>Below are demonstrations of various programming exercises fundamental to most of computing.</p>
+            <h3><p>Data Structures</p></h3>
+            <p>Stack</p>
+            <p>Queue</p>
+            <p>Circular Array Queue</p>
+            <p>TODO:<br />
+            Applications of Stack<br />
+            Heaps (Min or Max)<br />
+            Binary Search Tree (ADT &amp; AVL Implementation)<br />
+            Hash Tables (Separate Chaining &amp; Open Addressing)<br />
+            GRAPHS ARE REAL IMPORTANT M8<br />
+            Adjacency list &amp; mx representation<br />
+            Topological Sort<br />
+            Single Source Shortest Paths<br />
+            Breadth First Search, Dijkstra's Algorithm<br />
+            Depth First Search</p>
+            <h3><p>Sorting Algorithms</p></h3>
+            <p>Insertion & Selection</p>
+            <p>TODO:<br />
+            HeapSort<br />
+            MergeSort<br />
+            QuickSort<br />
+
+            <h3><p>Systems Programming</p></h3>
+            <p>TODO:<br />
+            Well this is in like 2 quarters...<br /></p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Hardware Fundamentals">
+        <md-content class="md-padding">
+          <!-- <h1 class="md-display-2">Tab Three</h1> -->
+          <h3>Hardware Fundamentals</h3>
+          <p>Below are demonstrations of various hardware exercises fundamental to designing hardware.</p>
+            <p>TODO:</p>
+            using xc7a35tcpg236-1 FPGA<br />
+            some vivado stuff (its trash software but why)<br />
+            Dont forget lots of black boxes<br />
+            Also dont forget your towel<br />
+            <h3><p>Combinatorial Circuits</p></h3>
+            MUX <br />
+            Generic Decoder<br />
+            STD Decoder<br />
+            Half Adder<br />
+            FULL ADDER<br />
+            RIPPLE CARRY ADDER!!!111oneonejuan<br />
+            Comparator<br />
+            Parity Generator<br />
+            <h3><p>Sequential Circuits</p></h3>
+            Flip Flops (And all the different types I guess...)<br />
+            Registers<br />
+            Shift Registers<br />
+            Counters<br />
+            <h3><p>Finite State Machines</p></h3>
+            Some examples I guess. Maybe Multiplier/Divider?<br />
+            <h3><p>Microcontrollers</p></h3>
+            Next quarter! :D <br />
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+
+
+  <!--
+    Your HTML content here
+  -->
+
+
+
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+
+  <!-- Your application bootstrap  -->
+  <script src="app.js"></script>
+</body>
+</html>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+-->
