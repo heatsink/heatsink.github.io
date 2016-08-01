@@ -11,8 +11,7 @@
   transition: all linear 0.5s;
 }
 
-#resume_banner {
-  display: block;
+.resume_banner {
   position: absolute;
   top:0;
   left: 3px;
@@ -27,8 +26,7 @@
   https://github.com/heatsink  border-bottom-right-radius: 2px;
 }
 
-#forkme_banner {
-  display: block;
+.forkme_banner {
   position: absolute;
   top:0;
   right: 3px;
@@ -192,4 +190,10 @@ a {
   -o-transition: text-shadow 0.5s ease;
   -ms-transition: color 0.5s ease;
   -ms-transition: text-shadow 0.5s ease;
+}
+
+@media only screen and (max-width:640px) {
+  .invisible {
+    display: none;
+  }
 }
