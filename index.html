@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 <!--body ng-app="resumeApp" ng-cloak layout="row" layout-align="center-start"-->
-  <body ng-app = "resumeApp" ng-cloak layout= "row" layout-align="center start">
+  <body ng-app = "resumeApp" ng-cloak>
 <!---
     <div ng-controller="sideNavController" layout="column" style="height:215px;" ng-cloak>
   <section layout="row" flex>
@@ -41,11 +41,10 @@
 
 
 
-  <md-content id="mainBody">
+  <md-content >
   <!-- HEADER START -->
-
-    <!--header layout="row"-->
-    <header>
+    <div class="outer">
+      <header class="inner">
       <md-button id="resume_banner" href="documents/resume.pdf" download="Sean-Wallace-Resume">Download My Resume</md-button>
       <md-button id="forkme_banner" href="https://github.com/heatsink">Visit My GitHub Page</md-button>
       <div id="header" >
@@ -53,16 +52,20 @@
         <h1 id = "title"> Sean Wallace </h1>
         <h2 id = "tagline"> Cal Poly, San Luis Obispo </h2>
         <h2 id = "tagline"> Computer Engineering </h2>
-        
       <!--/div>
 
       <div id = "header" flex layout="row"layout-align="center center">
-      
+      </div>
       </div-->
+      </header>
+    </div>
     <!-- HEADER END -->
+  </div>
+  <!-- MAIN BODYSTART -->
 
-    </header>
-    <md-tabs md-dynamic-height md-border-bottom id = "bodyText">
+    <div class = "inner">
+    <md-tabs md-dynamic-height md-border-bottom>
+    
       <md-tab label="Home">
         <md-content class="md-padding">
           <!-- <h1 class="md-display-2">Data Structures</h1> -->
@@ -92,9 +95,9 @@
           <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
         </md-content>
       </md-tab>
-      <md-tab label="Programming Fundamentals">
+      <md-tab label="Programming ">
         <md-content class="md-padding">
-          <!-- <h1 class="md-display-2">Tab Three</h1> -->
+          <h1 class="md-display-2">Tab Three</h1>
           <h3>Programming Fundamentals</h3>
           <p>Below are demonstrations of various programming exercises fundamental to most of computing.</p>
             <h3><p>Data Structures</p></h3>
@@ -124,7 +127,7 @@
             Well this is in like 2 quarters...<br /></p>
         </md-content>
       </md-tab>
-      <md-tab label="Hardware Fundamentals">
+      <md-tab label="Hardware">
         <md-content class="md-padding">
           <!-- <h1 class="md-display-2">Tab Three</h1> -->
           <h3>Hardware Fundamentals</h3>
@@ -154,7 +157,9 @@
             Next quarter! :D <br />
         </md-content>
       </md-tab>
+    
     </md-tabs>
+    </div>
   </md-content>
 
 
