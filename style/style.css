@@ -1,14 +1,14 @@
 /** BUTTON ANIMATIONS **/
 
 .animate-show, .ng-hide-add, .animate-show, .ng-hide-remove {
-  transition: all linear 0.05s;
+  transition: all linear 0.5s;
 }
 
 .animate-show, .ng-hide {
-  line-height: 100;
+  line-height: 1;
   opacity: 0;
   padding: 0 10px;
-  transition: all linear 0.05s;
+  transition: all linear 0.5s;
 }
 
 #resume_banner {
