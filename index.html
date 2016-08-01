@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 <!--body ng-app="resumeApp" ng-cloak layout="row" layout-align="center-start"-->
-  <body ng-app = "resumeApp" ng-cloak>
+  
+  <body ng-app = "resumeApp" ng-cloak >
 <!---
     <div ng-controller="sideNavController" layout="column" style="height:215px;" ng-cloak>
   <section layout="row" flex>
@@ -34,10 +35,6 @@
 </div>
 -->
 
-
-
-
-
   <md-content >
   <!-- HEADER START -->
     <div class="outer">
@@ -49,17 +46,12 @@
         <h1 id = "title"> Sean Wallace </h1>
         <h2 id = "tagline"> Cal Poly, San Luis Obispo </h2>
         <h2 id = "tagline"> Computer Engineering </h2>
-      <!--/div>
 
-      <div id = "header" flex layout="row"layout-align="center center">
-      </div>
-      </div-->
       </header>
     </div>
     <!-- HEADER END -->
   </div>
   <!-- MAIN BODYSTART -->
-
     <div class = "inner">
     <md-tabs md-dynamic-height md-border-bottom>
     
@@ -81,15 +73,93 @@
           <!-- <h1 class="md-display-2">Tab Two</h1> -->
           <h3>Projects</h3>
           <p>These are some projects I've most recently been involved in!</p>
-            <p>TODO: Robotics.</p>
-            <p>TODO: Chess AI.</p>
-            <p>TODO: Ninja Fighter.</p>
-            <p>TODO: Power Supply.</p>
-            <p>TODO: Start designing the speed controller PCB already for next quarter already dang it sean.</p>
-          <script src="https://gist.github.com/heatsink/00719c6f5bc7262e5d8e8c30f62ff1f0.js"></script>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
-          <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis. Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
-          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+          <!-- BUTTON ONE START -->
+          <div ng-app="expand" ng-controller="personCtrl">
+          <md-button class="md-raised md-primary" ng-click="toggle()">Autonomous Golf Cart</md-button>
+          <div ng-show="myVar">
+          <!-- HIDDEN CONTENT -->
+          <md-toolbar class="md-warn">
+            <div class="md-toolbar-tools">
+              <h2 class="md-flex">Robotics: Autonomous golf cart</h2>
+            </div>
+          </md-toolbar>
+          Long term robotics project. <br>
+          Definition of success: When the golf cart can drive to Woodstock's Pizza and back autonomously. <br>
+          <img id = "portrait" height = "auto" width="200px" img src="images/portrait.png" /> <br>
+          </div>
+          </div>
+          <!-- BUTTON ONE END -->
+
+          <!-- BUTTON TWO START -->
+          <div ng-app="expand" ng-controller="personCtrl">
+          <md-button class="md-raised md-primary" ng-click="toggle()">Chess AI</md-button>
+          <div ng-show="myVar">
+          <!-- HIDDEN CONTENT -->
+          <md-toolbar class="md-warn">
+            <div class="md-toolbar-tools">
+              <h2 class="md-flex">Chess AI</h2>
+            </div>
+          </md-toolbar>
+          Long term robotics project. <br>
+          <img id = "portrait" height = "auto" width="200px" img src="images/portrait.png" /> <br>
+          </div>
+          </div>
+          <!-- BUTTON TWO END -->
+
+          <!-- BUTTON THREE START -->
+          <div ng-app="expand" ng-controller="personCtrl">
+          <md-button class="md-raised md-primary" ng-click="toggle()">Ninja Fighter</md-button>
+          <div ng-show="myVar">
+          <!-- HIDDEN CONTENT -->
+          <md-toolbar class="md-warn">
+            <div class="md-toolbar-tools">
+              <h2 class="md-flex">Ninja Fighter</h2>
+            </div>
+          </md-toolbar>
+          A classic ninja game. Good vs. evil. <br>
+          Ninjas man. <br>
+          <img id = "portrait" height = "auto" width="200px" img src="images/portrait.png" /> <br>
+          </div>
+          </div>
+          <!-- BUTTON THREE END -->
+
+          <!-- BUTTON FOUR START -->
+          <div ng-app="expand" ng-controller="personCtrl">
+          <md-button class="md-raised md-primary" ng-click="toggle()">Power Supply</md-button>
+          <div ng-show="myVar">
+          <!-- HIDDEN CONTENT -->
+          <md-toolbar class="md-warn">
+            <div class="md-toolbar-tools">
+              <h2 class="md-flex">Power Supply</h2>
+            </div>
+          </md-toolbar>
+          Dual-variable power supply with digital meter. <br>
+          Manufactured well enough to plug into your standard outlet. <br>
+          Maximum 20 volts. <br>
+          <img id = "portrait" height = "auto" width="200px" img src="images/portrait.png" /> <br>
+          </div>
+          </div>
+          <!-- BUTTON FOUR END -->
+
+          <!-- BUTTON FIVE START -->
+          <div ng-app="expand" ng-controller="personCtrl">
+          <md-button class="md-raised md-primary" ng-click="toggle()">Speed Controller PCB</md-button>
+          <div ng-show="myVar">
+          <!-- HIDDEN CONTENT -->
+          <md-toolbar class="md-warn">
+            <div class="md-toolbar-tools">
+              <h2 class="md-flex">Speed Controller PCB</h2>
+            </div>
+          </md-toolbar>
+          Designed for the Cal Poly Robotics Team's Autonomous Golf Cart. <br>
+          Speed controller for golf cart steering system. <br>
+          Project for Fall 2016 (Not yet complete). <br>
+          <img id = "portrait" height = "auto" width="200px" img src="images/portrait.png" /> <br>
+          </div>
+          </div>
+          <!-- BUTTON FIVE END -->
+          
+     
         </md-content>
       </md-tab>
       <md-tab label="Programming ">
@@ -113,6 +183,7 @@
             Depth First Search</p>
             <h3><p>Sorting Algorithms</p></h3>
             <p>Insertion & Selection</p>
+            <script src="https://gist.github.com/heatsink/00719c6f5bc7262e5d8e8c30f62ff1f0.js"></script>
             <p>TODO:<br />
             HeapSort<br />
             MergeSort<br />

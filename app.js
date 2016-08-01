@@ -5,9 +5,9 @@ var app = angular.module('resumeApp', ['ngMaterial'])
     '100': 'ffcdd2',
     '200': 'ef9a9a',
     '300': 'e57373', //Text ONE TWO THREE
-    '400': 'ef5350',
-    '500': '0090ff',
-    '600': 'e53935', 
+    '400': 'efefef',
+    '500': '0090ff', // BUTTON COLOR
+    '600': '0090ff', 
     '700': 'd32f2f',
     '800': 'c62828',
     '900': 'b71c1c',
@@ -26,12 +26,23 @@ var app = angular.module('resumeApp', ['ngMaterial'])
     .accentPalette('blue-grey');
 });
 
+/** BUTTON EXPAND FEATURE **/
+var expand = angular.module('myApp', []);
+app.controller('personCtrl', function($scope) {
+    $scope.myVar = false;
+    $scope.toggle = function() {
+        $scope.myVar = !$scope.myVar;
+    };
+});
 
 
 
 
 
-
+/**
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+**/
 
 
 

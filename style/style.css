@@ -1,3 +1,16 @@
+/** BUTTON ANIMATIONS **/
+
+.animate-show, .ng-hide-add, .animate-show, .ng-hide-remove {
+  transition: all linear 0.05s;
+}
+
+.animate-show, .ng-hide {
+  line-height: 100;
+  opacity: 0;
+  padding: 0 10px;
+  transition: all linear 0.05s;
+}
+
 #resume_banner {
   display: block;
   position: absolute;
@@ -92,8 +105,8 @@
 }
 /* This is Tab Territory */
 md-content {
-    background: #f2f2f2;
-  }
+  background: #f2f2f2;
+}
 
 #title {
   margin: 0;
@@ -142,7 +155,6 @@ h1 {
 h2 {
   padding-bottom: 0px;
   font-size: 40px; /*32*/
-  background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
 h3 {
