@@ -21,7 +21,7 @@
         md-whiteframe="4">
       <md-toolbar class="md-theme-indigo">
         <h1 class="md-toolbar-tools">Sidenav Left</h1>
-      </md-toolbar>
+      </md-toolbar> 
       <md-content layout-padding ng-controller="LeftCtrl">
         <md-button ng-click="close()" class="md-primary" hide-gt-md>
           Close Sidenav Left
@@ -40,10 +40,10 @@
     <div class="outer">
       <header class="inner">
       
-      <div id="header" >
-        <md-button class = "invisible resume_banner" href="documents/resume.pdf" download="Sean-Wallace-Resume">Download My Resume</md-button>
-      <md-button class="invisible forkme_banner" href="https://github.com/heatsink">Visit My GitHub Page</md-button>
-        <img id = "portrait" class = "invisible" height = "auto" width="200px" img src="images/portrait.png" alt="Test Image" align="right"/> 
+      <div class="header mobileHeader" >
+        <md-button class = "resume_banner resumeMobile" href="documents/resume.pdf" download="Sean-Wallace-Resume">Download My Resume</md-button>
+      <md-button class="forkme_banner forkmeMobile" href="https://github.com/heatsink">Visit My GitHub Page</md-button>
+        <img class = "portrait invisible" class = "invisible" height = "auto" width="200px" img src="images/portrait.png" alt="Test Image" align="right"/> 
         <h1 id = "title"> Sean Wallace </h1>
         <h2 id = "tagline"> Cal Poly, San Luis Obispo </h2>
         <h2 id = "tagline"> Computer Engineering </h2>
