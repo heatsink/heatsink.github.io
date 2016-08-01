@@ -67,6 +67,15 @@
   background: -o-linear-gradient(top, #373737, #212121);
   background: linear-gradient(top, #373737, #212121);
 }
+#footer {
+  padding: 30px 10px 20px 10px;
+  background: #212121;
+  background: -moz-linear-gradient(top, #373737, #212121);
+  background: -webkit-linear-gradient(top, #373737, #212121);
+  background: -ms-linear-gradient(top, #373737, #212121);
+  background: -o-linear-gradient(top, #373737, #212121);
+  background: linear-gradient(top, #373737, #212121);
+}
 
 #portrait{
   position: relative;
@@ -151,6 +160,7 @@ h5 {
 
 h6 {
   font-size: 16px;
+  color: #efefef;
 }
 
 p {
@@ -161,7 +171,6 @@ a {
   text-decoration: none;
   color: #007edf;
   text-shadow: none;
-
   transition: color 0.5s ease;
   transition: text-shadow 0.5s ease;
   -webkit-transition: color 0.5s ease;
