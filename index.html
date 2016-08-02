@@ -55,6 +55,8 @@
   <!-- MAIN BODYSTART -->
     <div class = "inner">
     <md-tabs md-dynamic-height md-border-bottom md-swipe-content>
+      
+
       <md-tab label="Home">
         <md-content class="md-padding">
           <!-- <h1 class="md-display-2">Data Structures</h1> -->
@@ -68,6 +70,8 @@
             <p>I'm a huge fan of ROS, VIM, and OSX. TDD is still growing on me.</p>
         </md-content>
       </md-tab>
+      
+
       <md-tab label="Projects">
         <md-content class="md-padding">
           <!-- <h1 class="md-display-2">Tab Two</h1> -->
@@ -76,7 +80,7 @@
           <!-- BUTTON ONE START -->
           <div ng-app="expand" ng-controller="personCtrl">
           <md-button class="md-raised md-secondary" ng-click="toggle()">Autonomous Golf Cart</md-button>
-          <div ng-hide="myVar">
+          <div ng-show="myVar">
           <!-- HIDDEN CONTENT -->
           <md-toolbar class="md-warn">
             <div class="md-toolbar-tools">
@@ -160,10 +164,11 @@
           </div>
           </div>
           <!-- BUTTON FIVE END -->
-          
-     
+
         </md-content>
       </md-tab>
+      
+
       <md-tab label="Programming ">
         <md-content class="md-padding">
           <h3>Programming</h3>
@@ -246,26 +251,222 @@
             </div>
             </div>
             <!-- BUTTON ONE END -->
-            <p>Stack</p>
-            <p>Queue</p>
-            <p>Circular Array Queue</p>
-            <p>TODO:<br />
-            Applications of Stack<br />
-            Heaps (Min or Max)<br />
-            Binary Search Tree (ADT &amp; AVL Implementation)<br />
-            Hash Tables (Separate Chaining &amp; Open Addressing)<br />
-            GRAPHS ARE REAL IMPORTANT M8<br />
-            Adjacency list &amp; mx representation<br />
-            Topological Sort<br />
-            Single Source Shortest Paths<br />
-            Breadth First Search, Dijkstra's Algorithm<br />
-            Depth First Search</p>
 
+            <!-------------------------------- Next Set of Buttons ------------------------>
+            <!-- BUTTON ONE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Data Structures</md-button>
+            <div ng-show="myVar">
+            <!-- HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">Data Structures</h3>
+              </div>
+            </md-toolbar>
+            <!-- INNER BUTTON ONE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Stack</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">Stack</h3>
+              </div>
+            </md-toolbar>
+            <p>A simple class showcasing a stack.</p>
+            <script src="https://gist.github.com/heatsink/6a69800adc0dad2dc1a2a5b9721faeec.js"></script>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON ONE END -->
+            <!-- INNER BUTTON TWO START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Queue</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">Queue</h3>
+              </div>
+            </md-toolbar>
+            A simple class showcasing a queue. <br>
+            <script src="https://gist.github.com/heatsink/7fe61cd0c0a20a76be706033a38ac085.js"></script>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON TWO END -->
+            <!-- INNER BUTTON THREE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Circular Queue</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">Circular Queue</h3>
+              </div>
+            </md-toolbar>
+            A simple class showcasing a circular queue using an array as the underlying data structure. <br>
+            <script src="https://gist.github.com/heatsink/da9f825724f45e45b50a15647fcb0f2b.js"></script>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON THREE END -->
+            <!-- INNER BUTTON FOUR START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Heap</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">Heap</h3>
+              </div>
+            </md-toolbar>
+            A simple class showcasing a heap. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON FOUR END -->
+            <!-- INNER BUTTON FIVE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Hashing</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">Hashing</h3>
+              </div>
+            </md-toolbar>
+            A simple class showcasing hashing. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON FIVE END -->
+            <!-- HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- BUTTON ONE END -->
+
+            <!-------------------------------- Next Set of Buttons ------------------------>
+            <!-- BUTTON ONE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Graphs</md-button>
+            <div ng-show="myVar">
+            <!-- HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">Graphs</h3>
+              </div>
+            </md-toolbar>
+            <!-- INNER BUTTON ONE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Adjacency Representation</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">Adjacency Representation</h3>
+              </div>
+            </md-toolbar>
+            <p>A simple class showcasing a graph with adjacency representation.</p>
+            <p>SUPER GOOD GITHUB GIST GOES RIGHT HERE </p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON ONE END -->
+            <!-- INNER BUTTON TWO START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Matrix Representation</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">Matrix Representation</h3>
+              </div>
+            </md-toolbar>
+            A simple class showcasing a graph with matrix representation. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON TWO END -->
+            <!-- INNER BUTTON THREE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Topological Sort</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">Topological Sort</h3>
+              </div>
+            </md-toolbar>
+            A simple class showcasing the use of topological sort to order a directed graph. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON THREE END -->
+            <!-- INNER BUTTON FOUR START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Breadth First Search</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">Breadth First Search</h3>
+              </div>
+            </md-toolbar>
+            A simple class showcasing breadth first search to traverse a graph. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON FOUR END -->
+            <!-- INNER BUTTON FIVE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Depth First Search</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">Depth First Search</h3>
+              </div>
+            </md-toolbar>
+            A simple class showcasing breadth first search to traverse a graph. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON FIVE END -->
+            <!-- INNER BUTTON SIX START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Dijkstra's Algorithm</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">Dijkstra's Algorithm</h3>
+              </div>
+            </md-toolbar>
+            A simple class showcasing Dijkstra's Algorithm applied to a graph. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON SIX END -->
+            <!-- HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- BUTTON ONE END -->
+            <p>TODO:</p>
+            <h3><p>Algorithms Next</p></h3>
             <h3><p>Systems Programming</p></h3>
-            <p>TODO:<br />
             Well this is in like 2 quarters...<br /></p>
         </md-content>
       </md-tab>
+      
+
       <md-tab label="Hardware">
         <md-content class="md-padding">
           <h3>Hardware</h3>
