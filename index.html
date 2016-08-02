@@ -34,7 +34,7 @@
         <md-content class="md-padding">
           <!-- <h1 class="md-display-2">Data Structures</h1> -->
           <h3>Home</h3>
-          <p>I'll keep this short. I'm a college sophomore, and I write software for the Cal Poly Robotics Club.</p>
+          <p>Hi, I'll keep this short. I'm a college sophomore, and I write software for the Cal Poly Robotics Club.</p>
             <h3>
                <a id="elevator-pitch" class="anchor" href="#elevator-pitch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Engineering Background
             </h3>
@@ -53,16 +53,16 @@
           <!-- BUTTON ONE START -->
           <div ng-app="expand" ng-controller="personCtrl">
           <md-button class="md-raised md-secondary" ng-click="toggle()" >Autonomous Golf Cart</md-button>
-          <div ng-hide="myVar">
+          <div ng-show="myVar">
           <!-- HIDDEN CONTENT -->
-          <md-toolbar class="md-accent">
+          <md-toolbar class="md-accent  md-hue-1">
             <div class="md-toolbar-tools">
               <h3 class="md-flex"><b>Autonomous golf cart</b></h3>
             </div>
           </md-toolbar>
-          Long term robotics project. <br>
-          Definition of success: When the golf cart can drive from the Cal Poly robotics room to the nearest Woodstock's Pizza and back. Autonomously. And come back with pizza intact. <br>
-          ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS. ROS. Boom, I'm hired. ROS. Now I'm CEO.<br>
+          <p>Long term robotics project.</p>
+          <p>Definition of success: When the golf cart can drive from the Cal Poly robotics room to the nearest Woodstock's Pizza. Autonomously. And come back with pizza. </p>
+          <p>ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS. ROS. Boom, I'm hired. ROS. Now I'm CEO.</p>
           <img id = "portrait" height = "auto" width="200px" img src="images/portrait.png" /> <br>
           </div>
           </div>
@@ -73,7 +73,7 @@
           <md-button class="md-raised md-secondary" ng-click="toggle()">Chess AI</md-button>
           <div ng-show="myVar">
           <!-- HIDDEN CONTENT -->
-          <md-toolbar class="md-accent">
+          <md-toolbar class="md-accent  md-hue-1">
             <div class="md-toolbar-tools">
               <h3 class="md-flex"><b>Chess AI</b></h3>
             </div>
@@ -90,7 +90,7 @@
           <md-button class="md-raised md-secondary" ng-click="toggle()">Ninja Fighter</md-button>
           <div ng-show="myVar">
           <!-- HIDDEN CONTENT -->
-          <md-toolbar class="md-accent">
+          <md-toolbar class="md-accent  md-hue-1">
             <div class="md-toolbar-tools">
               <h3 class="md-flex"><b>Ninja Fighter</b></h3>
             </div>
@@ -107,7 +107,7 @@
           <md-button class="md-raised md-secondary" ng-click="toggle()">Power Supply</md-button>
           <div ng-show="myVar">
           <!-- HIDDEN CONTENT -->
-          <md-toolbar class="md-accent">
+          <md-toolbar class="md-accent  md-hue-1">
             <div class="md-toolbar-tools">
               <h3 class="md-flex"><b>Power Supply</b></h3>
             </div>
@@ -125,7 +125,7 @@
           <md-button class="md-raised md-secondary" ng-click="toggle()">Speed Controller PCB</md-button>
           <div ng-show="myVar">
           <!-- HIDDEN CONTENT -->
-          <md-toolbar class="md-accent">
+          <md-toolbar class="md-accent md-hue-1">
             <div class="md-toolbar-tools">
               <h3 class="md-flex"><b>Speed Controller PCB</b></h3>
             </div>
@@ -149,9 +149,9 @@
             <!-- BUTTON ONE START -->
             <div ng-app="expand" ng-controller="personCtrl">
             <md-button class="md-raised md-secondary" ng-click="toggle()">Sorting Algorithms</md-button>
-            <div ng-hide="myVar">
+            <div ng-show="myVar">
             <!-- HIDDEN CONTENT -->
-            <md-toolbar class="md-accent">
+            <md-toolbar class="md-accent md-hue-1" >
               <div class="md-toolbar-tools">
                 <h3 class="md-flex"><b>Sorting Algorithms</b></h3>
               </div>
@@ -231,7 +231,7 @@
             <md-button class="md-raised md-secondary" ng-click="toggle()">Data Structures</md-button>
             <div ng-show="myVar">
             <!-- HIDDEN CONTENT -->
-            <md-toolbar class="md-accent">
+            <md-toolbar class="md-accent md-hue-1">
               <div class="md-toolbar-tools">
                 <h3 class="md-flex"><b>Data Structures</b></h3>
               </div>
@@ -327,7 +327,7 @@
             <md-button class="md-raised md-secondary" ng-click="toggle()">Graphs</md-button>
             <div ng-show="myVar">
             <!-- HIDDEN CONTENT -->
-            <md-toolbar class="md-accent">
+            <md-toolbar class="md-accent md-hue-1">
               <div class="md-toolbar-tools">
                 <h3 class="md-flex"><b>Graphs</b></h3>
               </div>
@@ -440,32 +440,270 @@
         <md-content class="md-padding">
           <h3>Hardware</h3>
           <p>Here's some of what I know about hardware!</p>
+
+
+          <!--------- HARDWARE SECTION OF BUTTONS BEGINS ----------------------->
+          <!-- BUTTON ONE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Combinatorial Circuits</md-button>
+            <div ng-show="myVar">
+            <!-- HIDDEN CONTENT -->
+            <md-toolbar class="md-accent md-hue-1" >
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>Combinatorial Circuits</b></h3>
+              </div>
+            </md-toolbar>
+            <!-- INNER BUTTON ONE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">MUX</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>MUX</b></h3>
+              </div>
+            </md-toolbar>
+            <p>It's a standard MUX.</p>
+            <p>VHDL Gist here!</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON ONE END -->
+            <!-- INNER BUTTON TWO START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Decoder</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>Decoder</b></h3>
+              </div>
+            </md-toolbar>
+            It's a decoder.<br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON TWO END -->
+            <!-- INNER BUTTON THREE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Half Adder</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>Half Adder</b></h3>
+              </div>
+            </md-toolbar>
+            It's a half-adder. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON THREE END -->
+            <!-- INNER BUTTON FOUR START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Full Adder</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>Full Adder</b></h3>
+              </div>
+            </md-toolbar>
+            It's a full adder. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON FOUR END -->
+            <!-- HIDDEN CONTENT END -->
+            <!-- INNER BUTTON FIVE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Ripple Carry Adder</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>Ripple Carry Adder</b></h3>
+              </div>
+            </md-toolbar>
+            It's a ripple carry adder. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON FIVE END -->
+            <!-- HIDDEN CONTENT END -->
+            <!-- INNER BUTTON SIX START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Comparatorr</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>Comparator</b></h3>
+              </div>
+            </md-toolbar>
+            It's a Full Adder. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON SIX END -->
+            <!-- HIDDEN CONTENT END -->
+            <!-- INNER BUTTON SEVEN START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Parity Generator</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>Parity Generator</b></h3>
+              </div>
+            </md-toolbar>
+            It's a parity generator. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON SEVEN END -->
+            <!-- HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- BUTTON ONE END -->
+
+            <!-------------------------------- Next Set of Buttons ------------------------>
+            <!-- BUTTON ONE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Sequential Circuits</md-button>
+            <div ng-show="myVar">
+            <!-- HIDDEN CONTENT -->
+            <md-toolbar class="md-accent md-hue-1">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>Sequential Circuits</b></h3>
+              </div>
+            </md-toolbar>
+            <!-- INNER BUTTON ONE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Flip Flops</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>Flip Flops</b></h3>
+              </div>
+            </md-toolbar>
+            <p>It's a flip flop.</p>
+            <p>Gist goes here</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON ONE END -->
+            <!-- INNER BUTTON TWO START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Register</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>Register</b></h3>
+              </div>
+            </md-toolbar>
+            <p>It's a register. </p>
+            <p>Gist goes here</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON TWO END -->
+            <!-- INNER BUTTON THREE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Shift Register</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>Shift Register</b></h3>
+              </div>
+            </md-toolbar>
+            <p>It's a shift register.</p>
+            <p>Gist goes here</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON THREE END -->
+            <!-- INNER BUTTON FOUR START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Counter</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>Counter</b></h3>
+              </div>
+            </md-toolbar>
+            It's a counter. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON FOUR END -->
+            </div>
+            </div>
+            <!-- BUTTON ONE END -->
+
+            <!-------------------------------- Next Set of Buttons ------------------------>
+            <!-- BUTTON ONE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Controllers</md-button>
+            <div ng-show="myVar">
+            <!-- HIDDEN CONTENT -->
+            <md-toolbar class="md-accent md-hue-1">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>Controllers</b></h3>
+              </div>
+            </md-toolbar>
+            <!-- INNER BUTTON ONE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Multiplier By FSM</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>Multiplier By FSM</b></h3>
+              </div>
+            </md-toolbar>
+            <p>A multiplier made using an FSM. </p>
+            <p>SUPER GOOD GITHUB GIST GOES RIGHT HERE </p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON ONE END -->
+            <!-- INNER BUTTON TWO START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Divider By FSM</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex"><b>Divider By FSM</b></h3>
+              </div>
+            </md-toolbar>
+            A divider made using an FSM. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON TWO END -->
+            <!-- HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- BUTTON ONE END -->
             <p>TODO:</p>
-            using xc7a35tcpg236-1 FPGA<br />
-            some vivado stuff (its trash software but why)<br />
-            Dont forget lots of black boxes<br />
-            Also dont forget your towel<br />
-            <h3><p>Combinatorial Circuits</p></h3>
-            MUX <br />
-            Generic Decoder<br />
-            STD Decoder<br />
-            Half Adder<br />
-            FULL ADDER<br />
-            RIPPLE CARRY ADDER!!!111oneonejuan<br />
-            Comparator<br />
-            Parity Generator<br />
-            <h3><p>Sequential Circuits</p></h3>
-            Flip Flops (And all the different types I guess...)<br />
-            Registers<br />
-            Shift Registers<br />
-            Counters<br />
-            <h3><p>Finite State Machines</p></h3>
-            Some examples I guess. Maybe Multiplier/Divider?<br />
             <h3><p>Microcontrollers</p></h3>
             Next quarter! :D <br />
         </md-content>
       </md-tab>
-    
     </md-tabs>
     </div>
   </md-content>
@@ -478,8 +716,6 @@
      </footer>
   </div>
   -->
-
-
 
   <!-- Angular Material requires Angular.js Libraries -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
