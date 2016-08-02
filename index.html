@@ -1,40 +1,13 @@
 <html lang="en" >
 <head>
   <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
-  <title>Sean Wallace - Hire Me!</title>
+  <title>Sean Wallace - Available For Hire!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular Material style sheet -->
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
-<!--body ng-app="resumeApp" ng-cloak layout="row" layout-align="center-start"-->
-  
   <body ng-app = "resumeApp" ng-cloak >
-<!---
-    <div ng-controller="sideNavController" layout="column" style="height:215px;" ng-cloak>
-  <section layout="row" flex>
-    <md-sidenav
-        class="md-sidenav-left"
-        md-component-id="left"
-        md-is-locked-open="$mdMedia('gt-md')"
-        md-disable-backdrop
-        md-whiteframe="4">
-      <md-toolbar class="md-theme-indigo">
-        <h1 class="md-toolbar-tools">Sidenav Left</h1>
-      </md-toolbar> 
-      <md-content layout-padding ng-controller="LeftCtrl">
-        <md-button ng-click="close()" class="md-primary" hide-gt-md>
-          Close Sidenav Left
-        </md-button>
-        <p hide show-gt-md>
-          Sidenav locked. 
-        </p>
-      </md-content>
-    </md-sidenav>
-  </section>
-</div>
--->
-
   <md-content >
   <!-- HEADER START -->
     <div class="outer">
@@ -79,12 +52,12 @@
           <p>These are some of the recent projects I've been involved in!</p>
           <!-- BUTTON ONE START -->
           <div ng-app="expand" ng-controller="personCtrl">
-          <md-button class="md-raised md-secondary" ng-click="toggle()">Autonomous Golf Cart</md-button>
-          <div ng-show="myVar">
+          <md-button class="md-raised md-secondary" ng-click="toggle()" >Autonomous Golf Cart</md-button>
+          <div ng-hide="myVar">
           <!-- HIDDEN CONTENT -->
-          <md-toolbar class="md-warn">
+          <md-toolbar class="md-accent">
             <div class="md-toolbar-tools">
-              <h3 class="md-flex">Robotics: Autonomous golf cart</h3>
+              <h3 class="md-flex"><b>Autonomous golf cart</b></h3>
             </div>
           </md-toolbar>
           Long term robotics project. <br>
@@ -100,9 +73,9 @@
           <md-button class="md-raised md-secondary" ng-click="toggle()">Chess AI</md-button>
           <div ng-show="myVar">
           <!-- HIDDEN CONTENT -->
-          <md-toolbar class="md-warn">
+          <md-toolbar class="md-accent">
             <div class="md-toolbar-tools">
-              <h2 class="md-flex">Chess AI</h2>
+              <h3 class="md-flex"><b>Chess AI</b></h3>
             </div>
           </md-toolbar>
           Chess AI with Intermediate & Expert settings. <br>
@@ -117,9 +90,9 @@
           <md-button class="md-raised md-secondary" ng-click="toggle()">Ninja Fighter</md-button>
           <div ng-show="myVar">
           <!-- HIDDEN CONTENT -->
-          <md-toolbar class="md-warn">
+          <md-toolbar class="md-accent">
             <div class="md-toolbar-tools">
-              <h2 class="md-flex">Ninja Fighter</h2>
+              <h3 class="md-flex"><b>Ninja Fighter</b></h3>
             </div>
           </md-toolbar>
           A classic ninja game. Good vs. evil. <br>
@@ -134,9 +107,9 @@
           <md-button class="md-raised md-secondary" ng-click="toggle()">Power Supply</md-button>
           <div ng-show="myVar">
           <!-- HIDDEN CONTENT -->
-          <md-toolbar class="md-warn">
+          <md-toolbar class="md-accent">
             <div class="md-toolbar-tools">
-              <h2 class="md-flex">Power Supply</h2>
+              <h3 class="md-flex"><b>Power Supply</b></h3>
             </div>
           </md-toolbar>
           Dual-variable power supply with digital meter. <br>
@@ -152,9 +125,9 @@
           <md-button class="md-raised md-secondary" ng-click="toggle()">Speed Controller PCB</md-button>
           <div ng-show="myVar">
           <!-- HIDDEN CONTENT -->
-          <md-toolbar class="md-warn">
+          <md-toolbar class="md-accent">
             <div class="md-toolbar-tools">
-              <h2 class="md-flex">Speed Controller PCB</h2>
+              <h3 class="md-flex"><b>Speed Controller PCB</b></h3>
             </div>
           </md-toolbar>
           Designed for the Cal Poly Robotics Team's Autonomous Golf Cart. <br>
@@ -168,7 +141,7 @@
         </md-content>
       </md-tab>
       
-
+      <!-------------------------------- Next Set of Buttons ------------------------>
       <md-tab label="Programming ">
         <md-content class="md-padding">
           <h3>Programming</h3>
@@ -176,21 +149,21 @@
             <!-- BUTTON ONE START -->
             <div ng-app="expand" ng-controller="personCtrl">
             <md-button class="md-raised md-secondary" ng-click="toggle()">Sorting Algorithms</md-button>
-            <div ng-show="myVar">
+            <div ng-hide="myVar">
             <!-- HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">Sorting Algorithms</h3>
+                <h3 class="md-flex"><b>Sorting Algorithms</b></h3>
               </div>
             </md-toolbar>
             <!-- INNER BUTTON ONE START -->
             <div ng-app="expand" ng-controller="personCtrl">
-            <md-button class="md-raised md-secondary" ng-click="toggle()">Insertion & Selection Sort</md-button>
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Insertion & Selection Sort</md-button>
             <div ng-show="myVar">
             <!-- INNER HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">Insertion & Selection Sort</h3>
+                <h3 class="md-flex"><b>Insertion & Selection Sort</b></h3>
               </div>
             </md-toolbar>
             <p>A simple class showcasing both insertion & selection sort.</p>
@@ -201,12 +174,12 @@
             <!-- INNER BUTTON ONE END -->
             <!-- INNER BUTTON TWO START -->
             <div ng-app="expand" ng-controller="personCtrl">
-            <md-button class="md-raised md-secondary" ng-click="toggle()">HeapSort</md-button>
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">HeapSort</md-button>
             <div ng-show="myVar">
             <!-- INNER HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">HeapSort</h3>
+                <h3 class="md-flex"><b>HeapSort</b></h3>
               </div>
             </md-toolbar>
             A simple class showcasing HeapSort. <br>
@@ -217,12 +190,12 @@
             <!-- INNER BUTTON TWO END -->
             <!-- INNER BUTTON THREE START -->
             <div ng-app="expand" ng-controller="personCtrl">
-            <md-button class="md-raised md-secondary" ng-click="toggle()">MergeSort</md-button>
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">MergeSort</md-button>
             <div ng-show="myVar">
             <!-- INNER HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">MergeSort</h3>
+                <h3 class="md-flex"><b>MergeSort</b></h3>
               </div>
             </md-toolbar>
             A simple class showcasing MergeSort. <br>
@@ -233,12 +206,12 @@
             <!-- INNER BUTTON THREE END -->
             <!-- INNER BUTTON FOUR START -->
             <div ng-app="expand" ng-controller="personCtrl">
-            <md-button class="md-raised md-secondary" ng-click="toggle()">QuickSort</md-button>
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">QuickSort</md-button>
             <div ng-show="myVar">
             <!-- INNER HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">QuickSort</h3>
+                <h3 class="md-flex"><b>QuickSort</b></h3>
               </div>
             </md-toolbar>
             A simple class showcasing QuickSort. <br>
@@ -258,19 +231,19 @@
             <md-button class="md-raised md-secondary" ng-click="toggle()">Data Structures</md-button>
             <div ng-show="myVar">
             <!-- HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">Data Structures</h3>
+                <h3 class="md-flex"><b>Data Structures</b></h3>
               </div>
             </md-toolbar>
             <!-- INNER BUTTON ONE START -->
             <div ng-app="expand" ng-controller="personCtrl">
-            <md-button class="md-raised md-secondary" ng-click="toggle()">Stack</md-button>
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Stack</md-button>
             <div ng-show="myVar">
             <!-- INNER HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">Stack</h3>
+                <h3 class="md-flex"><b>Stack</b></h3>
               </div>
             </md-toolbar>
             <p>A simple class showcasing a stack.</p>
@@ -281,12 +254,12 @@
             <!-- INNER BUTTON ONE END -->
             <!-- INNER BUTTON TWO START -->
             <div ng-app="expand" ng-controller="personCtrl">
-            <md-button class="md-raised md-secondary" ng-click="toggle()">Queue</md-button>
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Queue</md-button>
             <div ng-show="myVar">
             <!-- INNER HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">Queue</h3>
+                <h3 class="md-flex"><b>Queue</b></h3>
               </div>
             </md-toolbar>
             A simple class showcasing a queue. <br>
@@ -297,12 +270,12 @@
             <!-- INNER BUTTON TWO END -->
             <!-- INNER BUTTON THREE START -->
             <div ng-app="expand" ng-controller="personCtrl">
-            <md-button class="md-raised md-secondary" ng-click="toggle()">Circular Queue</md-button>
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Circular Queue</md-button>
             <div ng-show="myVar">
             <!-- INNER HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">Circular Queue</h3>
+                <h3 class="md-flex"><b>Circular Queue</b></h3>
               </div>
             </md-toolbar>
             A simple class showcasing a circular queue using an array as the underlying data structure. <br>
@@ -313,12 +286,12 @@
             <!-- INNER BUTTON THREE END -->
             <!-- INNER BUTTON FOUR START -->
             <div ng-app="expand" ng-controller="personCtrl">
-            <md-button class="md-raised md-secondary" ng-click="toggle()">Heap</md-button>
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Heap</md-button>
             <div ng-show="myVar">
             <!-- INNER HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">Heap</h3>
+                <h3 class="md-flex"><b>Heap</b></h3>
               </div>
             </md-toolbar>
             A simple class showcasing a heap. <br>
@@ -329,12 +302,12 @@
             <!-- INNER BUTTON FOUR END -->
             <!-- INNER BUTTON FIVE START -->
             <div ng-app="expand" ng-controller="personCtrl">
-            <md-button class="md-raised md-secondary" ng-click="toggle()">Hashing</md-button>
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Hashing</md-button>
             <div ng-show="myVar">
             <!-- INNER HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">Hashing</h3>
+                <h3 class="md-flex"><b>Hashing</b></h3>
               </div>
             </md-toolbar>
             A simple class showcasing hashing. <br>
@@ -354,19 +327,19 @@
             <md-button class="md-raised md-secondary" ng-click="toggle()">Graphs</md-button>
             <div ng-show="myVar">
             <!-- HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">Graphs</h3>
+                <h3 class="md-flex"><b>Graphs</b></h3>
               </div>
             </md-toolbar>
             <!-- INNER BUTTON ONE START -->
             <div ng-app="expand" ng-controller="personCtrl">
-            <md-button class="md-raised md-secondary" ng-click="toggle()">Adjacency Representation</md-button>
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Adjacency Representation</md-button>
             <div ng-show="myVar">
             <!-- INNER HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">Adjacency Representation</h3>
+                <h3 class="md-flex"><b>Adjacency Representation</b></h3>
               </div>
             </md-toolbar>
             <p>A simple class showcasing a graph with adjacency representation.</p>
@@ -377,12 +350,12 @@
             <!-- INNER BUTTON ONE END -->
             <!-- INNER BUTTON TWO START -->
             <div ng-app="expand" ng-controller="personCtrl">
-            <md-button class="md-raised md-secondary" ng-click="toggle()">Matrix Representation</md-button>
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Matrix Representation</md-button>
             <div ng-show="myVar">
             <!-- INNER HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">Matrix Representation</h3>
+                <h3 class="md-flex"><b>Matrix Representation</b></h3>
               </div>
             </md-toolbar>
             A simple class showcasing a graph with matrix representation. <br>
@@ -393,12 +366,12 @@
             <!-- INNER BUTTON TWO END -->
             <!-- INNER BUTTON THREE START -->
             <div ng-app="expand" ng-controller="personCtrl">
-            <md-button class="md-raised md-secondary" ng-click="toggle()">Topological Sort</md-button>
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Topological Sort</md-button>
             <div ng-show="myVar">
             <!-- INNER HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">Topological Sort</h3>
+                <h3 class="md-flex"><b>Topological Sort</b></h3>
               </div>
             </md-toolbar>
             A simple class showcasing the use of topological sort to order a directed graph. <br>
@@ -409,12 +382,12 @@
             <!-- INNER BUTTON THREE END -->
             <!-- INNER BUTTON FOUR START -->
             <div ng-app="expand" ng-controller="personCtrl">
-            <md-button class="md-raised md-secondary" ng-click="toggle()">Breadth First Search</md-button>
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Breadth First Search</md-button>
             <div ng-show="myVar">
             <!-- INNER HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">Breadth First Search</h3>
+                <h3 class="md-flex"><b>Breadth First Search</b></h3>
               </div>
             </md-toolbar>
             A simple class showcasing breadth first search to traverse a graph. <br>
@@ -425,12 +398,12 @@
             <!-- INNER BUTTON FOUR END -->
             <!-- INNER BUTTON FIVE START -->
             <div ng-app="expand" ng-controller="personCtrl">
-            <md-button class="md-raised md-secondary" ng-click="toggle()">Depth First Search</md-button>
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Depth First Search</md-button>
             <div ng-show="myVar">
             <!-- INNER HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">Depth First Search</h3>
+                <h3 class="md-flex"><b>Depth First Search</b></h3>
               </div>
             </md-toolbar>
             A simple class showcasing breadth first search to traverse a graph. <br>
@@ -441,12 +414,12 @@
             <!-- INNER BUTTON FIVE END -->
             <!-- INNER BUTTON SIX START -->
             <div ng-app="expand" ng-controller="personCtrl">
-            <md-button class="md-raised md-secondary" ng-click="toggle()">Dijkstra's Algorithm</md-button>
+            <md-button class="md-raised md-secondary innerButtonStyle" ng-click="toggle()">Dijkstra's Algorithm</md-button>
             <div ng-show="myVar">
             <!-- INNER HIDDEN CONTENT -->
-            <md-toolbar class="md-warn">
+            <md-toolbar class="md-accent">
               <div class="md-toolbar-tools">
-                <h3 class="md-flex">Dijkstra's Algorithm</h3>
+                <h3 class="md-flex"><b>Dijkstra's Algorithm</b></h3>
               </div>
             </md-toolbar>
             A simple class showcasing Dijkstra's Algorithm applied to a graph. <br>
@@ -459,10 +432,6 @@
             </div>
             </div>
             <!-- BUTTON ONE END -->
-            <p>TODO:</p>
-            <h3><p>Algorithms Next</p></h3>
-            <h3><p>Systems Programming</p></h3>
-            Well this is in like 2 quarters...<br /></p>
         </md-content>
       </md-tab>
       

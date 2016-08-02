@@ -11,6 +11,15 @@
   transition: all linear 0.5s;
 }
 
+/** @Override md-warn **/
+.md-sidenav-left, .md-theme-indigo, .md-sidenav-left, .nav-theme. .md-warn, .md-menu-toolbar {
+  background-color: #efefef;
+}
+/** @Override md-button style **/
+.innerButtonStyle {
+  margin: auto 30px 10px;
+}
+
 .resume_banner {
   position: absolute;
   top:0;
