@@ -75,7 +75,7 @@
           <p>These are some of the projects I've most recently been involved in!</p>
           <!-- BUTTON ONE START -->
           <div ng-app="expand" ng-controller="personCtrl">
-          <md-button class="md-raised md-primary" ng-click="toggle()">Autonomous Golf Cart</md-button>
+          <md-button class="md-raised md-secondary" ng-click="toggle()">Autonomous Golf Cart</md-button>
           <div ng-hide="myVar">
           <!-- HIDDEN CONTENT -->
           <md-toolbar class="md-warn">
@@ -93,7 +93,7 @@
 
           <!-- BUTTON TWO START -->
           <div ng-app="expand" ng-controller="personCtrl">
-          <md-button class="md-raised md-primary" ng-click="toggle()">Chess AI</md-button>
+          <md-button class="md-raised md-secondary" ng-click="toggle()">Chess AI</md-button>
           <div ng-show="myVar">
           <!-- HIDDEN CONTENT -->
           <md-toolbar class="md-warn">
@@ -110,7 +110,7 @@
 
           <!-- BUTTON THREE START -->
           <div ng-app="expand" ng-controller="personCtrl">
-          <md-button class="md-raised md-primary" ng-click="toggle()">Ninja Fighter</md-button>
+          <md-button class="md-raised md-secondary" ng-click="toggle()">Ninja Fighter</md-button>
           <div ng-show="myVar">
           <!-- HIDDEN CONTENT -->
           <md-toolbar class="md-warn">
@@ -127,7 +127,7 @@
 
           <!-- BUTTON FOUR START -->
           <div ng-app="expand" ng-controller="personCtrl">
-          <md-button class="md-raised md-primary" ng-click="toggle()">Power Supply</md-button>
+          <md-button class="md-raised md-secondary" ng-click="toggle()">Power Supply</md-button>
           <div ng-show="myVar">
           <!-- HIDDEN CONTENT -->
           <md-toolbar class="md-warn">
@@ -145,7 +145,7 @@
 
           <!-- BUTTON FIVE START -->
           <div ng-app="expand" ng-controller="personCtrl">
-          <md-button class="md-raised md-primary" ng-click="toggle()">Speed Controller PCB</md-button>
+          <md-button class="md-raised md-secondary" ng-click="toggle()">Speed Controller PCB</md-button>
           <div ng-show="myVar">
           <!-- HIDDEN CONTENT -->
           <md-toolbar class="md-warn">
@@ -167,8 +167,85 @@
       <md-tab label="Programming ">
         <md-content class="md-padding">
           <h3>Programming</h3>
-          <p>Below are demonstrations of various programming exercises fundamental to most of computing.</p>
-            <h3><p>Data Structures</p></h3>
+          <p>Below are demonstrations of programming ability fundamental to most of computing.</p>
+            <!-- BUTTON ONE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Sorting Algorithms</md-button>
+            <div ng-show="myVar">
+            <!-- HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">Sorting Algorithms</h3>
+              </div>
+            </md-toolbar>
+            <!-- INNER BUTTON ONE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">Insertion & Selection Sort</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">Insertion & Selection Sort</h3>
+              </div>
+            </md-toolbar>
+            <p>A simple class showcasing both insertion & selection sort.</p>
+            <script src="https://gist.github.com/heatsink/00719c6f5bc7262e5d8e8c30f62ff1f0.js"></script>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON ONE END -->
+            <!-- INNER BUTTON TWO START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">HeapSort</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">HeapSort</h3>
+              </div>
+            </md-toolbar>
+            A simple class showcasing HeapSort. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON TWO END -->
+            <!-- INNER BUTTON THREE START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">MergeSort</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">MergeSort</h3>
+              </div>
+            </md-toolbar>
+            A simple class showcasing MergeSort. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON THREE END -->
+            <!-- INNER BUTTON FOUR START -->
+            <div ng-app="expand" ng-controller="personCtrl">
+            <md-button class="md-raised md-secondary" ng-click="toggle()">QuickSort</md-button>
+            <div ng-show="myVar">
+            <!-- INNER HIDDEN CONTENT -->
+            <md-toolbar class="md-warn">
+              <div class="md-toolbar-tools">
+                <h3 class="md-flex">QuickSort</h3>
+              </div>
+            </md-toolbar>
+            A simple class showcasing QuickSort. <br>
+            <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
+            <!-- INNER HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- INNER BUTTON FOUR END -->
+            <!-- HIDDEN CONTENT END -->
+            </div>
+            </div>
+            <!-- BUTTON ONE END -->
             <p>Stack</p>
             <p>Queue</p>
             <p>Circular Array Queue</p>
@@ -183,13 +260,6 @@
             Single Source Shortest Paths<br />
             Breadth First Search, Dijkstra's Algorithm<br />
             Depth First Search</p>
-            <h3><p>Sorting Algorithms</p></h3>
-            <p>Insertion & Selection</p>
-            <script src="https://gist.github.com/heatsink/00719c6f5bc7262e5d8e8c30f62ff1f0.js"></script>
-            <p>TODO:<br />
-            HeapSort<br />
-            MergeSort<br />
-            QuickSort<br />
 
             <h3><p>Systems Programming</p></h3>
             <p>TODO:<br />
@@ -199,7 +269,7 @@
       <md-tab label="Hardware">
         <md-content class="md-padding">
           <h3>Hardware</h3>
-          <p>Here are demonstrations of fundamental hardware exercises!</p>
+          <p>Here are some of the fundamentals I know about hardware!</p>
             <p>TODO:</p>
             using xc7a35tcpg236-1 FPGA<br />
             some vivado stuff (its trash software but why)<br />
