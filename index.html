@@ -48,7 +48,7 @@
             <p>These are some of the recent projects I've worked on.</p>
             <!-- BUTTON ONE START -->
             <div ng-app="expand" ng-controller="personCtrl">
-              <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Autonomous Golf Cart</b></md-button>
+              <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Autonomous Golf Cart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></b></md-button>
               <div ng-show="myVar">
                 <!-- HIDDEN CONTENT -->
                 <md-toolbar class="md-accent  md-hue-1">
@@ -56,16 +56,25 @@
                     <h3 class="md-flex"><b>Autonomous Golf Cart</b></h3>
                   </div>
                 </md-toolbar>
-                <p>Long term robotics project.</p>
-                <p>Definition of success: When the golf cart can drive from the Cal Poly robotics room to the nearest Woodstock's Pizza. Autonomously. And come back with pizza. </p>
-                <p>ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS ROS. ROS. Boom, I'm hired. ROS. Now I'm CEO.</p>
-                <img id = "portrait" height = "auto" width="200px" img src="images/portrait.png" /> <br>
+                <p><b>TL;DR:</b> collision detection & navigation, ROS, and home-made PCBs. Even more ROS , Python, lidar, and other lesser sensors (just kidding, they're all essential).</p>
+                <p>The autonomous golf cart is one of three flagship projects that the Cal Poly Robotics team is currently dedicated to. I'm part of what we affectionally call the IGVC team, even though we don't (yet) compete in the Intelligent Ground Vehicle Competition. But we do challenge and compete against ourselves to do some quality engineering! This sounds cooler in my head...</p>
+                <p>Within the IGVC team, I aim to primarily focus on collision detection & navigation. We use a SICK 2D Lidar, which coincidentally allows for many great puns and references as with the secondary benefit of allowing me to write collision detection software. We are currently experimenting with ROS's navigation stack for inspiration and proof of concept. I will begin designing our own in-house navigation stack during Fall 2016.</p>
+                <p>What's a good large-scale engineering project without a solid definition for success? The project can be declared successful when the golf cart can drive to and from the Cal Poly robotics room to the nearest Woodstock's Pizza autonomously. And come back with pizza.</p>
+                <img class = "leftImage" height = "auto" width="300px" img src="images/IGVC_PCB.png" ALIGN="left"/> <br>
+                <p>Even though I specialize in software for the Robotics team, I still interact with hardware on a regular basis. Here's the board made by my fellow IGVC team members! I will on designing a module on the board for a speedcontroller during Spring 2016 since relays are being used to control our steering motor... </p>
+                <p>Also, this picture was intentionally taken during the night to make it look awesome. Totally not because we sometimes work in the robotics room well into the A.M...</p>
+                <img class = "leftImage" height = "auto" width="300px" img src="images/IGVC_collision.png" ALIGN="left"/> <br>
+                <img class = "rightImage" height = "auto" width="300px" img src="images/IGVC_driving.png" ALIGN="right"/> <br>
+                <p> more cool text goes here</p>
+                </br>
+
+                <hr size=2>
               </div>
             </div>
             <!-- BUTTON ONE END -->
             <!-- BUTTON TWO START -->
             <div ng-app="expand" ng-controller="personCtrl">
-              <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Chess AI</b></md-button>
+              <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Chess AI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></b></md-button>
               <div ng-show="myVar">
                 <!-- HIDDEN CONTENT -->
                 <md-toolbar class="md-accent  md-hue-1">
@@ -81,7 +90,7 @@
             <!-- BUTTON TWO END -->
             <!-- BUTTON THREE START -->
             <div ng-app="expand" ng-controller="personCtrl">
-              <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Ninja Fighter</b></md-button>
+              <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Ninja Fighter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></b></md-button>
               <div ng-show="myVar">
                 <!-- HIDDEN CONTENT -->
                 <md-toolbar class="md-accent  md-hue-1">
@@ -97,7 +106,7 @@
             <!-- BUTTON THREE END -->
             <!-- BUTTON FOUR START -->
             <div ng-app="expand" ng-controller="personCtrl">
-              <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Power Supply</b></md-button>
+              <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Power Supply&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></b></md-button>
               <div ng-show="myVar">
                 <!-- HIDDEN CONTENT -->
                 <md-toolbar class="md-accent  md-hue-1">
@@ -108,13 +117,17 @@
                 Dual-variable power supply with digital meter. <br>
                 Manufactured well enough to plug into your standard outlet. <br>
                 Maximum 20 volts. <br>
+                <img class = "leftImage" height = "auto" width="300px" img src="images/PSU_case.png" ALIGN="left"/> <br>
+                <img class = "rightImage" height = "auto" width="300px" img src="images/PSU_inner.png" ALIGN="right"/> <br>
+
+
                 <img id = "portrait" height = "auto" width="200px" img src="images/portrait.png" /> <br>
               </div>
             </div>
             <!-- BUTTON FOUR END -->
             <!-- BUTTON FIVE START -->
             <div ng-app="expand" ng-controller="personCtrl">
-              <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Speed Controller PCB</b></md-button>
+              <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Speed Controller PCB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></b></md-button>
               <div ng-show="myVar">
                 <!-- HIDDEN CONTENT -->
                 <md-toolbar class="md-accent md-hue-1">

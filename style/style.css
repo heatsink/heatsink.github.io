@@ -28,6 +28,21 @@
 
 
 }
+/** @Override md-hue-1 style (for toolbars)  **/
+.md-hue-1, .md-accent {
+  color: #ffffff !important;
+  background-color:#E0E0E0 !important;
+  border-color: #ffffff !important;
+
+}
+
+.leftImage {
+  padding: 25px 25px 5px 0px;
+}
+.rightImage {
+  padding: 0px 0px 25px 25px;
+}
+
 
 .resume_banner {
   position: absolute;
@@ -75,6 +90,9 @@
   background: -o-linear-gradient(top, #373737, #212121);
   background: linear-gradient(top, #373737, #212121);
 }
+.md-padding {
+  min-height: 275px;
+}
 
 .inner {
   position: relative;
@@ -88,7 +106,7 @@
 }
 
 .header {
-  padding: 30px 0 20px 0;
+  padding: 20px 0 0px 0;
   background: #212121;
   background: -moz-linear-gradient(top, #373737, #212121);
   background: -webkit-linear-gradient(top, #373737, #212121);
