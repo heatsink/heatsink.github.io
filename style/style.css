@@ -18,6 +18,14 @@
 /** @Override md-button style **/
 .innerButtonStyle {
   margin: auto 30px 10px;
+  /* blue
+  color: #0090ff;
+  */
+  color: #000000;
+  background-color:#98fb98;
+  border-color: #ff6f00;
+
+
 }
 
 .resume_banner {
