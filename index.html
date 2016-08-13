@@ -27,7 +27,7 @@
     </div>
     <!-- MAIN BODYSTART -->
     <div class = "inner">
-      <md-tabs md-dynamic-height md-border-bottom md-swipe-content>
+      <md-tabs md-dynamic-height md-border-bottom>
         <md-tab label="Home">
           <md-content class="md-padding">
             <!-- <h1 class="md-display-2">Data Structures</h1> -->
@@ -51,23 +51,53 @@
               <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Autonomous Golf Cart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></b></md-button>
               <div ng-show="myVar">
                 <!-- HIDDEN CONTENT -->
+                <!--
                 <md-toolbar class="md-accent  md-hue-1">
                   <div class="md-toolbar-tools">
                     <h3 class="md-flex"><b>Autonomous Golf Cart</b></h3>
                   </div>
                 </md-toolbar>
+                -->
+                <h3>Autonomous Golf Cart</h3>
                 <p><b>TL;DR:</b> collision detection & navigation, ROS, and home-made PCBs. Even more ROS, Python, lidar, and other lesser sensors (just kidding, they're all essential).</p>
-                <p>The autonomous golf cart is one of three flagship projects that the Cal Poly Robotics team is currently dedicated to. I'm part of what we affectionally call the IGVC team, even though we don't (yet) compete in the Intelligent Ground Vehicle Competition. But we do challenge and compete against ourselves to do some quality engineering! This sounds cooler in my head...</p>
+                <p>The autonomous golf cart is one of three flagship projects that the Cal Poly Robotics team is currently dedicated to. I'm part of what we affectionally call the IGVC team, even though we don't (yet) compete in the Intelligent Ground Vehicle Competition. But we do challenge and compete against ourselves to do some quality engineering! Or something like that...</p>
                 <p>Within the IGVC team, I aim to primarily focus on collision detection & navigation. We use a SICK 2D Lidar, which coincidentally allows for many great puns and references as with the secondary benefit of allowing me to write collision detection software. We are currently experimenting with ROS's navigation stack for inspiration and proof of concept. I will begin designing our own in-house navigation stack during Fall 2016.</p>
                 <p>What's a good large-scale engineering project without a solid definition for success? The project can be declared successful when the golf cart can drive to and from the nearest Woodstock's Pizza and return with a dozen large Pepperonies. And maybe some Man Cave Wings.</p>
+
+                <figure ALIGN = "center">
+                <img height = "auto" width="300px" img src="images/IGVC_PCB.png"/>
+                <figcaption > <i>Figure 1. Test caption.</i>
+                </figcaption>
+                </figure>
+                <p>Even though I focus on software within the Robotics team, I still interact with hardware on a regular basis. This PCB was designed by my current team members before I joined the club, and I will design a module to add onto the board for a speedcontroller during Spring 2016.</p>
+                <div flex="95">
+                <!--
+                <p>New paragraph material goes here. New paragraph material goes here. New paragraph material goes here. New paragraph material goes here. New paragraph material goes here. New paragraph material goes here. New paragraph material goes here. New paragraph material goes here. </p>
+                </div>
+                <div flex="40">
+                  <img width="300px"img src="images/PSU_case.png"/>
+                </div>
+                <div flex="40">
+                  <img width="300px"img src="images/PSU_case.png"/>
+                </div>
+                -->
+
+                <!--
+
+
+
+                <figure>
                 <img class = "leftImage" height = "auto" width="300px" img src="images/IGVC_PCB.png" ALIGN="left"/> <br>
+                <figcaption ALIGN="left" >Figure 1. This is a test of an image caption.
+                </figcaption>
+                </figure>
+
                 <p>Even though I specialize in software for the Robotics team, I still interact with hardware on a regular basis. Here's the board made by my fellow IGVC team members! I will on designing a module on the board for a speedcontroller during Spring 2016 since relays are being used to control our steering motor... </p>
                 <p>Also, this picture was intentionally taken during the night to make it look awesome. Totally not because we sometimes work in the robotics room well into the A.M...</p>
                 <img class = "leftImage" height = "auto" width="300px" img src="images/IGVC_collision.png" ALIGN="left"/> <br>
                 <img class = "rightImage" height = "auto" width="300px" img src="images/IGVC_driving.png" ALIGN="right"/> <br>
                 <p> more cool text goes here</p>
-                </br>
-
+                -->
                 <hr size=2>
               </div>
             </div>
@@ -77,11 +107,14 @@
               <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Chess AI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></b></md-button>
               <div ng-show="myVar">
                 <!-- HIDDEN CONTENT -->
+                <!--
                 <md-toolbar class="md-accent  md-hue-1">
                   <div class="md-toolbar-tools">
                     <h3 class="md-flex"><b>Chess AI</b></h3>
                   </div>
                 </md-toolbar>
+                -->
+                <h3>Chess AI</h3>
                 Chess AI with Intermediate & Expert settings. <br>
                 Branch Traversal & Board value algorithm. <br>
                 <img id = "portrait" height = "auto" width="200px" img src="images/portrait.png" /> <br>
@@ -93,11 +126,14 @@
               <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Ninja Fighter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></b></md-button>
               <div ng-show="myVar">
                 <!-- HIDDEN CONTENT -->
+                <!--
                 <md-toolbar class="md-accent  md-hue-1">
                   <div class="md-toolbar-tools">
                     <h3 class="md-flex"><b>Ninja Fighter</b></h3>
                   </div>
                 </md-toolbar>
+                -->
+                <h3>Ninja Fighter</h3>
                 A classic ninja game. Good vs. evil. <br>
                 Ninjas man. <br>
                 <img id = "portrait" height = "auto" width="200px" img src="images/portrait.png" /> <br>
@@ -109,19 +145,57 @@
               <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Power Supply&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></b></md-button>
               <div ng-show="myVar">
                 <!-- HIDDEN CONTENT -->
+                <!--
                 <md-toolbar class="md-accent  md-hue-1">
                   <div class="md-toolbar-tools">
                     <h3 class="md-flex"><b>Power Supply</b></h3>
                   </div>
                 </md-toolbar>
+                -->
+                <h3>Power Supply</h3>
                 Dual-variable power supply with digital meter. <br>
                 Manufactured well enough to plug into your standard outlet. <br>
                 Maximum 20 volts. <br>
+                <!--
+                <div>
                 <img class = "leftImage" height = "auto" width="300px" img src="images/PSU_case.png" ALIGN="left"/> <br>
-                <img class = "rightImage" height = "auto" width="300px" img src="images/PSU_inner.png" ALIGN="right"/> <br>
+                </div>
+                <p>Hello World</p>
+                <div>
+                <img class = "leftImage" height = "auto" width="300px" img src="images/PSU_inner.png" ALIGN="left"/> <br>
+                </div>
+                -->
+                <div layout="row" layout-xs="column">
+                  <div flex="40">
+                    <img width="300px"img src="images/PSU_case.png"/>
+                  </div>
+                  <div flex>
+                    Here is some text.
+                  </div>
+                </div>
+                <br>
+                <div layout="row" layout-xs="column">
+                  <div flex="40">
+                    <img height = "auto" width="300px" img src="images/PSU_inner.png"/> <br>
+                  </div>
+                  <div flex>
+                    Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. 
+                  </div>
+                </div>
+
+                <div layout="row">
+                  <div flex>
+                    Wassap.
+                  </div>
+                  <div flex>
+                    Yo yo yo.
+                  </div>
+                </div>
+                <hr size=2>
 
 
-                <img id = "portrait" height = "auto" width="200px" img src="images/portrait.png" /> <br>
+
+
               </div>
             </div>
             <!-- BUTTON FOUR END -->
@@ -130,11 +204,14 @@
               <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Speed Controller PCB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></b></md-button>
               <div ng-show="myVar">
                 <!-- HIDDEN CONTENT -->
+                <!--
                 <md-toolbar class="md-accent md-hue-1">
                   <div class="md-toolbar-tools">
                     <h3 class="md-flex"><b>TODO:Speed Controller PCB</b></h3>
                   </div>
                 </md-toolbar>
+                -->
+                <h3>Speed Controller PCB</h3>
                 Designed for the Cal Poly Robotics Team's Autonomous Golf Cart. <br>
                 Speed controller for golf cart steering system. <br>
                 Project for Winter 2016 (Not yet complete). <br>
