@@ -1,11 +1,11 @@
 /** BUTTON ANIMATIONS **/
 
 .animate-show, .ng-hide-add, .animate-show, .ng-hide-remove {
-  transition: all linear 0.2s;
+  transition: all linear .2s;
 }
 
 .animate-show, .ng-hide {
-  line-height: 3;
+  line-height: 2;
   opacity: 0;
   padding: 0 10px;
   transition: all linear 0.2s;
@@ -91,7 +91,7 @@
   background: linear-gradient(top, #373737, #212121);
 }
 .md-padding {
-  min-height: 275px;
+  min-height: 250px;
 }
 
 .inner {
