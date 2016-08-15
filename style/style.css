@@ -127,13 +127,18 @@
   */
 }
 
+.projectImage {
+  /*padding: 1px;*/
+  border: 1px solid #efefef;
+  box-shadow: 0 0 5px #212121;
+  -webkit-box-shadow: 0 0 5px #212121;
+  -moz-box-shadow: 0 0 5px #212121;
+  -o-box-shadow: 0 0 5px #212121;
+  -ms-box-shadow: 0 0 5px #212121;
+}
+
 .portrait{
-  position: relative;
-  left: 0px;
-  margin: 0 auto;
-  max-width: 739px;
   padding: 2px;
-  margin: 10px 0 10px 0;
   border: 1px solid #efefef;
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px #ebebeb;

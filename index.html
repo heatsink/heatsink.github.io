@@ -14,8 +14,8 @@
       <header class="inner">
         <div class="header mobileHeader" >
           <md-button class = "resume_banner resumeMobile" href="documents/resume.pdf" download="Sean-Wallace-Resume">Download My Resume</md-button>
-          <!---
-          <md-button class="forkme_banner forkmeMobile" href="https://github.com/heatsink">Visit My GitHub Page</md-button>
+          <!--
+          <md-button class="forkme_banner invisible" href="https://github.com/heatsink">Visit My GitHub Page</md-button>
           <img class = "portrait invisible" class = "invisible" height = "200px" width="200px" img src="images/portrait_walrus.png" alt="Test Image" align="right"/> 
           -->
           <h1 id = "title"> Sean Wallace </h1>
@@ -61,24 +61,44 @@
                 </md-toolbar>
                 -->
                 <h3>Autonomous Golf Cart</h3>
-                <p><b>TL;DR:</b> collision detection & navigation, ROS, and home-made PCBs. Python, lidar, and other lesser sensors (just kidding, they're all essential).</p>
-                <img height = "auto" width="300px" img src="images/IGVC_driving.png"/>
-                <figcaption > <i>Testing an old iteration of my collision detection software. Will update image during Fall 2016.</i>
-                </figcaption>
+                <p><b>TL;DR:</b> collision detection & navigation, ROS, home-made PCB. Python, lidar, and other inferior sensors (just kidding, they're all essential).</p>
 
-                <p>The autonomous golf cart is one of three flagship projects that the Cal Poly Robotics team is currently dedicated to. I'm part of what we affectionally call the IGVC team, even though we don't (yet) compete in the Intelligent Ground Vehicle Competition. But we do challenge and compete against ourselves to do some quality engineering! Or something like that...</p>
-                <p>Within the IGVC team, I specialize in collision detection & navigation. We use a SICK 2D Lidar, which coincidentally allows for many great puns and references as with the secondary benefit of allowing me to write collision detection software. We are currently experimenting with ROS's navigation stack for inspiration and proof of concept. I will begin designing our own in-house navigation stack during Fall 2016.</p>
-                <img height = "auto" width="300px" img src="images/IGVC_collision.png"/>
-                <figcaption> <i>An old iteration of my collision detection software. Will update image during Fall 2016.
-                </i>
-                </figcaption>
+                <div layout="row" layout-xs="column">
+                  <div flex-gt-sm="40">
+                    <img class = "projectImage" height = "auto" width="300px" img src="images/IGVC_driving.png"/>
+                    <figcaption > <small><i>Testing an old iteration of my collision detection software. Will update image during Fall 2016.</i></small>
+                    </figcaption>
+                  </div>
+                  <div flex-gt-sm="60">
+                    <p>The autonomous golf cart is one of three flagship projects that the Cal Poly Robotics team is currently dedicated to. I'm part of what we affectionally call the IGVC team, even though we don't (yet) compete in the Intelligent Ground Vehicle Competition. But we do challenge and compete against ourselves to do some quality engineering! Or something like that...</p>
+                  </div>
+                </div>
 
-                <p>What's a good large-scale engineering project without a solid definition for success? The project can be declared successful when the golf cart can drive to and from the nearest Woodstock's Pizza and return with a dozen large Pepperonies. And maybe some Man Cave Wings. We keep our eyes on the prize</p>
+                <p>Our team is interdisciplinary, comprising of electrical, mechanical, and computer engineers. We also have a geologist who happens to know a lot about engineering. This allows us to claim diversity.</p>
 
-                <img height = "auto" width="300px" img src="images/IGVC_PCB.png"/>
-                <figcaption > <i>The golf cart's PCB, designed in-house.</i>
-                </figcaption>
+                <div layout="row" layout-xs="column">
+                  <div flex-gt-sm="40">
+                    <img class = "projectImage" height = "auto" width="300px" img src="images/IGVC_collision.png"/>
+                    <figcaption><small><i>An old iteration of my collision detection software. Will update image during Fall 2016.</i></small>
+                    </figcaption>
+                  </div>
+                  <div flex-gt-sm="60">
+                <p>Within the IGVC team, I specialize in collision detection & navigation. We use a SICK 2D Lidar, which has the the dual purpose of detecting solid objects in a 270 degree field of view as well as be the basis for many sick puns. Currently, our team is experimenting with ROS's navigation stack for proof of concept as well as inspiration for our own in-house navigation stack. The design and programming of this milestone will take place during Fall 2016.</p>
+                  </div>
+                </div>
+                <p>This is a large-scale long term project so it is entirely possible that it will continue until graduation. Therefore, it is important to have a solid definition for project success. Otherwise, we'll never end up pursing another project! The IGVC team will declare the project successful when the golf cart can drive to and from the nearest Woodstock's Pizza and return with a delicious payload. Autonomously. Worry not, the pizza will be in good hands.</p>
+
+                <div layout="row" layout-xs="column">
+                  <div flex-gt-sm="40">
+                    <img class = "projectImage" height = "auto" width="300px" img src="images/IGVC_PCB.png"/>
+                    <figcaption ><small><i>The golf cart's PCB, designed in-house.</i></small>
+                    </figcaption>
+                  </div>
+                  <div flex-gt-sm="60">
+
                 <p>Even though I focus on software within the Robotics team, I still interact with hardware on a regular basis. This PCB was designed by my current team members before I joined the club, and I will design a module to add onto the board for a speedcontroller during Spring 2016.</p>
+                  </div>
+                </div>
                 <!--
                 <div flex="95">
                 <p>New paragraph material goes here. New paragraph material goes here. New paragraph material goes here. New paragraph material goes here. New paragraph material goes here. New paragraph material goes here. New paragraph material goes here. New paragraph material goes here. </p>
