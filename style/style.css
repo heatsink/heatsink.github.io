@@ -84,6 +84,7 @@
 .outer {
   width: 100%;
   background: #212121;
+  background: #efefef;
   background: -moz-linear-gradient(top, #373737, #212121);
   background: -webkit-linear-gradient(top, #373737, #212121);
   background: -ms-linear-gradient(top, #373737, #212121);
@@ -106,25 +107,19 @@
 }
 
 .header {
-  padding: 20px 0 0px 0;
-/*
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
-  */
+  padding: 20px 0px 0px 0px;
 }
 #footer {
-/*
-  background: #212121;
+  width: 100%;
+  background:#212121
   background: -moz-linear-gradient(top, #373737, #212121);
   background: -webkit-linear-gradient(top, #373737, #212121);
   background: -ms-linear-gradient(top, #373737, #212121);
   background: -o-linear-gradient(top, #373737, #212121);
   background: linear-gradient(top, #373737, #212121);
-  */
+
+  position: relative;
+  bottom: 0;
 }
 
 .projectImage {
@@ -148,7 +143,7 @@
 }
 /* This is Tab Territory */
 md-content {
-  background: #f2f2f2;
+  background:#f2f2f2;
 }
 
 #title {
@@ -251,8 +246,8 @@ a {
 }
 .resumeMobile {
   position: relative;
-  top:0;
-  left: 0px;
+  top:-20px;
+  left: -15px;
   z-index: 11;
   padding: 3px 10px 3px 50px;
   background: url('../images/icon_portfolio.png') #ff6f00 no-repeat 5% 50%;
@@ -260,4 +255,17 @@ a {
 }
 .mobileHeader {
   padding: 0px 0 0px 0;
+
+}
+.mobileTitle {
+  position: relative;
+  top: -40px;
+}
+.mobileTagline {
+  position: relative;
+  top: -40px;
+  }
+.mobileInner {
+  padding: 20px 0px 0px 10px;
+  }
 }

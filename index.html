@@ -11,16 +11,16 @@
   <md-content >
     <!-- HEADER START -->
     <div class="outer">
-      <header class="inner">
-        <div class="header mobileHeader" >
+      <header class="inner mobileInner">
+        <div class = "header mobileHeader" >
           <md-button class = "resume_banner resumeMobile" href="documents/resume.pdf" download="Sean-Wallace-Resume">Download My Resume</md-button>
           <!--
           <md-button class="forkme_banner invisible" href="https://github.com/heatsink">Visit My GitHub Page</md-button>
           <img class = "portrait invisible" class = "invisible" height = "200px" width="200px" img src="images/portrait_walrus.png" alt="Test Image" align="right"/> 
           -->
-          <h1 id = "title"> Sean Wallace </h1>
-          <h2 id = "tagline"> Cal Poly, San Luis Obispo </h2>
-          <h2 id = "tagline"> Computer Engineering </h2>
+          <h1 id = "title" class = "mobileTitle"> Sean Wallace </h1>
+          <h2 id = "tagline" class = "mobileTagline"> Cal Poly, San Luis Obispo </h2>
+          <h2 id = "tagline" class = "mobileTagline"> Computer Engineering </h2>
       </header>
       </div>
       <!-- HEADER END -->
@@ -185,7 +185,7 @@
                 <div layout="row" layout-xs="column">
                   <div flex-gt-sm="40">
                     <img class = "projectImage" height = "auto" width="300px" img src="images/Ninja_Fighter_cinematic_1.png" /> <br>
-                    <figcaption ><small><i>So. Many. Shurikens.</i></small>
+                    <figcaption ><small><i>Like guns in hollywood. Except with shurikens.</i></small>
                     </figcaption>
                     <br>
                   </div>
@@ -201,7 +201,7 @@
                 <div layout="row" layout-xs="column">
                   <div flex-gt-sm="40">
                       <img class = "projectImage" height = "auto" width="300px" img src="images/Ninja_Fighter_training_1.png" /> <br>
-                      <figcaption ><small><i>The boy begins his ninja training.</i></small>
+                      <figcaption ><small><i>The boy begins his ninja training. By walking.</i></small>
                       </figcaption>
                       <br>
                   </div>
@@ -236,7 +236,7 @@
                     <br>
                   </div>
                   <div flex-gt-sm="60">
-                    <p>What's an offline RPG without a cheat code? Pressing 1, 3, 5, and 7 activated "Haung's Mode", named after Dr. Haungs (our game design professor). It made the player really overpowered, and would feature a badly photoshopped Captain "Haungs" America. It was really funny at the time.</p>
+                    <p>What's an offline RPG without a cheat code? Pressing 1, 3, 5, and 7 activated "Haung's Mode", inspired by our professor of game design. This feature makes activates a badly photoshopped Captain "Haungs" America with the side effect of making the player really overpowered. It was really funny at the time.</p>
                   </div>
                 </div>
 
@@ -244,19 +244,18 @@
                 <div layout="row" layout-xs="column">
                   <div flex-gt-sm="40">
                     <img class = "projectImage" height = "auto" width="300px" img src="images/Ninja_Fighter_final_boss.png" /> <br>
-                    <figcaption ><small><i>The final boss fight. Firebats and fireballs spawn from the cesspools of darkness. Fireballs shoot in semi-random directions. Madness. Chaos. Evidently, childrens' skill level was not accounted for during playtesting data-collection.</i></small>
+                    <figcaption ><small><i>The final boss fight. Firebats and fireballs. Chaos.</i></small>
                     </figcaption>
-                    <br>
                   </div>
                   <div flex-gt-sm="60">
-                    <p>Remember that part where the master mysteriously disappears? Turns out, the master had been controlling the darkness the entire time. Woah. That's a quality plot twist if I've ever seen one. When I look back on this project, I tend to poke a lot of fun at the code I wrote and the game we produced. The phenomenon of programmers cringing over old code they wrote is not lost on me. I think this game was still worth documenting, as it serves as a reminder of constant improvement in programming practices. And it truly isn't that bad! Ninja Fighter  was really popular with my two 7 and 8 year old cousins. They wouldn't stop asking to play it...</p>
+                    <p>Remember that part where the master mysteriously disappears? When you defeat the final boss, it turns out that the master had been controlling the darkness the entire time. Woah. That's a quality plot twist if I've ever seen one. When I look back on this project, I tend to poke a lot of fun at the code I wrote and the game we produced. The phenomenon of programmers cringing over old code they wrote is not lost on me. I think this game was still worth documenting, as it serves as a reminder of constant improvement in programming practices. And it truly isn't that bad! Ninja Fighter  was really popular with my two 7 and 8 year old cousins. They wouldn't stop asking to play it...</p>
                   </div>
                 </div>
 
 
 
 
-                <p>Although Ninja Fighter could certainly be improved, I think the goal of the project was certainly achieved. Programming individually has its challenges, but the logistics of coding with others was a whole new beast to get used to. Also, we used Git for version control, and this was where I was forced to learn how to resolve merge conflicts. They gave me nightmares at the time... I am happy to report that these personal issues are no longer a problem.</p>
+                <p>Although Ninja Fighter could certainly be improved, I certainly achieved my learning goals for this project. Programming individually has its challenges, but the logistics of coding with others was a whole new beast to get the hang of. I've used Git before, but never in a group setting. This was the project where I was forced to learn how to resolve merge conflicts. They gave me nightmares at the time... I am happy to resolve that I no longer fear Git and its associated nuances.</p>
                 <hr size=2>
 
 
@@ -912,15 +911,16 @@
         </md-tab>
       </md-tabs>
     </div>
+    
   </md-content>
   <!-- FOOTER  -->
   <!-- 
   -->
-    <div id="footer" class="outer">
-       <footer class="inner">
-          <h6> Powered by GitHub. <br>Upon its inception, everywhere, coders rejoiced.</h6>
+       <div class = "outer">
+       <footer id = "footer" class = "inner">
+          <h6> sswallac@calpoly.edu</h6>
        </footer>
-    </div>
+       </div>
     <!--
     -->
   <!-- Angular.js Libraries -->
