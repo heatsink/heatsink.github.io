@@ -109,16 +109,17 @@
   padding: 20px 0px 0px 0px;
 }
 #footer {
-  width: 100%;
+  /*width: 100%;*/
   background:#212121
   background: -moz-linear-gradient(top, #373737, #212121);
   background: -webkit-linear-gradient(top, #373737, #212121);
   background: -ms-linear-gradient(top, #373737, #212121);
   background: -o-linear-gradient(top, #373737, #212121);
   background: linear-gradient(top, #373737, #212121);
-
+  /*
   position: relative;
   bottom: 0;
+  */
 }
 
 .projectImage {
