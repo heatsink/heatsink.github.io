@@ -84,7 +84,6 @@
 .outer {
   width: 100%;
   background: #212121;
-  background: #efefef;
   background: -moz-linear-gradient(top, #373737, #212121);
   background: -webkit-linear-gradient(top, #373737, #212121);
   background: -ms-linear-gradient(top, #373737, #212121);
