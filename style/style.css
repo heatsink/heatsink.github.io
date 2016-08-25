@@ -110,6 +110,12 @@ font-size: 13px;
   -ms-box-shadow: 0 0 5px #0090ff;
 }
 /** BUTTON ANIMATIONS **/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -159,6 +165,7 @@ font-size: 13px;
 }
 
 .fadeInDown {
+  -webkit-animation-fill-mode: both;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
