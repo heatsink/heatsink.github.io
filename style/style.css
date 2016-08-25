@@ -32,10 +32,10 @@ html, .md-default-theme {
 }
 
 .accordion.active, .accordion:hover {
-    background-color: #000000;
-    font-size: 15px;
-    color: #0090ff;
-    border: 1px solid #efefef;
+  background-color: #000000;
+  font-size: 15px;
+  color: #0090ff;
+  border: 1px solid #efefef;
   box-shadow: 0 0 5px #0090ff;
   -webkit-box-shadow: 0 0 5px #0090ff;
   -moz-box-shadow: 0 0 5px #0090ff;
@@ -220,18 +220,43 @@ font-size: 13px;
 
 
 .resume_banner {
-  position: absolute;
-  bottom:0;
-  left: 3px;
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 250px;
+  top:50px;
+  /*
   z-index: 11;
   padding: 3px 10px 3px 50px;
   color: #fff;
   background: url('../images/icon_portfolio.png') #ff6f00 no-repeat 5% 50%;
   background-size: 25px 25px;
+  */
+  color: #f2f2f2;
+  background:#008000;
   font-weight: 700;
+  font-size: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
-  https://github.com/heatsink  border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border: 1px solid #efefef;
+  ox-shadow: 0 0 5px #212121;
+  -webkit-box-shadow: 0 0 5px #212121;
+  -moz-box-shadow: 0 0 5px #212121;
+  -o-box-shadow: 0 0 5px #212121;
+  -ms-box-shadow: 0 0 5px #212121;
+}
+.resume_banner:active, .resume_banner:hover {
+  background: #008000 !important;
+  font-size: 15px;
+  color: #0090ff;
+  /*margin-left: 5px;*/
+  border: 1px solid #efefef;
+  box-shadow: 0 0 5px #0090ff;
+  -webkit-box-shadow: 0 0 5px #0090ff;
+  -moz-box-shadow: 0 0 5px #0090ff;
+  -o-box-shadow: 0 0 5px #0090ff;
+  -ms-box-shadow: 0 0 5px #0090ff;
 }
 
 .forkme_banner {
@@ -440,13 +465,7 @@ a {
   background: url('../images/blacktocat.png') #ff6f00 /*#0090ff*/ no-repeat 5% 50%;
 }
 .resumeMobile {
-  position: relative;
-  top:-20px;
-  left: -15px;
-  z-index: 11;
-  padding: 3px 10px 3px 50px;
-  background: url('../images/icon_portfolio.png') #ff6f00 no-repeat 5% 50%;
-  background-size: 25px 25px;
+  top: 15px;
 }
 .mobileHeader {
   padding: 0px 0 0px 0;
