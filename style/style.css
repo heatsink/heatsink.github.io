@@ -9,7 +9,11 @@
     transition: 0.1s;
     
   border: 1px solid #efefef;
-  box-shadow: none;
+  ox-shadow: 0 0 5px #212121;
+  -webkit-box-shadow: 0 0 5px #212121;
+  -moz-box-shadow: 0 0 5px #212121;
+  -o-box-shadow: 0 0 5px #212121;
+  -ms-box-shadow: 0 0 5px #212121;
 }
 html, .md-default-theme {
   color:#373737;
@@ -32,19 +36,25 @@ html, .md-default-theme {
     font-size: 15px;
     color: #0090ff;
     border: 1px solid #efefef;
-  box-shadow: 0 0 5px #212121;
-  -webkit-box-shadow: 0 0 5px #212121;
-  -moz-box-shadow: 0 0 5px #212121;
-  -o-box-shadow: 0 0 5px #212121;
-  -ms-box-shadow: 0 0 5px #212121;
+  box-shadow: 0 0 5px #0090ff;
+  -webkit-box-shadow: 0 0 5px #0090ff;
+  -moz-box-shadow: 0 0 5px #0090ff;
+  -o-box-shadow: 0 0 5px #0090ff;
+  -ms-box-shadow: 0 0 5px #0090ff;
     /*margin-left: 5px;*/
     
 
 }
 .divContent {
-  border: 1px solid #E0E0E0;
+  border: 1px solid #efefef;
+  ox-shadow: 0 0 5px #121212;
+  -webkit-box-shadow: 0 0 5px #121212;
+  -moz-box-shadow: 0 0 5px #121212;
+  -o-box-shadow: 0 0 5px #121212;
+  -ms-box-shadow: 0 0 5px #121212;
   padding: 5px;
 }
+
 /*
 .accordion:after {
     
@@ -93,23 +103,75 @@ font-size: 13px;
     background-color: #f2f2f2;
     color: #0090ff;
     border: none;
-  box-shadow: none;
-  -webkit-box-shadow: 0 0 5px #212121;
-  -moz-box-shadow: 0 0 5px #212121;
-  -o-box-shadow: 0 0 5px #212121;
-  -ms-box-shadow: 0 0 5px #212121;
+  box-shadow: #0090ff;
+  -webkit-box-shadow: 0 0 5px #0090ff;
+  -moz-box-shadow: 0 0 5px #0090ff;
+  -o-box-shadow: 0 0 5px #0090ff;
+  -ms-box-shadow: 0 0 5px #0090ff;
 }
 /** BUTTON ANIMATIONS **/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
 
-.animate-show, .ng-hide-add, .animate-show, .ng-hide-remove {
-  transition: all linear .2s;
+  to {
+    opacity: 1;
+  }
 }
 
-.animate-show, .ng-hide {
-  line-height: 2;
-  opacity: 0;
-  padding: 0 10px;
-  transition: all linear 0.2s;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.animate-show, .ng-hide-add, .animate-show, .ng-hide-remove, .fadeIn {
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  /*transition:  0.1s;*/
+}
+
+.animate-show, .ng-hide, .fadeOut {
+  -webkit-animation: none 0s !important;
 }
 
 /** @Override md-warn **/
@@ -117,30 +179,12 @@ font-size: 13px;
   background-color: #efefef;
 }
 /** @Override md-button style **/
-.innerButtonStyle {
-  /* blue
-  color: #0090ff;
-  */
-  /*
-  margin: auto 30px 10px;
-  min-width: 250px;
-  
-  color: #000000;
-  background-color:#98fb98;
-  border-color: #ff6f00;
-  */
-  width: 75%;
-  color: #000000;
-  background-color:#E0E0E0;
-  border: 1px solid #efefef;
-  box-shadow: none;
-  
 
-}
 .smallAccordion {
   width: 40%;
-  padding: 1px;
+  padding: 0px;
   background-color:#E4E4E4;
+  font-weight: lighter;
 }
 .innerButton:active, .innerButton:hover {
     background-color: #000000;
