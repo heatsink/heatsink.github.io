@@ -1,5 +1,6 @@
 var app = angular.module('resumeApp', ['ngMaterial'])
 .config(function($mdThemingProvider) {
+
   $mdThemingProvider.definePalette('amazingPaletteName', {
     '50': 'ffebee',
     '100': 'ffcdd2',
@@ -24,13 +25,4 @@ var app = angular.module('resumeApp', ['ngMaterial'])
   $mdThemingProvider.theme('default')
     .primaryPalette('amazingPaletteName')
     .accentPalette('blue-grey');
-});
-
-/** BUTTON EXPAND FEATURE **/
-var expand = angular.module('myApp', []);
-app.controller('personCtrl', function($scope) {
-    $scope.myVar = false;
-    $scope.toggle = function() {
-        $scope.myVar = !$scope.myVar;
-    };
 });
