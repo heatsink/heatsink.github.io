@@ -451,7 +451,17 @@ a {
   -ms-transition: color 0.5s ease;
   -ms-transition: text-shadow 0.5s ease;
 }
-
+.bufferedText {
+  padding-left: 25px;
+}
+.bufferedTextMain {
+  padding-left: 25px;
+}
+@media only screen and (max-width:960px) {
+  .bufferedTextMain {
+    padding-left: 5px !important;
+  }
+}
 @media only screen and (max-width:510px) {
   .invisible {
     display: none;
@@ -463,35 +473,41 @@ a {
   z-index: 10;
   padding: 3px 10px 3px 50px;
   background: url('../images/blacktocat.png') #ff6f00 /*#0090ff*/ no-repeat 5% 50%;
-}
-.resumeMobile {
-  top: 15px;
-}
-.mobileHeader {
-  padding: 0px 0 0px 0;
+  }
+  .resumeMobile {
+    top: 15px;
+  }
+  .mobileHeader {
+    padding: 0px 0 0px 0;
 
-}
-.mobileTitle {
-  position: relative;
-  padding: 25px 0px 0px 10px;
-  top: -40px;
-}
-.mobileTagline {
-  position: relative;
-  top: -40px;
   }
-.mobileInner {
-  padding: 20px 0px 0px 0px;
+  .mobileTitle {
+    position: relative;
+    padding: 25px 0px 0px 10px;
+    top: -40px;
   }
-.projectImage {
-  width: 300px;
-  position: relative;
-}
-.smallAccordion {
-width: 80%;
-}
-.md-padding {
-  min-height:275px;
-}
+  .mobileTagline {
+    position: relative;
+    top: -40px;
+    }
+  .mobileInner {
+    padding: 20px 0px 0px 0px;
+    }
+  .projectImage {
+    width: 300px;
+    position: relative;
+  }
+  .smallAccordion {
+  width: 80%;
+  }
+  .md-padding {
+    min-height:275px;
+  }
+  .bufferedText {
+    padding-left: 5px !important;
+  }
+  .bufferedTextMain {
+  padding-left: 5px !important;
+  }
 }
 

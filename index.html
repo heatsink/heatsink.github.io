@@ -47,7 +47,7 @@
 
             </md-button>
               <div ng-show="myVar" class = "divContent animated">
-                <p align = "LEFT"><b>TL;DR:</b> Python. C. Collision detection & navigation. Home-made PCB. Lidar, encoders and other sensors.</p>
+                <p align = "LEFT" class = "bufferedTextMain"><b>TL;DR:</b> Robotics club project. Rudimentary self-driving golf cart. PCB designed in-house. ROS. Python. C. Collision detection & navigation. Lidar, encoders, and other sensors.</p>
 
                 <div layout="row" layout-xs="column">
                   <div flex-gt-sm="40">
@@ -56,34 +56,36 @@
                     </figcaption>
                   </div>
                   <div flex-gt-sm="50">
-                    <p align = "LEFT">The autonomous golf cart is one of three flagship projects that the Cal Poly Robotics team is currently dedicated to. Even though we don't compete in the Intelligent Ground Vehicle Competition, we're called the IGVC team within the robotics club. The official idea is that we still challenge ourselves to do better. But really, we just like the name.</p>
+                    <p align = "LEFT" class = "bufferedText">The autonomous golf cart is a collaborative and multidisciplinary project within the Cal Poly robotics club. I've been working on this project since my Freshman year, and it is likely that project development will continue for the majority of my university career. However, I'll stop to declare project success when the golf cart can drive to Woodstock's Pizza and back without supervision. Some of the team members won't settle for Ciao's campus pizza, which is much closer to headquarters. The harder goal is being set because we are confident we can achieve it. Not because our campus food is bad or anything...</p>
                   </div>
                   <div flex gt-sm = "10">
                   </div>
                 </div>
-
-                <p align = "LEFT">Our team is interdisciplinary. We've got electrical, mechanical, and computer engineers. That's about it. All majors are welcome, but we're having a hard time recruiting non-engineering majors to tame electrons and 3-D print stuff.</p>
+                <p align = "LEFT" class ="bufferedTextMain">My current role in the team is a focus on collision detection & navigation. We've got a SICK 2D Lidar mounted on the golf cart, which has the dual purpose of object detection as well as be the basis for many sick puns. Since our SICK Lidar was already pushing the budget with its 'modest' price tag of $5000, it only has a two-dimensional field of view. As it's mounted, it detects objects at an approximate waist level flawlessly, but will scan right over dogs and small children. We have sonar mounts on the bottom of the golf cart to aid in this 'minor' issue, as well as to detect objects in our blind spot as the SICK lidar has a 270 degree field of view. I am currently experimenting with ROS's native navigation stack for proof of concept in addition to giving inspiration for our own in-house navigation stack. The bulk of development for this milestone will take place during Fall of 2016.</p>
                 <div layout="row" layout-xs="column">
                   <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="350px" img src="images/IGVC_collision.png"/>
-                    <figcaption><small><i>An old iteration of my collision detection software.</i></small>
+                    <img class = "projectImage" height = "auto" width="350px" img src="images/IGVC_PCB.png"/>
+                    <figcaption><small><i>An old iteration of collision detection software (closeup).</i></small>
                     </figcaption>
                   </div>
-                  <div flex-gt-sm="60">
-                <p align = "LEFT">Within the IGVC team, I specialize in collision detection & navigation. We use a SICK 2D Lidar, which has the the dual purpose of detecting solid objects in a 270 degree field of view as well as be the basis for many sick puns. Currently, our team is experimenting with ROS's navigation stack for proof of concept as well as inspiration for our own in-house navigation stack. The design and programming of this milestone will take place during Fall 2016.</p>
+                  <div flex-gt-sm="50">
+                <p align = "LEFT" class = "bufferedText">Our team uses ROS (Robot Operating System) as a software framework in developing for our golf cart. Consequently, a large majority of our scripts are written in Python as it is the largest client library for ROS. There's also a large client library for C++ and increasing development for Java, so there's been some talk of switching. Since message types are really important to ROS while Python couldn't care less, we feel that it isn't the most ideal relationship. However, it is unlikely that python and ROS will flat out prevent us from doing anything, and at worst it's only an annoyance, we can get used to, it was decided that it wouldn't be worth the migration. Our firmware is written in C, and at the core of our operation is a PCB designed in-house. Bay Area Circuits loves us, so they fabricate our board designs. Since we're poor college students, we love them too. </p>
+                  </div>
+                  <div flex gt-sm = "10">
                   </div>
                 </div>
-                <p align = "LEFT">This is a large-scale long term project so it is entirely possible that it will continue until graduation. Therefore, it is important to have a solid definition for project success. Otherwise, we'll never end up pursing another project! The IGVC team will declare the project successful when the golf cart can drive to and from the nearest Woodstock's Pizza and return with a delicious payload. Autonomously. Worry not, the pizza will be in good hands.</p>
+                <p align = "LEFT" class ="bufferedTextMain">Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .</p>
 
                 <div layout="row" layout-xs="column">
                   <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="350" img src="images/IGVC_PCB.png"/>
+                    <img class = "projectImage" height = "auto" width="350" img src="images/IGVC_collision.png"/>
                     <figcaption ><small><i>The golf cart's PCB, designed in-house.</i></small>
                     </figcaption>
                   </div>
-                  <div flex-gt-sm="60">
-
-                <p align = "LEFT">Even though I focus on software within the Robotics team, I still interact with hardware on a regular basis. This PCB was designed by my current team members before I joined the club, and I will design a module to add onto the board for a speedcontroller during Spring 2016.</p>
+                  <div flex-gt-sm="50">
+                <p align = "LEFT" class = "bufferedText">Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .</p>
+                  </div>
+                  <div flex gt-sm = "10">
                   </div>
                 </div>
                 
@@ -102,7 +104,7 @@
             <!-- BUTTON TWO END -->
             <!-- BUTTON THREE START -->
             <div ng-app="expand" ng-controller="personCtrl" align = "CENTER">
-              <md-button class="accordion" ng-click="toggle()"><b>Ninja Fighter</b></md-button>
+              <md-button class="accordion" ng-click="toggle()"><b>Ninja Fighter RPG</b></md-button>
               <div ng-show="myVar"  class = "divContent  animated">
                 <p align = "LEFT"><b>TL;DR:</b> Java. Object Oriented Programming. Game design. GitHub.</p>
 
@@ -122,7 +124,6 @@
                     <img class = "projectImage" height = "auto" width="300px" img src="images/Ninja_Fighter_cinematic_1.png" /> <br>
                     <figcaption ><small><i>A shuriken scene as is typical of Hollywood projectiles.</i></small>
                     </figcaption>
-                    <br>
                   </div>
                   <div flex-gt-sm="60">
                     <p align = "LEFT">The storyline of Ninja Fighter is partially conveyed through cinematics. In the beginning, a lone boy picking berries when "The Darkness" suddenly envelops his village. A mysterious master rescues  the boy, who takes him to his cave to train him to become a ninja. The player experiences this training, and becomes a ninja that fights to save his village from the darkness. (This was the best storyline that the combined effort of five Cal Poly computer and software engineers could come up with. I hope this doesn't our university's reputation).</p>
@@ -151,7 +152,6 @@
                     <img class = "projectImage" height = "auto" width="300px" img src="images/Ninja_Fighter_abilities.png" /> <br>
                     <figcaption ><small><i>The various ability icons (borrowed from WoW).</i></small>
                     </figcaption>
-                    <br>
                   </div>
                   <div flex-gt-sm="60">
                     <p align = "LEFT">The game is split into 3 acts with different themes (possibly inspired by Blizzard's Diablo). We have a grasslands, haunted forest, and fire (Inferno!) act. Each act has monsters that somewhat correspond to the theme along with different game mechanics. At the end of each act is a bossfight, where players earn a new ability upon completion of the act. By the time players reach the fire levels, they know how to dash as well as be temporarily invulnerable.</p>
@@ -163,7 +163,6 @@
                     <img class = "projectImage" height = "auto" width="300px" img src="images/Ninja_Fighter_HUD.png" /> <br>
                     <figcaption ><small><i>The HUD, before and after "Haung's Mode."</i></small>
                     </figcaption>
-                    <br>
                   </div>
                   <div flex-gt-sm="60">
                     <p align = "LEFT">What's an offline RPG without a cheat code? Pressing 1, 3, 5, and 7 activated "Haung's Mode", inspired by our professor of game design. This feature makes activates a badly photoshopped Captain "Haungs" America with the side effect of making the player really overpowered. It was really funny at the time.</p>
