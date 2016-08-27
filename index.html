@@ -47,45 +47,51 @@
 
             </md-button>
               <div ng-show="myVar" class = "divContent animated">
+                <div flex-gt-sm="5">
+                </div>
+                <div flex-gt-sm="95">
                 <p align = "LEFT" class = "bufferedTextMain"><b>TL;DR:</b> Robotics club project. Rudimentary self-driving golf cart. PCB designed in-house. ROS. Python. C. Collision detection & navigation. Lidar, encoders, and other sensors.</p>
+              </div>
 
-                <div layout="row" layout-xs="column">
+                <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="350px" img src="images/IGVC_driving.png"/>
+                    <img class = "projectImage" height = "auto" width="90%" img src="images/IGVC_driving.png"/>
                     <figcaption > <small><i>Testing an old iteration of my collision detection software.</i></small>
                     </figcaption>
                   </div>
-                  <div flex-gt-sm="50">
+                  <div flex-gt-sm="60">
                     <p align = "LEFT" class = "bufferedText">The autonomous golf cart is a collaborative and multidisciplinary project within the Cal Poly robotics club. I've been working on this project since my Freshman year, and it is likely that project development will continue for the majority of my university career. However, I'll stop to declare project success when the golf cart can drive to Woodstock's Pizza and back without supervision. Some of the team members won't settle for Ciao's campus pizza, which is much closer to headquarters. The harder goal is being set because we are confident we can achieve it. Not because our campus food is bad or anything...</p>
                   </div>
-                  <div flex gt-sm = "10">
-                  </div>
                 </div>
-                <p align = "LEFT" class ="bufferedTextMain">My current role in the team is a focus on collision detection & navigation. We've got a SICK 2D Lidar mounted on the golf cart, which has the dual purpose of object detection as well as be the basis for many sick puns. Since our SICK Lidar was already pushing the budget with its 'modest' price tag of $5000, it only has a two-dimensional field of view. As it's mounted, it detects objects at an approximate waist level flawlessly, but will scan right over dogs and small children. We have sonar mounts on the bottom of the golf cart to aid in this 'minor' issue, as well as to detect objects in our blind spot as the SICK lidar has a 270 degree field of view. I am currently experimenting with ROS's native navigation stack for proof of concept in addition to giving inspiration for our own in-house navigation stack. The bulk of development for this milestone will take place during Fall of 2016.</p>
-                <div layout="row" layout-xs="column">
+                <div flex-gt-sm = "5">
+                </div>
+                <div flex-gt-sm = "95">
+                <p align = "LEFT">My current role in the team is a focus on collision detection & navigation. We've got a SICK 2D Lidar mounted on the golf cart, which has the dual purpose of object detection as well as be the basis for many sick puns. Since our SICK Lidar was already pushing the budget with its 'modest' price tag of $5000, it only has a two-dimensional field of view. As it's mounted, it detects objects at an approximate waist level flawlessly, but will scan right over dogs and small children. We have sonar mounts on the bottom of the golf cart to aid in this 'minor' issue, as well as to detect objects in our blind spot as the SICK lidar has a 270 degree field of view. I am currently experimenting with ROS's native navigation stack for proof of concept in addition to giving inspiration for our own in-house navigation stack. The bulk of development for this milestone will take place during Fall of 2016.</p>
+              </div>
+                <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="350px" img src="images/IGVC_PCB.png"/>
-                    <figcaption><small><i>An old iteration of collision detection software (closeup).</i></small>
+                    <img class = "projectImage" height = "auto" width="90%" img src="images/IGVC_PCB.png"/>
+                    <figcaption><small><i>The golf cart's PCB, designed in-house.</i></small>
                     </figcaption>
                   </div>
-                  <div flex-gt-sm="50">
+                  <div flex-gt-sm="60">
                 <p align = "LEFT" class = "bufferedText">Our team uses ROS (Robot Operating System) as a software framework in developing for our golf cart. Consequently, a large majority of our scripts are written in Python as it is the largest client library for ROS. There's also a large client library for C++ and increasing development for Java, so there's been some talk of switching. Since message types are really important to ROS while Python couldn't care less, we feel that it isn't the most ideal relationship. However, it is unlikely that python and ROS will flat out prevent us from doing anything, and at worst it's only an annoyance, we can get used to, it was decided that it wouldn't be worth the migration. Our firmware is written in C, and at the core of our operation is a PCB designed in-house. Bay Area Circuits loves us, so they fabricate our board designs. Since we're poor college students, we love them too. </p>
                   </div>
-                  <div flex gt-sm = "10">
-                  </div>
                 </div>
-                <p align = "LEFT" class ="bufferedTextMain">Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .</p>
+                <div flex-gt-sm="5">
+                </div>
+                <div flex-gt-sm="95">
+                <p align = "LEFT">.Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .</p>
+              </div>
 
-                <div layout="row" layout-xs="column">
+                <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="350" img src="images/IGVC_collision.png"/>
-                    <figcaption ><small><i>The golf cart's PCB, designed in-house.</i></small>
+                    <img class = "projectImage" height = "auto" width="90%" img src="images/IGVC_collision.png"/>
+                    <figcaption ><small><i>An old iteration of collision detection software (closeup).</i></small>
                     </figcaption>
                   </div>
-                  <div flex-gt-sm="50">
+                  <div flex-gt-sm="60">
                 <p align = "LEFT" class = "bufferedText">Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .</p>
-                  </div>
-                  <div flex gt-sm = "10">
                   </div>
                 </div>
                 
@@ -96,9 +102,27 @@
             <div ng-app="expand" ng-controller="personCtrl" align = "CENTER">
               <md-button class="accordion" ng-click="toggle()"><b>Chess AI</b></md-button>
               <div ng-show="myVar"  class = "divContent animated">
+                <div flex-gt-sm="5">
+                </div>
+                <div flex-gt-sm="95">
+                <p align = "LEFT" class = "bufferedTextMain"><b>TL;DR:</b> THE TLDR GOES HERE</p>
+              </div>
+                <div layout="column" layout-gt-sm="row">
+                  <div flex-gt-sm="40">
+                    <img id = "portrait" height = "auto" width="90%" img src="images/portrait.png" /> <br>
+                    <figcaption ><small><i>A temporary plotting raccoon meme.</i></small>
+                    </figcaption>
+                  </div>
+                  <div flex-gt-sm="60">
+                <p align = "LEFT" class = "bufferedText">Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .</p>
+                  </div>
+                </div>
+                <p>
+                This is a summary. <br>
                 Chess AI with Intermediate & Expert settings. <br>
                 Branch Traversal & Board value algorithm. <br>
-                <img id = "portrait" height = "auto" width="200px" img src="images/portrait.png" /> <br>
+                Branch Traversal & Board value algorithm. <br></p>
+                
               </div>
             </div>
             <!-- BUTTON TWO END -->
@@ -106,11 +130,14 @@
             <div ng-app="expand" ng-controller="personCtrl" align = "CENTER">
               <md-button class="accordion" ng-click="toggle()"><b>Ninja Fighter RPG</b></md-button>
               <div ng-show="myVar"  class = "divContent  animated">
+                <div flex-gt-sm="5">
+                </div>
+                <div flex-gt-sm="95">
                 <p align = "LEFT"><b>TL;DR:</b> Java. Object Oriented Programming. Game design. GitHub.</p>
-
-                <div layout="row" layout-xs="column">
+              </div>
+                <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="300px" img src="images/Ninja_Fighter_Main.png" /> <br>
+                    <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_Main.png" /> <br>
                     <figcaption ><small><i>A player attempts to survive the "Endless" mode.</i></small>
                     </figcaption>
                   </div>
@@ -118,10 +145,14 @@
                     <p align = "LEFT">Ninja Fighter is a top-down action RPG written in Java using Greenfoot. It was a collaborative effort, made with four other members during a course in game design. Ninja Fighter also happens to share the same name with many other ninja games, but this was unintentional. We signed some forms supposedly granting immunity from copyright claims under the presumption that we wouldn't try to make money from the project. These university powers were pretty great, as it allowed us to focus our time on programming game mechanics.</p>
                   </div>
                 </div>
+                <div flex-gt-sm="5">
+                </div>
+                <div flex-gt-sm="95">
                 <p align = "LEFT">Coincidentally, our animations, sound effects, and background music are on point. Thanks to the work of many fine artists working at Blizzard, Nexon, and many other game companies. Don't worry, we gave credit through comments in our source code. And again, strictly educational purposes. No profit. In the end, Ninja Fighter ended up looking like a pretty cool ninja game with classic gameplay mechanics with a cheesy storyline. As is tradition.</p>
-                <div layout="row" layout-xs="column">
+              </div>
+                <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="300px" img src="images/Ninja_Fighter_cinematic_1.png" /> <br>
+                    <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_cinematic_1.png" /> <br>
                     <figcaption ><small><i>A shuriken scene as is typical of Hollywood projectiles.</i></small>
                     </figcaption>
                   </div>
@@ -129,9 +160,9 @@
                     <p align = "LEFT">The storyline of Ninja Fighter is partially conveyed through cinematics. In the beginning, a lone boy picking berries when "The Darkness" suddenly envelops his village. A mysterious master rescues  the boy, who takes him to his cave to train him to become a ninja. The player experiences this training, and becomes a ninja that fights to save his village from the darkness. (This was the best storyline that the combined effort of five Cal Poly computer and software engineers could come up with. I hope this doesn't our university's reputation).</p>
                   </div>
                 </div>
-                <div layout="row" layout-xs="column">
+                <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
-                      <img class = "projectImage" height = "auto" width="300px" img src="images/Ninja_Fighter_training_1.png" /> <br>
+                      <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_training_1.png" /> <br>
                       <figcaption ><small><i>The boy begins his ninja training. By walking.</i></small>
                       </figcaption>
                       <br>
@@ -139,17 +170,21 @@
                   <div flex-gt-sm="20">
                   </div>
                   <div flex-gt-sm="40">
-                <img class = "projectImage" height = "auto" width="300px" img src="images/Ninja_Fighter_training_2.png" /> <br>
+                <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_training_2.png" /> <br>
                 <figcaption ><small><i>A player walks on a sword to learn to use it.</i></small>
                     </figcaption>
                   </div>
                 </div>
+                <div flex-gt-sm="5">
+                </div>
+                <div flex-gt-sm="95">
                 <p align = "LEFT">The player follows the master, but he suddenly disappears, never to be seen again. The plot thickens. Despite its flaws, I think Ninja Fighter actually does a relatively decent job of introducing players to gameplay mechanics. We didn't have to implement those lazy chatboxes that tell players to "Press W to move! :D" (this is far too common these days). During the training levels, the boy learns how to use a sword by walking on a sword rack (very realistic). The same mechanic is in place where he walks on a table covered with shurikens to learn how to throw them. Hopefully, players learn that walking on objects do good things. Later, as ninjas, players walk over barrels to replenish their shurikens, apples to regenerate health, and eggs to replenish their power.</p>
+              </div>
 
 
-                <div layout="row" layout-xs="column">
+                <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="300px" img src="images/Ninja_Fighter_abilities.png" /> <br>
+                    <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_abilities.png" /> <br>
                     <figcaption ><small><i>The various ability icons (borrowed from WoW).</i></small>
                     </figcaption>
                   </div>
@@ -158,9 +193,9 @@
                   </div>
                 </div>
 
-                <div layout="row" layout-xs="column">
+                <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="300px" img src="images/Ninja_Fighter_HUD.png" /> <br>
+                    <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_HUD.png" /> <br>
                     <figcaption ><small><i>The HUD, before and after "Haung's Mode."</i></small>
                     </figcaption>
                   </div>
@@ -170,9 +205,9 @@
                 </div>
 
 
-                <div layout="row" layout-xs="column">
+                <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="300px" img src="images/Ninja_Fighter_final_boss.png" /> <br>
+                    <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_final_boss.png" /> <br>
                     <figcaption ><small><i>The final boss fight. Firebats and fireballs. Chaos.</i></small>
                     </figcaption>
                   </div>
@@ -180,12 +215,11 @@
                     <p align = "LEFT">Remember that part where the master mysteriously disappears? When you defeat the final boss, it turns out that the master had been controlling the darkness the entire time. Woah. That's a quality plot twist if I've ever seen one. When I look back on this project, I tend to poke a lot of fun at the code I wrote and the game we produced. The phenomenon of programmers cringing over old code they wrote is not lost on me. I think this game was still worth documenting, as it serves as a reminder of constant improvement in programming practices. And it truly isn't that bad! Ninja Fighter  was really popular with my two 7 and 8 year old cousins. They wouldn't stop asking to play it...</p>
                   </div>
                 </div>
-
-
-
-
+                <div flex-gt-sm="5">
+                </div>
+                <div flex-gt-sm="95">
                 <p align = "LEFT">Although Ninja Fighter could certainly be improved, I certainly achieved my learning goals for this project. Programming individually has its challenges, but the logistics of coding with others was a whole new beast to get the hang of. I've used Git before, but never in a group setting. This was the project where I was forced to learn how to resolve merge conflicts. They gave me nightmares at the time... I am happy to resolve that I no longer fear Git and its associated nuances.</p>
-
+              </div>
 
               </div>
             </div>
@@ -195,43 +229,37 @@
               <md-button class="accordion" ng-click="toggle()"><b>Power Supply</b></md-button>
               <div ng-show="myVar"  class = "divContent  animated">
                 <!-- HIDDEN CONTENT -->
-                Dual-variable power supply with digital meter. <br>
-                Manufactured well enough to plug into your standard outlet. <br>
-                Maximum 20 volts. <br>
-                -->
-                <div layout="row" layout-xs="column">
+                <div flex-gt-sm="5">
+                </div>
+                <div flex-gt-sm="95">
+                <p align = "LEFT"><b>TL;DR:</b> Dual-output variable DC power supply. Soldering, electrical testing and calibration. Exercises in PCB layout design.</p>
+              </div>
+                <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
-                    <img width="300px"img src="images/PSU_case.png"/>
+                    <img height = "auto" width="90%" class = "projectImage" img src="images/PSU_case.png"/>
                     <figcaption > <i>Figure 1. Test caption 2.</i>
                     </figcaption>
                   </div>
-                  <div flex hide-xs>
-                    <p>Here is some text. bblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahlah blah</p>
+                  <div flex-gt-xs="60">
+                    <p align = "LEFT" class = "bufferedTextMain">I made this power supply during a basic electronics manufacturing course I took in Winter of 2015. It was the first time I got a first hand exposure of creating hardware. Consequently, I admit to making a few rookie mistakes (some slightly worse than others) along the way, but in the end my project turned out alright! It works great, and I'm confident enough in it to plug it straight into the wall in my apartment. With no power strip and no surge protection. Okay, I lied. When I use it I still use a power strip... Just incase, you know? But it won't trip the breakers and cause a hassle if I don't use a power strip, I'm just being cautious!</p>
                   </div>
                 </div>
-                <div layout="row" hide-gt-xs>
-                  <p>Here is some text. bblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blahlah blah</p>
-                </div>
+                  <div flex-gt-sm="5">
+                  </div>
+                  <div flex-gt-sm="95">
+                <p align = "LEFT" class = "bufferedTextMain">It's a dual-variable power supply, so I can adjust my two output voltages independently using potentiometers. These potentiometers are controlled by knobs placed in the front of the case, and the terminal voltages are displayed to the user using two digital meters. Mounting the digital meters with hot glue took me a lot longer than it should have... In the back panel, there's a fuse that sits in between the power input and the internal power supply to protect both the user's and the rest of my power supply components in the case that something might go horribly wrong...</p>
+              </div>
 
 
-                <div layout="row">
-                <p>Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text.</p>
-                </div>
-
-
-                <div layout="row" layout-xs="column">
+                <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm= "40">
-                    <img height = "auto" width="300px" img src="images/PSU_inner.png"/> <br>
+                    <img height = "auto" width="90%" class = "projectImage" img src="images/PSU_inner.png"/> <br>
                     <figcaption > <i>Figure 2. Test caption 3.</i>
                     </figcaption>
                   </div>
-                  <div flex hide-xs>
-                    <p>Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text.</p>
+                  <div flex-gt-sm="60">
+                    <p align = "LEFT" class = "bufferedTextMain">Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text.</p>
                   </div>
-                </div>
-                <div layout="row" flex hide-gt-xs>
-                <p>Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text.</p>
-
                 </div>
               </div>
             </div>

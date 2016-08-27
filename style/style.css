@@ -451,15 +451,26 @@ a {
   -ms-transition: color 0.5s ease;
   -ms-transition: text-shadow 0.5s ease;
 }
+/*
 .bufferedText {
   padding-left: 25px;
 }
 .bufferedTextMain {
   padding-left: 25px;
 }
+*/
+
 @media only screen and (max-width:960px) {
+  /*
   .bufferedTextMain {
     padding-left: 5px !important;
+  }
+  .bufferedText {
+  padding-left: 5px !important;
+  }
+  */
+  .projectImage {
+    width: 75%;
   }
 }
 @media only screen and (max-width:510px) {
@@ -494,8 +505,7 @@ a {
     padding: 20px 0px 0px 0px;
     }
   .projectImage {
-    width: 300px;
-    position: relative;
+    width: 95% !important;
   }
   .smallAccordion {
   width: 80%;
@@ -503,11 +513,13 @@ a {
   .md-padding {
     min-height:250px;
   }
+  /*
   .bufferedText {
     padding-left: 5px !important;
   }
   .bufferedTextMain {
   padding-left: 5px !important;
   }
+  */
 }
 
