@@ -28,11 +28,11 @@
 <md-content>
     <!-- MAIN BODYSTART -->
     <div class = "inner animated fadeIn">
-      <md-tabs md-dynamic-height md-border-bottom md-center-tabs="true">
+      <md-tabs md-dynamic-height md-border-bottom md-center-tabs="true" md-swipe-content>
         <md-tab label="Home" >
 
           <md-content class="md-padding">
-            <p align = "LEFT" class ="animated fadeInDown">I'm a college sophomore, and I write software for the Cal Poly Robotics Club. I'm a huge fan of ROS, VIM, and Git. Test-driven development is (slowly) growing on me. My interests include hiking, swimming, and playing my tenor saxophone.</p>
+            <p align = "LEFT" class ="animated fadeInDown">I'm a college sophomore, and I write software for the Cal Poly Robotics Club. I'm a huge fan of ROS, VIM, and Git. Test-driven development is (slowly) growing on me. My interests include hiking, playing the saxophone, and artificial intelligence.</p>
             <md-button class = "resume_banner resumeMobile animated fadeInDown" href="documents/resume_sean_wallace.pdf" download="Sean-Wallace-Resume">Download My Resume</md-button>
 
 
@@ -50,7 +50,7 @@
                 <div flex-gt-sm="5">
                 </div>
                 <div flex-gt-sm="95">
-                <p align = "LEFT" class = "bufferedTextMain"><b>TL;DR:</b> Robotics club project. Rudimentary self-driving golf cart. PCB designed in-house. ROS. Python. C. Collision detection & navigation. Lidar, encoders, and other sensors.</p>
+                <p align = "LEFT" class = "bufferedTextMain"><b>TL;DR:</b> Ongoing Robotics club project. PCB designed in-house. ROS. Python. C. Collision detection & navigation. Lidar, encoders, and other sensors.</p>
               </div>
 
                 <div layout="column" layout-gt-sm="row">
@@ -60,13 +60,17 @@
                     </figcaption>
                   </div>
                   <div flex-gt-sm="60">
-                    <p align = "LEFT" class = "bufferedText">The autonomous golf cart is a collaborative and multidisciplinary project within the Cal Poly robotics club. I've been working on this project since my Freshman year, and it is likely that project development will continue for the majority of my university career. However, I'll stop to declare project success when the golf cart can drive to Woodstock's Pizza and back without supervision. Some of the team members won't settle for Ciao's campus pizza, which is much closer to headquarters. The harder goal is being set because we are confident we can achieve it. Not because our campus food is bad or anything...</p>
+                    <p align = "LEFT">The autonomous golf cart is a collaborative and multidisciplinary project within the Cal Poly robotics club. I've been working on this project since my Freshman year, and it is likely that project development will continue for the majority of my university career. Within the team, I focus on collision detection & navigation. A SICK 2D Lidar is mounted on the golf cart, whose primary purpose is to be the focus of various bad puns. The component was already pushing the budget as is, so only a 2D version was purchased for $5,000. Since it's a two-dimensional sensor, it excels in detecting objects at the waist-level it's mounted, but has trouble with odd creatures of inconvenient heights, such as the local turkies. Or small children. To combat this issue, sonar mounts are placed on the bottom of the golf cart to see what the lidar cannot. Collision detection works with reasonable accuracy for various steering angles held, and I am now experimenting with ROS's navigation stack for my proof of concept. Seeing how it functions will also give me a design inspiration for our own in-house navigation stack upon further development. This milestone will begin development during Fall of 2016 and continue well into the Winter quarter.</p>
+                    <!--
+                    </p> However, I'll stop to declare project success when the golf cart can drive to Woodstock's Pizza and back without supervision. We won't settle for pizza from Ciao, which is much closer to headquarters. Not because our campus food is bad or anything...</p>
+                  -->
+
                   </div>
                 </div>
                 <div flex-gt-sm = "5">
                 </div>
                 <div flex-gt-sm = "95">
-                <p align = "LEFT">My current role in the team is a focus on collision detection & navigation. We've got a SICK 2D Lidar mounted on the golf cart, which has the dual purpose of object detection as well as be the basis for many sick puns. Since our SICK Lidar was already pushing the budget with its 'modest' price tag of $5000, it only has a two-dimensional field of view. As it's mounted, it detects objects at an approximate waist level flawlessly, but will scan right over dogs and small children. We have sonar mounts on the bottom of the golf cart to aid in this 'minor' issue, as well as to detect objects in our blind spot as the SICK lidar has a 270 degree field of view. I am currently experimenting with ROS's native navigation stack for proof of concept in addition to giving inspiration for our own in-house navigation stack. The bulk of development for this milestone will take place during Fall of 2016.</p>
+                 <p align = "LEFT" class = "bufferedText">Our team uses ROS (Robot Operating System) as a software framework in developing for our golf cart. Specifically, we still use the Indigo distribution, as we haven't seen huge advantages in the newer distributions that would make it worth a team migration. Besides, Indigo will continue to be supported until April 2019 (right before I graduate), so that also pressures me to ensure the project is entirely completed by then. Consequently, we generally use Python to write our scripts as it is the largest client library for ROS Indigo. Our firmware is written in C, and at the core of our operation is a PCB designed in-house. We have a sweet deal with Bay Area Circuits, so they manufacture our board designs for the discounted price of poor college students. Those guys are awesome. </p>
               </div>
                 <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
@@ -75,7 +79,10 @@
                     </figcaption>
                   </div>
                   <div flex-gt-sm="60">
-                <p align = "LEFT" class = "bufferedText">Our team uses ROS (Robot Operating System) as a software framework in developing for our golf cart. Consequently, a large majority of our scripts are written in Python as it is the largest client library for ROS. There's also a large client library for C++ and increasing development for Java, so there's been some talk of switching. Since message types are really important to ROS while Python couldn't care less, we feel that it isn't the most ideal relationship. However, it is unlikely that python and ROS will flat out prevent us from doing anything, and at worst it's only an annoyance, we can get used to, it was decided that it wouldn't be worth the migration. Our firmware is written in C, and at the core of our operation is a PCB designed in-house. Bay Area Circuits loves us, so they fabricate our board designs. Since we're poor college students, we love them too. </p>
+                <p align = "LEFT" class = "bufferedText">The PCB runs its corresponding electronics run off of a simple 12V battery. Additionally, the drive train itself consists merely of a motor running of of three car batteries. Therefore, our project can be considered an autonomous electric vehicle! Classifying it as such makes it sound trendy. The PCB itself is split into modules whose names (and occasionally functions) resemble Greek mythology. The upperclassmen, with their glorious knowledge, typically are the ones involved with board design. Although I have historically been focused on collision detection & navigation, I have been practicing my Eagle skills on the side to add my own module to the board. I plan to add a simple component for tracking battery power and usage (along with the corresponding firmware and small bit of software) to track the battery power and usage within the next year.</p>
+                <!--p>
+                  There's also a large client library for C++ and increasing development for Java, so there's been some talk of switching. Since message types are really important to ROS while Python couldn't care less, we feel that it isn't the most ideal relationship. However, it is unlikely that python and ROS will flat out prevent us from doing anything, and at worst it's only an annoyance, we can get used to, it was decided that it wouldn't be worth the migration. 
+                </p-->
                   </div>
                 </div>
                 <div flex-gt-sm="5">
@@ -100,21 +107,23 @@
             <!-- BUTTON ONE END -->
             <!-- BUTTON TWO START -->
             <div ng-app="expand" ng-controller="personCtrl" align = "CENTER">
-              <md-button class="accordion" ng-click="toggle()"><b>Chess AI</b></md-button>
+              <md-button class="accordion" ng-click="toggle()"><b>Chess AI (2.0)</b></md-button>
               <div ng-show="myVar"  class = "divContent animated">
+                <!--div class = "myDiv">
+              </div-->
                 <div flex-gt-sm="5">
                 </div>
                 <div flex-gt-sm="95">
-                <p align = "LEFT" class = "bufferedTextMain"><b>TL;DR:</b> THE TLDR GOES HERE</p>
+                <p align = "LEFT" class = "bufferedTextMain"><b>TL;DR:</b> New iteration of an old school project. Written in C. Branch-traversal board value algorithm.</p>
               </div>
                 <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
-                    <img id = "portrait" height = "auto" width="90%" img src="images/portrait.png" /> <br>
-                    <figcaption ><small><i>A temporary plotting raccoon meme.</i></small>
+                    <img id = "portrait" height = "auto" width="90%" img src="images/DOG.png" /> <br>
+                    <figcaption ><small><i>LUCY.</i></small>
                     </figcaption>
                   </div>
                   <div flex-gt-sm="60">
-                <p align = "LEFT" class = "bufferedText">Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .</p>
+                <p align = "LEFT" class = "bufferedText">The Chess AI started off as a 2-man group university project during a course on object-oriented programming. It was originally written in Java, and pitted AI against AI without human interaction. The idea was to create different levels of AI difficulty depending on the amount of branches (possible future moves on both sides) it considered for every move. However, we ended up having a lot of trouble with memory. As such, games would played out and outputted to a text file within a minute on two branches of consideration, or 20 hours on three branches of consideration. The AI would often make good moves in the short term and make terrible moves in the grand scheme of things since our code wasn't optimized well enough to consider possibilities far enough into the future. Thus, I began to make a new Chess AI (v2.0).</p>
                   </div>
                 </div>
                 <p>
@@ -133,31 +142,32 @@
                 <div flex-gt-sm="5">
                 </div>
                 <div flex-gt-sm="95">
-                <p align = "LEFT"><b>TL;DR:</b> Java. Object Oriented Programming. Game design. GitHub.</p>
+                <p align = "LEFT"><b>TL;DR:</b> Object Oriented Programming. Java. Game design. GitHub.</p>
               </div>
                 <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
                     <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_Main.png" /> <br>
-                    <figcaption ><small><i>A player attempts to survive the "Endless" mode.</i></small>
+                    <figcaption ><small><i>A player battles monsters within the "endless" realm.</i></small>
                     </figcaption>
                   </div>
                   <div flex-gt-sm="60">
-                    <p align = "LEFT">Ninja Fighter is a top-down action RPG written in Java using Greenfoot. It was made during a course in game design with four other computer science and engineering majors. Ninja Fighter also happens to share the name with many other ninja games (I suppose we weren't creative enough), but this was unintentional. Fortunately, our group signed forms supposedly granting immunity from copyright claims (as long as we wouldn't try to make money from the project. A shoutout for educational purposes! These university powers were pretty great, as it allowed us to focus our time on programming game mechanics instead of failing miserably in creating good artwork.</p>
+                    <p align = "LEFT">Ninja Fighter is a top-down action RPG made during a course in game design. It is written in Java using Greenfoot in collaboration with four other computer science and engineering students during my Freshman year. Coincidentally, as a group of five engineering students, we chose a terrible generic name for our game. Ninja Fighter. It shares the name of dozens of games on the internet (I suppose we weren't creative enough in choosing our name), but this was unintentional. Regardless, I suppose this is our spin on a Ninja Fighter game!</p>
+                    <p align="LEFT">A quick concession: A clear majority (approximately 99%) of the artwork and sound effects within Ninja Fighter belongs to various artists and game companies. As the focus of the course was on the software development cycle in game design, we signed a form allowing us to use others' artwork and music in our game under the pretext of educational purposes (no monetary gains). This is the artwork in Ninja Fighter looks pretty good - None of our group would consider ourselves artists. I used many resources such as <a href="http://www.spriters-resource.com/fullview/57625/" target="_blank"> this sprite sheet</a> to create the animations within Ninja Fighter. Thanks Blizzard!</p>
                   </div>
                 </div>
                 <div flex-gt-sm="5">
                 </div>
                 <div flex-gt-sm="95">
-                <p align = "LEFT">It might be coincidental (it isn't), but our in-game animations and sound effects are on point. I thank the many fine artists working at fantastic games companies such as Blizzard and Nexon. Just incase, i'll mention this again: Ninja Fighter was made strictly for educational purposes so this was allowed. In the end, the game ended up looking pretty good! Considering it was our first game, of course. Realistically, if we tried to sell the game on Steam (not that we would), we might have two lost connoisseurs purchase it for about $3.50. Consequently, four people who played it would complain that it was a waste of time. As is tradition. Regardless, Ninja Fighter was made with classic RPG mechanics with a pretty cheesy storyline.</p>
+                <p align = "LEFT">The storyline of Ninja Fighter is partially conveyed through cinematics. In the beginning, a lone boy picking berries when "The Darkness" suddenly envelops his village. A mysterious master rescues  the boy, who takes him to his cave to train him to become a ninja. The player experiences this training, and becomes a ninja that fights to save his village from the darkness. This was the best storyline that the combined effort of five Cal Poly computer science and engineering students could come up with. It's a good thing we were barred from selling the game from the get-go. If we tried to sell it on Steam, perhaps two lost video game conoisseurs might purchase it for $0.99. As things are in the game industry, four people who played the game would complain that its storyline was worse than Tetris. As is tradition. </p>
               </div>
                 <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
                     <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_cinematic_1.png" /> <br>
-                    <figcaption ><small><i>A cutscene. The shurikens mimic Hollywood.</i></small>
+                    <figcaption ><small><i>A cutscene inspired by clips of ammo depicted in Hollywood.</i></small>
                     </figcaption>
                   </div>
                   <div flex-gt-sm="60">
-                    <p align = "LEFT">The storyline of Ninja Fighter is partially conveyed through cinematics. In the beginning, a lone boy picking berries when "The Darkness" suddenly envelops his village. A mysterious master rescues  the boy, who takes him to his cave to train him to become a ninja. The player experiences this training, and becomes a ninja that fights to save his village from the darkness. (This was the best storyline that the combined effort of five Cal Poly computer and software engineers could come up with. I hope this doesn't damage our university's reputation).</p>
+                    <p align = "LEFT">The storyline of Ninja Fighter is partially conveyed through cinematics. In the beginning, a lone boy picking berries when "The Darkness" suddenly envelops his village. A mysterious master rescues  the boy, who takes him to his cave to train him to become a ninja. The player experiences this training, and becomes a ninja that fights to save his village from the darkness. This was the best storyline that the combined effort of five Cal Poly computer science and engineering students could come up with. It's a good thing we were barred from selling the game from the get-go. If we tried to sell it on Steam, perhaps two lost video game conoisseurs might purchase it for $0.99. As things are in the game industry, four people who played the game would complain that its storyline was worse than Tetris. As is tradition. </p>
                   </div>
                 </div>
                 <div layout="column" layout-gt-sm="row">
@@ -171,7 +181,7 @@
                   </div>
                   <div flex-gt-sm="40">
                 <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_training_2.png" /> <br>
-                <figcaption ><small><i>A player walks on a sword to learn to use it.</i></small>
+                <figcaption ><small><i>A player undergoes ninja training as a boy.</i></small>
                     </figcaption>
                   </div>
                 </div>
@@ -237,28 +247,29 @@
                 <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
                     <img height = "auto" width="90%" class = "projectImage" img src="images/PSU_case.png"/>
-                    <figcaption > <small><i>Figure 1. Test caption 2.</i></small>
+                    <figcaption > <small><i>My lovely box after chassis fabrication (essentially metamorphosis).</i></small>
                     </figcaption>
                   </div>
                   <div flex-gt-sm="60">
-                    <p align = "LEFT" class = "bufferedTextMain">I made this power supply during a basic electronics manufacturing course I took in Winter of 2015. It was the first time I got a first hand exposure of creating hardware. Consequently, I admit to making a few rookie mistakes (some slightly worse than others) along the way, but in the end my project turned out alright! It works great, and I'm confident enough in it to plug it straight into the wall in my apartment. With no power strip and no surge protection. Okay, I lied. When I use it I still use a power strip... Just incase, you know? But it won't trip the breakers and cause a hassle if I don't use a power strip, I'm just being cautious!</p>
+                    <p align = "LEFT" class = "bufferedTextMain">I made this power supply during a basic electronics manufacturing course I took in Winter of 2015. The experience was my first large exposure into electronics, and consequently, I admit to making a few rookie mistakes. I definitely learned from these mistakes however, and the power supply still turned out all right in the end! It works great for testing inexpensive electrical components! I'll add some emphasis on the inexpensive...</p>
+                    <p align = "LEFT" class = "bufferedTextMain">The power supply is dual-variable. Both of its output voltages can be adjusted independently by knobs in front of the case which adjust their respective potentiometer. The terminal voltages are displayed in the front of the case through two digital meters. An aside: mounting the meters with hot glue took me a lot longer than it should have... In the back panel, a trusty fuse serves as a line of defense to protect both the internal components and the device supplied in the event of a power surge or some other minor disaster.</p>
                   </div>
                 </div>
                   <div flex-gt-sm="5">
                   </div>
                   <div flex-gt-sm="95">
-                <p align = "LEFT" class = "bufferedTextMain">It's a dual-variable power supply, so I can adjust my two output voltages independently using potentiometers. These potentiometers are controlled by knobs placed in the front of the case, and the terminal voltages are displayed to the user using two digital meters. Mounting the digital meters with hot glue took me a lot longer than it should have... In the back panel, there's a fuse that sits in between the power input and the internal power supply to protect both the user's and the rest of my power supply components in the case that something might go horribly wrong...</p>
+                <p align = "LEFT" class = "bufferedTextMain">I calibrated the potentiometers to control the output voltages manually with a small flat-head screwdriver. Thus, the optimal operating conditions consist of a stable position without intense vibration. Charging your iPhone on a rollercoaster is a no-go, chief. Although old Nokias are welcome.</p>
               </div>
-
 
                 <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm= "40">
                     <img height = "auto" width="90%" class = "projectImage" img src="images/PSU_inner.png"/> <br>
-                    <figcaption > <small><i>Figure 2. Test caption 3.</i></small>
+                    <figcaption > <small><i>The bulk of electrical components residing within the power supply.</i></small>
                     </figcaption>
                   </div>
                   <div flex-gt-sm="60">
-                    <p align = "LEFT" class = "bufferedTextMain">Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text. Here is some more text.</p>
+                    <p align = "LEFT" class = "bufferedTextMain">A significant portion of this course was dedicated to taking a pre-made electrical schematic and using DipTrace (I now prefer Eagle) to make an intelligent layout for a good board design. If desired, this could have been sent off directly to a company for fabrication, but since it makes a lot more sense economically to order a single large batch of identical boards, my power supply shares an identical PCB with many other power supplies made at Cal Poly. In short, it's not my own electrical schematic or PCB that contributed to the success of this project, but I did go through the process of making my own PCB board design that would have worked if fabricated. I promise!</p>
+                    <p align = "LEFT" class = "bufferedTextMain">Ultimately, this is the project that piqued my interest in board design. While I still maintain a stronger software skillset and intend to continue that same focus, I think it is useful both practically and philosophically as a future engineer to fundamentally understand how my hardware running my software works.</p>
                   </div>
                 </div>
               </div>

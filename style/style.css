@@ -1,3 +1,16 @@
+.myDiv {
+  position: relative;
+  height:300px;
+  background-image: url(../images/DOG.jpg);
+  background-size:cover;
+}
+.myDog { 
+background: url(../images/DOG.png) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
 /** ACCORDION STUFF **/
 .accordion {
     background-color: #E0E0E0;
