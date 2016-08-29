@@ -30,10 +30,9 @@
     <div class = "inner animated fadeIn">
       <md-tabs md-dynamic-height md-border-bottom md-center-tabs="true" md-swipe-content>
         <md-tab label="Home" >
-
           <md-content class="md-padding">
-            <p align = "LEFT" class ="animated fadeInDown">I'm a college sophomore, and I write software for the Cal Poly Robotics Club. I'm a huge fan of ROS, VIM, and Git. Test-driven development is (slowly) growing on me. My interests include hiking, playing the saxophone, and artificial intelligence.</p>
-            <md-button class = "resume_banner resumeMobile animated fadeInDown" href="documents/resume_sean_wallace.pdf" download="Sean-Wallace-Resume">Download My Resume</md-button>
+            <p align = "LEFT" class ="animated fadeInDown">I'm a college sophomore, and I write software for the Cal Poly Robotics Club. I'm a huge fan of ROS, Vim, and Git. My interests include hiking, playing the saxophone, and artificial intelligence.</p>
+            <md-button class = "resume_banner resumeMobile animated fadeInDown" href="documents/Sean Wallace.pdf" download="Sean-Wallace-Resume">Download My Resume</md-button>
 
 
           </md-content>
@@ -88,13 +87,13 @@
                 <div flex-gt-sm="5">
                 </div>
                 <div flex-gt-sm="95">
-                <p align = "LEFT">.Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .Blah blah lorem ipsum stuff. .</p>
+                <p align = "LEFT">A slightly modified version of the Bicycle Model is used to determine the path of the golf cart based its current steering angle. By itself, the Bicycle model works very well for small steering angles but tends to become more inconsistent with larger steering angles. Then, some teams participating in the 2005 DARPA Challenge have pointed out, the model is violated at high velocities where tires slip as they turn. Through testing, we added a calibration to minimize the turning bias for large steering angles. This allowed us to achieve what was necessary for our proof of concept, but we are working on a more accurate model for further development. </p>
               </div>
 
                 <div layout="column" layout-gt-sm="row">
                   <div flex-gt-sm="40">
                     <img class = "projectImage" height = "auto" width="90%" img src="images/IGVC_collision.png"/>
-                    <figcaption ><small><i>An old iteration of collision detection software (closeup).</i></small>
+                    <figcaption ><small><i>What the lidar detects inside of an empty hallway.</i></small>
                     </figcaption>
                   </div>
                   <div flex-gt-sm="60">
@@ -152,7 +151,7 @@
                   </div>
                   <div flex-gt-sm="60">
                     <p align = "LEFT">Ninja Fighter is a top-down action RPG made during a course in game design. It is written in Java using Greenfoot in collaboration with four other computer science and engineering students during my Freshman year. Admittedly, the title of our game wasn't very creative and is quite generic (dozens of other games on the internet are also called "Ninja Fighter." This project is our personalized spin on a Ninja Fighter game!</p>
-                    <p align="LEFT">A quick concession: Most of the artwork and sound effects we use (let's estimate 99%) belongs to various video game companies. The focus of the course and project was toward the software development cycle in game design. Therefore, we signed a form allowing us to use others' artwork and music (as long as we didn't make monetary gain) so we could focus on designing our program rather than drawing sprites for it. This is why the artwork in Ninja Fighter might look as it came from a caliber of individuals more artistically inclined than a bunch of engineers who can barely draw - Because the art really was made by people who do that for a living. I used various sprite sheets <a href="http://www.spriters-resource.com/fullview/57625/" target="_blank"> such as this one </a>to program the animations within Ninja Fighter. Thanks Blizzard!</p>
+                    <p align="LEFT">A quick concession: Most of the artwork and sound effects we use (let's estimate 99%) belongs to various video game companies. The focus of the course and project was toward the software development cycle in game design. Therefore, we signed a form allowing us to use others' artwork and music (as long as we didn't make monetary gain) so we could focus on designing our program rather than drawing sprites for it. This is why the artwork in Ninja Fighter looks as though it came from a higher caliber of artists than computer engineers. Thanks Blizzard and Nexon!</p>
                   </div>
                 </div>
                 <div flex-gt-sm="5">
@@ -319,15 +318,19 @@
                 </div>
                 <!-- INNER BUTTON ONE END -->
                 <!-- INNER BUTTON TWO START -->
+                <!-----------------------
                 <div ng-app="expand" ng-controller="personCtrl">
                   <md-button class="accordion smallAccordion" ng-click="toggle()">HeapSort</md-button>
                   <div ng-show="myVar" class = "animated">
                     <!-- INNER HIDDEN CONTENT -->
                     
+                <!-----------------------
                     <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
                     <!-- INNER HIDDEN CONTENT END -->
+                    <!-------------------
                   </div>
                 </div>
+                -------------------------->
                 <!-- INNER BUTTON TWO END -->
                 <!-- INNER BUTTON THREE START -->
                 <div ng-app="expand" ng-controller="personCtrl">
@@ -367,6 +370,29 @@
                   </div>
                 </md-toolbar>
                 -->
+                <!-- INNER BUTTON ZERO START -->
+                <div ng-app="expand" ng-controller="personCtrl">
+                  <md-button class="accordion smallAccordion" ng-click="toggle()">Array List</md-button>
+                  <div ng-show="myVar" class = "animated">
+                    <!-- INNER HIDDEN CONTENT -->
+                    <script src="https://gist.github.com/heatsink/25eb44bd32b0059c83563717577b86ad.js"></script>
+                    <script src="https://gist.github.com/heatsink/5983070f079877c8d387afe14ca82e65.js"></script>
+                    <!-- INNER HIDDEN CONTENT END -->
+                  </div>
+                </div>
+                <!-- INNER BUTTON ZERO END -->
+                <!-- INNER BUTTON ZERO ONE START -->
+                <div ng-app="expand" ng-controller="personCtrl">
+                  <md-button class="accordion smallAccordion" ng-click="toggle()">Doubly Linked List</md-button>
+                  <div ng-show="myVar" class = "animated">
+                    <!-- INNER HIDDEN CONTENT -->
+                    <script src="https://gist.github.com/heatsink/5f1720dab6f413ff55984942b34f6e5d.js"></script>
+                    <script src="https://gist.github.com/heatsink/6cb2fbaf5202e26574c1375819848e7d.js"></script>
+                    <script src="https://gist.github.com/heatsink/710d02024e1b2fbeb391790b9b7578ef.js"></script>
+                    <!-- INNER HIDDEN CONTENT END -->
+                  </div>
+                </div>
+                <!-- INNER BUTTON ZERO ONE END -->
                 <!-- INNER BUTTON ONE START -->
                 <div ng-app="expand" ng-controller="personCtrl">
                   <md-button class="accordion smallAccordion" ng-click="toggle()">Stack</md-button>
@@ -404,8 +430,7 @@
                   <md-button class="accordion smallAccordion" ng-click="toggle()">Heap</md-button>
                   <div ng-show="myVar" class = "animated">
                     <!-- INNER HIDDEN CONTENT -->
-                    <p>SUPER COOL GITHUB GIST GOES RIGHT HERE</p>
-                    <!-- INNER HIDDEN CONTENT END -->
+                    <script src="https://gist.github.com/heatsink/c816b7bfe93af11ebd107ea2f1aeb5fd.js"></script>
                   </div>
                 </div>
                 <!-- INNER BUTTON FOUR END -->
