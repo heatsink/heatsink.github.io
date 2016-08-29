@@ -35,13 +35,6 @@ html, .md-default-theme {
   background: -o-linear-gradient(right, #373737, #212121); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, #373737, #212121); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #373737 , #212121); /* Standard syntax */
-  /*
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
-  */
 }
 
 .accordion.active, .accordion:hover {
@@ -54,9 +47,6 @@ html, .md-default-theme {
   -moz-box-shadow: 0 0 5px #0090ff;
   -o-box-shadow: 0 0 5px #0090ff;
   -ms-box-shadow: 0 0 5px #0090ff;
-    /*margin-left: 5px;*/
-    
-
 }
 .divContent {
   border: 1px solid #efefef;
@@ -67,48 +57,6 @@ html, .md-default-theme {
   -ms-box-shadow: 0 0 5px #121212;
   padding: 5px;
 }
-
-/*
-.accordion:after {
-    
-}
-
-.accordion.active:after {
-content: "\2796";
-}
-
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.1s ease-in-out;
-    opacity: 0;
-}
-
-.panel.show {
-    opacity: 1;
-    max-height: 500px;
-}
-.icon-resize-small {
-    background: url('../images/icon_portfolio.png') #ff6f00 no-repeat 100% 100%;
-    content: '\02795';
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-    padding: 0px 15px 10px 15px;
-}
-
-.icon-fullscreen {
-content: "\2796";
-font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-    padding: 0px 15px 10px 15px;
-}
-*/
 
 /*This is the css you need to add*/
 .md-tab:hover {
@@ -187,7 +135,6 @@ font-size: 13px;
   -webkit-animation-fill-mode: both;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  /*transition:  0.1s;*/
 }
 
 .animate-show, .ng-hide, .fadeOut {
@@ -238,13 +185,6 @@ font-size: 13px;
   position: relative;
   width: 250px;
   top:50px;
-  /*
-  z-index: 11;
-  padding: 3px 10px 3px 50px;
-  color: #fff;
-  background: url('../images/icon_portfolio.png') #ff6f00 no-repeat 5% 50%;
-  background-size: 25px 25px;
-  */
   color: #f2f2f2;
   background:#008000;
   font-weight: 700;
@@ -263,7 +203,6 @@ font-size: 13px;
   background: #008000 !important;
   font-size: 15px;
   color: #0090ff;
-  /*margin-left: 5px;*/
   border: 1px solid #efefef;
   box-shadow: 0 0 5px #0090ff;
   -webkit-box-shadow: 0 0 5px #0090ff;
@@ -293,7 +232,6 @@ font-size: 13px;
   background-color: #f2f2f2;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
-  /*width:640px;*/
 }
 
 .outer {
@@ -306,7 +244,6 @@ font-size: 13px;
   background: linear-gradient(top, #373737, #212121);
 }
 .md-padding {
-  /*min-height: 250px;*/
   min-height:250px;
 }
 
@@ -319,20 +256,6 @@ font-size: 13px;
 
 #bodyText {
   background-color: #f2f2f2;
-}
-
-#footer {
-  /*width: 100%;*/
-  /*
-  height: 200px;
-  background:#212121
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
-  */  bottom:0;
-  left:0;
 }
 
 .projectImage {
@@ -384,25 +307,14 @@ md-content {
 }
 
 body {
-
   margin:0;
   padding:0;
-
   color:#373737;
   background:#212121;
   background: -webkit-linear-gradient(left, #373737, #212121); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, #373737, #212121); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, #373737, #212121); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #373737 , #212121); /* Standard syntax */
-  /*
-  color:#373737;
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
-  */
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -418,14 +330,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 48px; /*36*/
+  font-size: 48px;
   padding: 0px 0px 0px 0px;
   font-weight: 700;
 }
 
 h2 {
   padding-bottom: 0px;
-  font-size: 40px; /*32*/
+  font-size: 40px;
 }
 
 h3 {
@@ -464,24 +376,8 @@ a {
   -ms-transition: color 0.5s ease;
   -ms-transition: text-shadow 0.5s ease;
 }
-/*
-.bufferedText {
-  padding-left: 25px;
-}
-.bufferedTextMain {
-  padding-left: 25px;
-}
-*/
 
 @media only screen and (max-width:960px) {
-  /*
-  .bufferedTextMain {
-    padding-left: 5px !important;
-  }
-  .bufferedText {
-  padding-left: 5px !important;
-  }
-  */
   .projectImage {
     width: 75%;
   }
@@ -526,13 +422,5 @@ a {
   .md-padding {
     min-height:250px;
   }
-  /*
-  .bufferedText {
-    padding-left: 5px !important;
-  }
-  .bufferedTextMain {
-  padding-left: 5px !important;
-  }
-  */
 }
 
