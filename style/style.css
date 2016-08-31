@@ -13,14 +13,13 @@ background-size: cover;
 }
 /** ACCORDION STUFF **/
 .accordion {
-    background-color: #E0E0E0;
-    color: #444;
-    padding: 10px;
-    width: 95%;
-    text-align: center;
-    font-size: 15px;
-    transition: 0.1s;
-    
+  background-color: #E0E0E0;
+  color: #444;
+  padding: 10px;
+  width: 95%;
+  text-align: center;
+  font-size: 15px;
+  transition: 0.1s;
   border: 1px solid #efefef;
   ox-shadow: 0 0 5px #212121;
   -webkit-box-shadow: 0 0 5px #212121;
@@ -60,10 +59,10 @@ html, .md-default-theme {
 
 /*This is the css you need to add*/
 .md-tab:hover {
-    /*background-color: #E0E0E0 !important;*/
-    background-color: #f2f2f2;
-    color: #0090ff;
-    border: none;
+  /*background-color: #E0E0E0 !important;*/
+  background-color: #f2f2f2;
+  color: #0090ff;
+  border: none;
   box-shadow: #0090ff;
   -webkit-box-shadow: 0 0 5px #0090ff;
   -moz-box-shadow: 0 0 5px #0090ff;
