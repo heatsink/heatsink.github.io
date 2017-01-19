@@ -88,7 +88,7 @@ vmap <silent> // :s/^/\/\//<CR>
 
 :map <F2> :set filetype=c<cr>i/**<cr>This program does stuff. File template description goes right about here.<cr>So many descriptors. It truly never ends.<cr>@author Sean Wallace<cr>@version 1<cr>/<cr>#include <stdio.h><cr>#include <stdlib.h><cr>#include <unistd.h><cr>#include <math.h><cr><cr>/**<cr>This is the main method.<cr>/<cr>int main() {<cr><cr>return 0;<cr><bs>}<esc>kka<tab><Esc>i<tab>
 
-:map <F6> :<cr>i/* Sean Wallace Makefile */<cr>CC = gcc<cr>CFLAGS = -Wall -ansi -pedantic<cr>MAIN = a.out<cr>OBJS = part1.c part1_tests.c<cr>all : $(MAIN)<cr><cr>$(MAIN) : $(OBJS) <cr>$(CC) $(CFLAGS) -o $(MAIN) $(OBJS)<cr><cr>clean :<cr>rm *.o $(MAIN) core
+:map <F6> :<cr>CC = gcc<cr>CFLAGS = -Wall -std=c99 -pedantic<cr>MAIN = a.out<cr>OBJS = part1.c part1_tests.c<cr>all : $(MAIN)<cr><cr>$(MAIN) : $(OBJS) <cr>$(CC) $(CFLAGS) -o $(MAIN) $(OBJS)<cr><cr>clean :<cr>rm *.o $(MAIN) core
 
 :map <F3> :set paste!<cr>
 
