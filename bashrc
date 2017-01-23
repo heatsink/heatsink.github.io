@@ -95,6 +95,7 @@ alias fixrviz='export LIBGL_ALWAYS_SOFTWARE=1'
 alias ..="cd .."
 alias ..2="cd ../.."
 alias ..3="cd ../../.."
+alias scd="cd"
 alias s="ls"
 alias l="ls"
 alias sl="ls"
@@ -128,7 +129,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-source /opt/ros/indigo/setup.bash
+source /opt/ros/kinetic/setup.bash
 
 TERM=xterm-256color
 
