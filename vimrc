@@ -64,7 +64,7 @@ let @h='5w,'
 let @l='5w.'
 
 " Insert Mode "
-imap jk <ESC>l
+imap jk <ESC>
 
 "Auto Close brackets"
 inoremap {J {<CR>}<Esc>ko
