@@ -133,6 +133,7 @@ source /opt/ros/kinetic/setup.bash
 
 TERM=xterm-256color
 
+export IGNOREEOF=42
 export PATH=$PATH:/usr/local/arm-none-eabi/bin
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
