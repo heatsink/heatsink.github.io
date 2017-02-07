@@ -47,7 +47,7 @@ set viminfo+=<500
 
 " Filetype Specifics "
 autocmd Filetype python setlocal tabstop=3 shiftwidth=3
-autocmd Filetype c setlocal tabstop=3 shiftwidth=3
+autocmd Filetype c setlocal tabstop=4 shiftwidth=4
 autocmd Filetype java setlocal tabstop=4 shiftwidth=4
 
 " Commands "
