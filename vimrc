@@ -66,6 +66,8 @@ let @l='5w.'
 " Insert Mode "
 imap jk <ESC>
 
+imap tb <C-V><Tab>
+
 "Auto Close brackets"
 inoremap {J {<CR>}<Esc>ko
 inoremap {jj {<space><space>}<Esc>hi
@@ -101,7 +103,7 @@ vmap <silent> // :s/^/\/\//<CR>
 :map <F6> :<cr>CC = gcc<cr>CFLAGS = -Wall -std=c99 -pedantic<cr>MAIN = a.out<cr>OBJS = part1.c part1_tests.c<cr>all : $(MAIN)<cr><cr>$(MAIN) : $(OBJS) <cr>$(CC) $(CFLAGS) -o $(MAIN) $(OBJS)<cr><cr>clean :<cr>rm *.o $(MAIN) corejk
 
 :map <F3> :set paste!<cr>
-
+         
 " Spell check!
 :map <F4> :set spell!<cr>
 
@@ -118,3 +120,4 @@ command! Wq wq
 command! WQ wq
 
 set viminfo='20,<1000
+"set tags=tags,./tags
