@@ -80,8 +80,18 @@ nnoremap <Space><Space> i<Space><Esc>
 
 " Add line without insert or auto comment"
 nnoremap <silent> <Space><CR> :NoAutoComment<CR>o<Esc>:AutoComment<CR>
-
-
+noremap cp yap<S-}>p
+" Toggle set paste and nopaste with \n "
+set pastetoggle=<leader>z
+" Awesome toggle vim/shell with ctrl+d "
+map <c-d> :sh <cr>
+" Save files with Leader + s "
+nnoremap <leader>s :w<cr>
+inoremap <leader>s <C-c>:w<cr>
+" Quit files with Leader + q "
+nnoremap <leader>q :q<cr>
+inoremap <leader>q <C-c>:q<cr>
+noremap <leader><space> :noh<cr>:call clearmatches()<cr>i<Esc>l
 " Visual Mode"
 " Mapping to comment the line "
 vmap <silent> // :s/^/\/\//<CR>
