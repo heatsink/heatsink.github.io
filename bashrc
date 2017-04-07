@@ -96,11 +96,28 @@ alias ..="cd .."
 alias ..2="cd ../.."
 alias ..3="cd ../../.."
 alias scd="cd"
+alias ..l="cd .."
 alias s="ls"
 alias l="ls"
 alias sl="ls"
 alias lsl="ls"
+alias lls="ls"
 alias sls="ls"
+alias evim="vim ~/.vimrc"
+alias ebash="vim ~/.bashrc"
+alias work=workfunc
+alias workl=labfunc
+alias worka=assignfunc
+alias valgrind=valgrind --leak-check=yes
+workfunc() {
+   cd ~/Workspace/357
+}
+labfunc() {
+   cd ~/Workspace/357/labs
+}
+assignfunc() {
+   cd ~/Workspace/357/assignments
+}
 igvcfunc() {
     igvcdir;
     source devel/setup.bash;
@@ -133,7 +150,7 @@ source /opt/ros/kinetic/setup.bash
 
 TERM=xterm-256color
 
-export IGNOREEOF=42
+#export IGNOREEOF=42
 export PATH=$PATH:/usr/local/arm-none-eabi/bin
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
