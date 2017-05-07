@@ -85,6 +85,12 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
+alias swd='export DIRP=$(pwd)'
+alias lwd='cd $DIRP'
+alias swd1='export DIRP1=$(pwd)'
+alias lwd1='cd $DIRP1'
+alias swd2='export DIRP2=$(pwd)'
+alias lwd2='cd $DIRP2'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -95,7 +101,10 @@ alias fixrviz='export LIBGL_ALWAYS_SOFTWARE=1'
 alias ..="cd .."
 alias ..2="cd ../.."
 alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+alias ..5="cd ../../../../.."
 alias scd="cd"
+alias rcd="cd"
 alias ..l="cd .."
 alias s="ls"
 alias l="ls"
@@ -103,6 +112,10 @@ alias sl="ls"
 alias lsl="ls"
 alias lls="ls"
 alias sls="ls"
+alias ssl="ls"
+alias lss="ls"
+alias svim="vim"
+alias lvim="vim"
 alias evim="vim ~/.vimrc"
 alias ebash="vim ~/.bashrc"
 alias work=workfunc
@@ -146,7 +159,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-source /opt/ros/kinetic/setup.bash
+#source /opt/ros/kinetic/setup.bash
 
 TERM=xterm-256color
 
@@ -155,6 +168,6 @@ export PATH=$PATH:/usr/local/arm-none-eabi/bin
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
-echo -e "\e]12;gray\a"
+#echo -e "\e]12;gray\a"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
