@@ -1,307 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
-  <title>Sean Wallace - Computer Engineering</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Angular Material style sheet -->
-  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
-  <link rel="stylesheet" href="style/style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="vAccordion - AngularJS multi-level accordion component.">
+    <meta name="author" content="Łukasz Wątroba">
 
-</head>
-<body ng-app = "resumeApp" ng-cloak>
-  <md-content>
-    <!-- HEADER START -->
-    <div class="outer">
-      <div id = "header">
-      <header class="inner mobileInner">
-        <div class = "header mobileHeader" >
+    <title>vAccordion</title>
+
+    <!-- Google fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,700,300italic" rel="stylesheet" type="text/css">
+
+    <!-- Styles -->
+    <link href="http://lukaszwatroba.github.io/valitycss/dist/vality.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./bower/valitycss/dist/vality.css"> -->
+    <link href="./dist/v-accordion.css" rel="stylesheet">
+    <link href="./dist/v-tabs.css" rel="stylesheet">
+    <link href="./style/style.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-touch.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.min.js"></script>
+    <!-- <script src="./bower/angular/angular.js"></script> -->
+    <!-- <script src="./bower/angular-animate/angular-animate.js"></script> -->
+    <script src="./dist/v-accordion.js"></script>
+    <script src="./dist/v-tabs.js"></script>
+    <script src="./demo/app.js"></script>
+  </head>
+
+  <body ng-app="myApp" class = "easyBackground">
+   <div class = "outer">
+<header class="u-marginBl u-textCenter outer animated fadeIn">
+        <div>
+           <br>
+          <!--svg class="u-inlineBlock" width="58px" height="58px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54"><g><path fill="#4CAF50" d="M3.1,27.9c0,0,10.2-24.1,11.6-27.2c0.2-0.5,0.6-0.8,1.2-0.6c0.5,0.1,0.8,0.7,1.5,2.2c1.3,2.9,18,37.2,18.7,38.6c0.8,1.6,1,2.6,0.7,3.4c-0.3,0.6-1,1.1-1.8,1.4c-2.3,0.9-20.3,7.8-21.5,8.3c-0.7,0.3-0.8-0.4-1.4-1.7C11.6,51,3.7,32.1,3.1,30.7C2.5,29.3,3.1,27.9,3.1,27.9z"/><path fill="#2196F3" d="M50.9,17.3c-0.3-0.3-0.4-0.4-0.7-0.2c-0.3,0.1-11.5,8.6-16.8,12.5c2.7,5.5,4.7,9.7,5,10.2c0.4,0.8,0.8,1.7,1,2.6c0.1-0.2,0.2-0.3,0.3-0.5c0.9-1.8,11.3-23.4,11.5-23.8C51.3,17.7,51.2,17.7,50.9,17.3z"/></g></svg-->
           <h1 id = "title" align = "CENTER" class = "mobileTitle"> Sean Wallace </h1>
           <h2 id = "tagline" align = "CENTER" class = "mobileTagline"> Cal Poly, San Luis Obispo</h2>
-          <h2 id = "tagline" align = "CENTER" class = "mobileTagline"> Computer Engineering </h2>
+          <br>
         </div>
       </header>
+      <div class = "u-wideWrapper">
+          <a href="./documents/Sean_Wallace.pdf" id="download-pdf" class="button"><span>Resume.pdf</span></a>
+          <a href="https://github.com/heatsink" id="view-on-github" class="button"><span>View on GitHub</span></a>
       </div>
-      <!-- HEADER END -->
-    </div>
-  </md-content>
-<md-content>
-    <!-- MAIN BODYSTART -->
-    <div class = "inner animated fadeIn">
-      <md-tabs md-dynamic-height md-border-bottom md-center-tabs="true">
-        <md-tab label="Home" >
-          <md-content class="md-padding">
-            <p align = "LEFT" class ="animated fadeInDown">I study computer engineering at Cal Poly, San Luis Obispo. I anticipate graduating in June 2019.</p>
-
-            <md-button class = "resume_banner resumeMobile animated fadeInDown" href="documents/Sean Wallace.pdf" download="Sean-Wallace-Resume">Download My Resume</md-button>
-
-          </md-content>
-        </md-tab>
-        <md-tab label="My Projects">
-          <md-content class="md-padding">
-            <!-- BUTTON ONE START -->
-            <p align = "CENTER">These are some of my most recent projects!</p>
-            <div ng-app="expand" ng-controller="personCtrl" align = "CENTER">
-              <md-button class="accordion" ng-click="toggle()" ><b>Autonomous Golf Cart</b>
-
-            </md-button>
-              <div ng-show="myVar" class = "divContent animated">
-                <div flex-gt-sm="5">
-                </div>
-                <div flex-gt-sm="95">
-                <p align = "LEFT" class = "bufferedTextMain"><b>TL;DR:</b> Ongoing robotics club project. ROS. Python. C. Collision detection. Navigation. Lidar, encoders, and other sensors.</p>
-              </div>
-
-                <div layout="column" layout-gt-sm="row">
-                  <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="90%" img src="images/IGVC_driving.png"/>
-                    <figcaption > <small><i>Testing an old iteration of my collision detection software.</i></small>
-                    </figcaption>
-                  </div>
-                  <div flex-gt-sm="60">
-                    <p align = "LEFT">The autonomous golf cart is a collaborative and multidisciplinary project within the Cal Poly robotics club. I've been working on this project since my Freshman year, and it is likely that project development will continue for the majority of my university career. Within the team, I focus on collision detection & navigation. A SICK 2D Lidar is mounted on the golf cart, whose primary purpose is to be the focus of various bad puns. The component was already pushing the budget as is, so only a 2D version was purchased for $5,000. Since it's a two-dimensional sensor, it excels in detecting objects at the waist-level it's mounted, but has trouble with odd creatures of inconvenient heights, such as the local turkies. Or small children. To combat this issue, sonar mounts are placed on the bottom of the golf cart to see what the lidar cannot. Collision detection works with reasonable accuracy for various steering angles held, and I am now experimenting with ROS's navigation stack for my proof of concept. Seeing how it functions will also give me a design inspiration for our own in-house navigation stack upon further development. This milestone will begin development during Fall of 2016 and continue well into the Winter quarter.</p>
-                    <!--
-                    </p> However, I'll stop to declare project success when the golf cart can drive to Woodstock's Pizza and back without supervision. We won't settle for pizza from Ciao, which is much closer to headquarters. Not because our campus food is bad or anything...</p>
-                  -->
-
-                  </div>
-                </div>
-                <div flex-gt-sm = "5">
-                </div>
-                <div flex-gt-sm = "95">
-                 <p align = "LEFT" class = "bufferedText">Our team uses ROS (Robot Operating System) as a software framework in developing for our golf cart. Python is used in a majority of our scripts while our firmware is written in C.</p>
-              </div>
-                <div layout="column" layout-gt-sm="row">
-                  <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="90%" img src="images/IGVC_PCB.png"/>
-                    <figcaption><small><i>The golf cart's PCB, designed in-house.</i></small>
-                    </figcaption>
-                  </div>
-                  <div flex-gt-sm="60">
-                <p align = "LEFT" class = "bufferedText">The PCB runs its corresponding electronics run off of a simple 12V battery. Additionally, the drive train itself consists merely of a motor running of of three car batteries. Therefore, our project can be considered an autonomous electric vehicle! Classifying it as such makes it sound trendy. The PCB itself is split into modules whose names (and occasionally functions) resemble Greek mythology. The upperclassmen, with their glorious knowledge, typically are the ones involved with board design. Although I have historically been focused on collision detection & navigation, I have been practicing my Eagle skills on the side to add my own module to the board. I plan to add a simple component for tracking battery power and usage (along with the corresponding firmware and small bit of software) to track the battery power and usage within the next year.</p>
-                <!--p>
-                  There's also a large client library for C++ and increasing development for Java, so there's been some talk of switching. Since message types are really important to ROS while Python couldn't care less, we feel that it isn't the most ideal relationship. However, it is unlikely that python and ROS will flat out prevent us from doing anything, and at worst it's only an annoyance, we can get used to, it was decided that it wouldn't be worth the migration. 
-                </p-->
-                  </div>
-                </div>
-                <div flex-gt-sm="5">
-                </div>
-                <div flex-gt-sm="95">
-                <p align = "LEFT">A slightly modified version of the bicycle Model is used to determine the path of the golf cart based its current steering angle. By itself, the bicycle model works very well for small steering angles but tends to become more inconsistent with larger steering angles. Then, some teams participating in the 2005 DARPA Challenge have pointed out, the model is violated at high velocities where tires slip as they turn. Through testing, we added a calibration to minimize the turning bias for large steering angles. This allowed us to achieve what was necessary for our proof of concept, but we are working on a more accurate model for further development. </p>
-              </div>
-
-                <div layout="column" layout-gt-sm="row">
-                  <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="90%" img src="images/IGVC_collision.png"/>
-                    <figcaption ><small><i>What the lidar detects inside of an empty hallway.</i></small>
-                    </figcaption>
-                  </div>
-                  <div flex-gt-sm="60">
-                <p align = "LEFT" class = "bufferedText"></p>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <!-- BUTTON ONE END -->
-            <!-- BUTTON THREE START -->
-            <div ng-app="expand" ng-controller="personCtrl" align = "CENTER">
-              <md-button class="accordion" ng-click="toggle()"><b>Ninja Fighter RPG</b></md-button>
-              <div ng-show="myVar"  class = "divContent  animated">
-                <div flex-gt-sm="5">
-                </div>
-                <div flex-gt-sm="95">
-                <p align = "LEFT"><b>TL;DR:</b> Object Oriented Programming. Java. Game design. GitHub.</p>
-              </div>
-                <div layout="column" layout-gt-sm="row">
-                  <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_Main.png" /> <br>
-                    <figcaption ><small><i>A player battles monsters within the "endless" realm.</i></small>
-                    </figcaption>
-                  </div>
-                  <div flex-gt-sm="60">
-                    <p align = "LEFT">Ninja Fighter is a top-down action RPG made during a course in game design. It is written in Java using Greenfoot in collaboration with four other computer science and engineering students during my Freshman year. Admittedly, the title of our game wasn't very creative and is quite generic (dozens of other games on the internet are also called "Ninja Fighter." This project is our personalized spin on a Ninja Fighter game.</p>
-                  </div>
-                </div>
-                <div flex-gt-sm="5">
-                </div>
-                <div flex-gt-sm="95">
-                    
-                <p align="LEFT">A quick concession: most of the artwork and sound effects we use belongs to various video game companies. The focus of the course and project was toward the software development cycle in game design. Therefore, we signed a form allowing us to use others' artwork and music (as long as we didn't make monetary gain) so we could focus on designing our program rather than drawing sprites for it. Thanks to the artists at game companies such as Blizzard and Nexon, the graphics in this game are on point!</p>
-              </div>
-                <div layout="column" layout-gt-sm="row">
-                  <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_cinematic_1.png" /> <br>
-                    <figcaption ><small><i>A cutscene inspired by clips of ammo depicted in Hollywood.</i></small>
-                    </figcaption>
-                  </div>
-                  <div flex-gt-sm="60">
-                    <p align = "LEFT">The storyline of Ninja Fighter is partially conveyed through cinematics. In the beginning, a lone boy picking berries when "The Darkness" suddenly envelops his village. A mysterious master rescues  the boy, who takes him to his cave to train him to become a ninja. The player experiences this training, and becomes a ninja that fights to save his village from the darkness. This was the best storyline that the combined effort of five Cal Poly computer science and engineering students could come up with. It's a good thing we can't even try to sell the game because of the copyrighted visual content. If we tried to sell it on Steam, perhaps two lost video game conoisseurs might purchase it for $0.99. As things are in the game industry, four people who played the game would complain that its storyline was worse than Tetris. As is tradition. </p>
-                  </div>
-                </div>
-
-                <div flex-gt-sm="5">
-                </div>
-                <div flex-gt-sm="95">
-                <p align = "LEFT">The player follows the master, but he suddenly disappears, never to be seen again. The plot thickens. Despite its flaws, I think Ninja Fighter actually does a relatively decent job of introducing players to gameplay mechanics. We didn't have to implement those irritating chatboxes that tell players to "Press W to move! :D" (this is far too common these days). During the training levels, the boy learns how to use a sword by walking on a sword rack (very realistic). The same mechanic is in place where he walks on a table covered with shurikens to learn how to throw them. Hopefully, players learn that walking on objects do good things. Later, as ninjas, players walk over barrels to replenish their shurikens, apples to regenerate health, and eggs to replenish their power.</p>
-              </div>
-
-                <div layout="column" layout-gt-sm="row">
-                  <div flex-gt-sm="40">
-                      <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_training_1.png" /> <br>
-                      <figcaption ><small><i>The boy begins his ninja training. By walking.</i></small>
-                      </figcaption>
-                      <br>
-                  </div>
-                  <div flex-gt-sm="20">
-                  </div>
-                  <div flex-gt-sm="40">
-                <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_training_2.png" /> <br>
-                <figcaption ><small><i>A player undergoes ninja training as a boy.</i></small>
-                    </figcaption>
-                  </div>
-                </div>
-                <div flex-gt-sm="5">
-                </div>
-                <div flex-gt-sm="95">
-                <p align = "LEFT">The game is split into 3 acts with different themes corresponding to each act. We have a grasslands, haunted forest, and fire (Inferno!) act. Each act has monsters that somewhat correspond to the theme along with different game mechanics. At the end of each act is a bossfight, where players earn a new ability upon completion of the act. By the time players reach the fire levels, they know how to dash as well as be temporarily invulnerable.</p>
-              </div>
-
-                <div layout="column" layout-gt-sm="row">
-                  <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_HUD.png" /> <br>
-                    <figcaption ><small><i>The HUD, before and after "Haung's Mode."</i></small>
-                    </figcaption>
-                  </div>
-                  <div flex-gt-sm="60">
-                    <p align = "LEFT">What's an offline RPG without a cheat code? Pressing 1, 3, 5, and 7 activated "Haung's Mode", inspired by our professor of game design. This feature makes activates a badly photoshopped Captain "Haungs" America with the side effect of making the player really overpowered. It was really funny at the time.</p>
-                  </div>
-                </div>
+      </div>
+   </div>
+   <div class="u-wideWrapper u-paddingHm u-paddingTl animated fadeIn easyBackground" ng-controller="MainController">
+        <div class="u-marginBl">
+        <section class="u-paddingBl">
+          <v-tabs class="vTabs--default" horizontal control="horizontalTabs" active="horizontalTabs.active">
+            <v-tab id="tabH_{{ ::page.id }}" aria-controls="pageV_{{ ::page.id }}" ng-repeat="page in pages" ng-bind="page.title"></v-tab>
+          </v-tabs>
+          <v-pages class="vPages--default" active="horizontalTabs.active" ng-swipe-left="horizontalTabs.next()" ng-swipe-right="horizontalTabs.previous()">
+            <v-page id="pageH_{{ ::page.id }}" aria-labelledby="tabH_{{ ::page.id }}" ng-repeat="page in pages">
+              <div class="u-formatedText" ng-bind-html="page.content"></div>
+              <label ng-init ="val = page.id">
+               <div ng-if="val == 1">
+                  <div ng-cloak class="u-wideWrapper" ng-controller="MainController">
+                   <v-accordion id="accordionA" class="vAccordion--default" control="accordionA" onexpand="expandCallback(index, id)" oncollapse="collapseCallback(index, id)">
+                     <v-pane id="{{ ::pane.id }}" ng-repeat="pane in panesA" expanded="pane.isExpanded">
+                       <v-pane-header id="{{ ::pane.id }}-header" aria-controls="{{ ::pane.id }}-content">
+                         <h5>{{ ::pane.header }}</h5>
+                       </v-pane-header>
+                       <v-pane-content id="{{ ::pane.id }}-content" aria-labelledby="{{ ::pane.id }}-header">
+                         <p>{{ ::pane.content }}</p>
+                       </v-pane-content>
+                     </v-pane>
+                   </v-accordion>
+                   </div>
+               </div>
+               <div ng-if="val == 2">
+                    <div class="Grid-cell u-marginBl">
+                   <h4 class="u-marginVm">Personal Projects</h4>
+                   <v-accordion id="accordionB" class="vAccordion--default" multiple control="accordionB">
+                     <v-pane id="{{ ::pane.id }}" ng-repeat="pane in panesB" expanded="pane.isExpanded">
+                       <v-pane-header id="{{ ::pane.id }}-header" aria-controls="{{ ::pane.id }}-header">
+                         <h5>{{ ::pane.header }}</h5>
+                       </v-pane-header>
+                       <v-pane-content id="{{ ::pane.id }}-content" aria-labelledby="{{ ::pane.id }}-content">
+                         <p>{{ ::pane.content }}</p>
+                         <v-accordion id="nestedAccordionB" multiple ng-if="pane.subpanes">
+                           <v-pane id="{{ ::subpane.id }}" ng-repeat="subpane in pane.subpanes" ng-disabled="subpane.isDisabled">
+                             <v-pane-header id="{{ ::subpane.id }}-header" aria-controls="{{ ::subpane.id }}-header">
+                               <h5>{{ ::subpane.header }}</h5>
+                             </v-pane-header>
+                             <v-pane-content id="{{ ::subpane.id }}-content" aria-labelledby="{{ ::subpane.id }}-content">
+                               <p>{{ ::subpane.content }}</p>
+                             </v-pane-content>
+                           </v-pane>
+                         </v-accordion>
+                       </v-pane-content>
+                     </v-pane>
+                   </v-accordion>
 
 
-                <div layout="column" layout-gt-sm="row">
-                  <div flex-gt-sm="40">
-                    <img class = "projectImage" height = "auto" width="90%" img src="images/Ninja_Fighter_final_boss.png" /> <br>
-                    <figcaption ><small><i>The final boss fight. Firebats and fireballs. Chaos.</i></small>
-                    </figcaption>
-                  </div>
-                  <div flex-gt-sm="60">
-                    <p align = "LEFT">After defeating the final boss, players discover that the ninja master who trained them had been inside that same final boss. Perhaps he had been controlling the darkness all along... We left the story here ambiguous. If players choose to kill the master in his weakened state, they gain 100 upgrade points (that's a lot) to upgrade their health and damage. The philosophical ramifications of this game mechanic are also left open to interpretation. From here, players have the option of playing in the endless mode! They fight waves of progressively stronger monsters until death.</p>
-                  </div>
-                </div>
-                <div flex-gt-sm="5">
-                </div>
-                <div flex-gt-sm="95">
-                <p align = "LEFT">When I look back on this project, I tend to poke a lot of fun at the code I wrote and the game we produced. The phenomenon of programmers cringing over old code they wrote is not lost on me. I think this game was still worth documenting, as it serves as a reminder of constant improvement in programming practices. And it truly isn't that bad! Ninja Fighter  was really popular with my two 7 and 8 year old cousins. They wouldn't stop asking to play it...</p>
-                <p align = "LEFT">Although Ninja Fighter could certainly be improved, I certainly achieved my learning goals for this project. Programming individually has its challenges, but the logistics of coding with others was a whole new beast to get the hang of. I've used Git before, but never in a group setting. This was the project where I was forced to learn how to resolve merge conflicts. They gave me nightmares at the time... I am happy to resolve that I no longer fear Git and its associated nuances.</p>
-              </div>
-
-              </div>
-            </div>
-            <p align = "CENTER">In progress: Roborodentia Robot!</p>
-            <p align = "CENTER">In progress: Rewritten Chess AI 2.0!</p>
-            <!-- BUTTON THREE END -->
-            <!-- BUTTON FIVE START
-            <div ng-app="expand" ng-controller="personCtrl">
-              <md-button class="md-raised md-secondary" ng-click="toggle()"><b>Speed Controller PCB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></b></md-button>
-              <div ng-show="myVar">
-                <h3>Speed Controller PCB</h3>
-                Designed for the Cal Poly Robotics Team's Autonomous Golf Cart. <br>
-                Speed controller for golf cart steering system. <br>
-                Project for Winter 2016 (Not yet complete). <br>
-                <img id = "portrait" height = "auto" width="200px" img src="images/portrait.png" /> <br>
-              </div>
-            </div>
-            -->
-            <!-- BUTTON FIVE END -->
-          </md-content>
-        </md-tab>
-        <!-------------------------------- Next Set of Buttons ------------------------>
-        <md-tab label="School Projects">
-          <md-content class="md-padding">
-            <p align = "CENTER">Here's what I've been working on at school!</p>
-            <!-- BUTTON FOUR START -->
-            <div ng-app="expand" ng-controller="personCtrl" align = "CENTER">
-              <md-button class="accordion" ng-click="toggle()"><b>Power Supply</b></md-button>
-              <div ng-show="myVar"  class = "divContent  animated">
-                <!-- HIDDEN CONTENT -->
-                <div flex-gt-sm="5">
-                </div>
-                <div flex-gt-sm="95">
-                <p align = "LEFT"><b>TL;DR:</b> Dual-output variable DC power supply. Soldering, electrical testing and calibration. Exercises in PCB layout design.</p>
-              </div>
-                <div layout="column" layout-gt-sm="row">
-                  <div flex-gt-sm="40">
-                    <img height = "auto" width="90%" class = "projectImage" img src="images/PSU_case.png"/>
-                    <figcaption > <small><i>My lovely box after chassis fabrication (essentially metamorphosis).</i></small>
-                    </figcaption>
-                  </div>
-                  <div flex-gt-sm="60">
-                    <p align = "LEFT" class = "bufferedTextMain">I made this power supply during a basic electronics manufacturing course I took in Winter of 2015. The experience was my first large exposure into electronics, and consequently, I admit to making a few rookie mistakes. I definitely learned from these mistakes however, and the power supply still turned out all right in the end! It works great for testing inexpensive electrical components! I'll add some emphasis on the inexpensive...</p>
-                    <p align = "LEFT" class = "bufferedTextMain">The power supply is dual-variable. Both of its output voltages can be adjusted independently by knobs in front of the case which adjust their respective potentiometer. The terminal voltages are displayed in the front of the case through two digital meters. An aside: mounting the meters with hot glue took me a lot longer than it should have... In the back panel, a trusty fuse serves as a line of defense to protect both the internal components and the device supplied in the event of a power surge or some other minor disaster.</p>
-                  </div>
-                </div>
-                  <div flex-gt-sm="5">
-                  </div>
-                  <div flex-gt-sm="95">
-                <p align = "LEFT" class = "bufferedTextMain">I calibrated the potentiometers to control the output voltages manually with a small flat-head screwdriver. Thus, the optimal operating conditions consist of a stable position without intense vibration. Charging your iPhone on a rollercoaster is a no-go, chief. Although old Nokias are welcome.</p>
-              </div>
-
-                <div layout="column" layout-gt-sm="row">
-                  <div flex-gt-sm= "40">
-                    <img height = "auto" width="90%" class = "projectImage" img src="images/PSU_inner.png"/> <br>
-                    <figcaption > <small><i>The bulk of electrical components residing within the power supply.</i></small>
-                    </figcaption>
-                  </div>
-                  <div flex-gt-sm="60">
-                    <p align = "LEFT" class = "bufferedTextMain">A significant portion of this course was dedicated to taking a pre-made electrical schematic and using DipTrace (I now prefer Eagle) to make an intelligent layout for a good board design. If desired, this could have been sent off directly to a company for fabrication, but since it makes a lot more sense economically to order a single large batch of identical boards, my power supply shares an identical PCB with many other power supplies made at Cal Poly. In short, it's not my own electrical schematic or PCB that contributed to the success of this project, but I did go through the process of making my own PCB board design that would have worked if fabricated. I promise!</p>
-                    <p align = "LEFT" class = "bufferedTextMain">Ultimately, this is the project that piqued my interest in board design. While I still maintain a stronger software skillset and intend to continue that same focus, I think it is useful both practically and philosophically as a future engineer to fundamentally understand how my hardware running my software works.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <p align = "CENTER">RAT MCU status: Complete! (In progress: Document on website)</p>
-            <!-- BUTTON FOUR END -->
-          </md-content>
-        </md-tab>
 
 
-      </md-tabs>
-    </div>
-    
-  </md-content>
-  <div class = "footer_message animated fadeInDown">
-<h6 align = "CENTER" > Sean Wallace</h6>
-    <h6 align = "CENTER" > (808)-541-7052</h6>
-    <h6 align = "CENTER" > sswallac@calpoly.edu</h6>
-    </div>
-  <!-- FOOTER  -->
-  <!--
-       <div class = "outer">
-        
-       <footer class = "inner">
-        <div id = "footer" class = "inner">
-        <h6 align = "CENTER" class="footer_message"> Sean Wallace</h6>
-        <h6 align = "CENTER" class="footer_message"> (808)-541-7052</h6>
-          <h6 align = "CENTER" class="footer_message"> sswallac@calpoly.edu</h6>
-          <md-button align class = "resume_banner resumeMobile" href="documents/resume.pdf" download="Sean-Wallace-Resume">Download My Resume</md-button>
-          <md-button class="forkme_banner invisible" href="https://github.com/heatsink">Visit My GitHub Page</md-button>
-          
-       </footer>
-       </div>
-       </div>
-     -->
-    
-  
-  <!-- Angular.js Libraries -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
-  <!-- Angular Material Library -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
-  <!-- Application Bootstrap  -->
-  <script src="javascripts/app.js"></script>
-  
-</body>
+
+
+
+
+               <div class="Grid-cell u-marginBl">
+                   <h4 class="u-marginVm">School Projects</h4>
+                   <v-accordion id="accordionC" class="vAccordion--default" multiple control="accordionC">
+                     <v-pane id="{{ ::pane.id }}" ng-repeat="pane in panesC" expanded="pane.isExpanded">
+                       <v-pane-header id="{{ ::pane.id }}-header" aria-controls="{{ ::pane.id }}-header">
+                         <h5>{{ ::pane.header }}</h5>
+                       </v-pane-header>
+                       <v-pane-content id="{{ ::pane.id }}-content" aria-labelledby="{{ ::pane.id }}-content">
+                         <p>{{ ::pane.content }}</p>
+                         <v-accordion id="nestedAccordionC" multiple ng-if="pane.subpanes">
+                           <v-pane id="{{ ::subpane.id }}" ng-repeat="subpane in pane.subpanes" ng-disabled="subpane.isDisabled">
+                             <v-pane-header id="{{ ::subpane.id }}-header" aria-controls="{{ ::subpane.id }}-header">
+                               <h5>{{ ::subpane.header }}</h5>
+                             </v-pane-header>
+                             <v-pane-content id="{{ ::subpane.id }}-content" aria-labelledby="{{ ::subpane.id }}-content">
+                               <p>{{ ::subpane.content }}</p>
+                             </v-pane-content>
+                           </v-pane>
+                         </v-accordion>
+                       </v-pane-content>
+                     </v-pane>
+                   </v-accordion>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               </div>
+              </label>
+            </v-page>
+          </v-pages>
+        </section>
+      </div>
+  </body>
 </html>

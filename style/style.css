@@ -1,238 +1,3 @@
-.myDiv {
-  position: relative;
-  height:300px;
-  background-image: url(../images/DOG.jpg);
-  background-size:cover;
-}
-.myDog { 
-background: url(../images/DOG.png) no-repeat center center fixed; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
-/** ACCORDION STUFF **/
-.accordion {
-  background-color: #E0E0E0;
-  color: #444;
-  padding: 10px;
-  width: 95%;
-  text-align: center;
-  font-size: 15px;
-  transition: 0.1s;
-  border: 1px solid #efefef;
-  ox-shadow: 0 0 5px #212121;
-  -webkit-box-shadow: 0 0 5px #212121;
-  -moz-box-shadow: 0 0 5px #212121;
-  -o-box-shadow: 0 0 5px #212121;
-  -ms-box-shadow: 0 0 5px #212121;
-}
-html, .md-default-theme {
-  color:#373737;
-  background:#212121;
-  background: -webkit-linear-gradient(left, #373737, #212121); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #373737, #212121); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #373737, #212121); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #373737 , #212121); /* Standard syntax */
-}
-
-.accordion.active, .accordion:hover {
-  background-color: #000000;
-  font-size: 15px;
-  color: #0090ff;
-  border: 1px solid #efefef;
-  box-shadow: 0 0 5px #0090ff;
-  -webkit-box-shadow: 0 0 5px #0090ff;
-  -moz-box-shadow: 0 0 5px #0090ff;
-  -o-box-shadow: 0 0 5px #0090ff;
-  -ms-box-shadow: 0 0 5px #0090ff;
-}
-.divContent {
-  border: 1px solid #efefef;
-  ox-shadow: 0 0 5px #121212;
-  -webkit-box-shadow: 0 0 5px #121212;
-  -moz-box-shadow: 0 0 5px #121212;
-  -o-box-shadow: 0 0 5px #121212;
-  -ms-box-shadow: 0 0 5px #121212;
-  padding: 5px;
-}
-
-/*This is the css you need to add*/
-.md-tab:hover {
-  /*background-color: #E0E0E0 !important;*/
-  background-color: #f2f2f2;
-  color: #0090ff;
-  border: none;
-  box-shadow: #0090ff;
-  -webkit-box-shadow: 0 0 5px #0090ff;
-  -moz-box-shadow: 0 0 5px #0090ff;
-  -o-box-shadow: 0 0 5px #0090ff;
-  -ms-box-shadow: 0 0 5px #0090ff;
-}
-/** BUTTON ANIMATIONS **/
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInDown {
-  -webkit-animation-fill-mode: both;
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-}
-
-.animate-show, .ng-hide-add, .animate-show, .ng-hide-remove, .fadeIn {
-  -webkit-animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
-.animate-show, .ng-hide, .fadeOut {
-  -webkit-animation: none 0s !important;
-}
-
-/** @Override md-warn **/
-.md-sidenav-left, .md-theme-indigo, .md-sidenav-left, .nav-theme. .md-warn, .md-menu-toolbar {
-  background-color: #efefef;
-}
-/** @Override md-button style **/
-
-.smallAccordion {
-  width: 40%;
-  padding: 0px;
-  font-weight: 300;
-  background-color:#E4E4E4; /*It's slightly different I promise*/
-}
-.innerButton:active, .innerButton:hover {
-    background-color: #000000;
-    font-size: 15px;
-    color: #0090ff;
-    /*margin-left: 5px;*/
-    -webkit-box-shadow: 0 0 5px #212121;
-  -moz-box-shadow: 0 0 5px #212121;
-  -o-box-shadow: 0 0 5px #212121;
-  -ms-box-shadow: 0 0 5px #212121;
-}
-/** @Override md-hue-1 style (for toolbars)  **/
-.md-hue-1, .md-accent {
-  color: #ffffff !important;
-  background-color:#E0E0E0 !important;
-  border-color: #ffffff !important;
-
-}
-
-.leftImage {
-  padding: 25px 25px 5px 0px;
-}
-.rightImage {
-  padding: 0px 0px 25px 25px;
-}
-
-
-.resume_banner {
-  display: block;
-  margin: auto;
-  position: relative;
-  width: 250px;
-  top:50px;
-  color: #f2f2f2;
-  background:#008000;
-  font-weight: 700;
-  font-size: 15px;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border: 1px solid #efefef;
-  ox-shadow: 0 0 5px #212121;
-  -webkit-box-shadow: 0 0 5px #212121;
-  -moz-box-shadow: 0 0 5px #212121;
-  -o-box-shadow: 0 0 5px #212121;
-  -ms-box-shadow: 0 0 5px #212121;
-}
-.resume_banner:active, .resume_banner:hover {
-  background: #008000 !important;
-  font-size: 15px;
-  color: #0090ff;
-  border: 1px solid #efefef;
-  box-shadow: 0 0 5px #0090ff;
-  -webkit-box-shadow: 0 0 5px #0090ff;
-  -moz-box-shadow: 0 0 5px #0090ff;
-  -o-box-shadow: 0 0 5px #0090ff;
-  -ms-box-shadow: 0 0 5px #0090ff;
-}
-
-.forkme_banner {
-  position: absolute;
-  bottom:0;
-  right: 3px;
-  z-index: 10;
-  padding: 3px 50px 3px 10px;
-  color: #fff;
-  background: url('../images/blacktocat.png') #ff6f00 /*#0090ff*/ no-repeat 95% 50%;
-  font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-}
-.footer_message {
-    position: relative;
-    padding:10px;
-}
-#mainBody {
-  background-color: #f2f2f2;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
-}
-
 .outer {
   width: 100%;
   background: #212121;
@@ -242,82 +7,13 @@ html, .md-default-theme {
   background: -o-linear-gradient(top, #373737, #212121);
   background: linear-gradient(top, #373737, #212121);
 }
-.md-padding {
-  min-height:250px;
+
+.easyBackground {
+  background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
 }
 
-.inner {
-  position: relative;
-  max-width: 1140px;
-  padding: 10px 10px;
-  margin: 0 auto;
-}
-
-#bodyText {
-  background-color: #f2f2f2;
-}
-
-.projectImage {
-  /*padding: 1px;*/
-  border: 1px solid #efefef;
-  box-shadow: 0 0 5px #212121;
-  -webkit-box-shadow: 0 0 5px #212121;
-  -moz-box-shadow: 0 0 5px #212121;
-  -o-box-shadow: 0 0 5px #212121;
-  -ms-box-shadow: 0 0 5px #212121;
-}
-
-.portrait{
-  padding: 2px;
-  border: 1px solid #efefef;
-  box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
-  -moz-box-shadow: 0 0 5px #ebebeb;
-  -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
-}
-/* This is Tab Territory */
-md-content {
-  background:#f2f2f2;
-}
-
-#title {
-  margin: 10px;
-  color: #fff;
-  font-size: 42px;
-  font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
-}
-
-#tagline {
-  color: #fff;
-  margin: 5px;
-  font-size: 24px;
-  font-weight: 300;
-  background: none;
-  text-shadow: #111 0px 0px 10px;
-}
-
-#wrapper {
-  min-height:100%;
-  position:relative;
-  background-color:#212121;
-  color:#212121;
-}
-
-body {
-  margin:0;
-  padding:0;
-  color:#373737;
-  background:#212121;
-  background: -webkit-linear-gradient(left, #373737, #212121); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #373737, #212121); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #373737, #212121); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #373737 , #212121); /* Standard syntax */
-  font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+html {
+  background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -376,50 +72,86 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
-@media only screen and (max-width:960px) {
-  .projectImage {
-    width: 75%;
-  }
-}
-@media only screen and (max-width:510px) {
-  .invisible {
-    display: none;
-  }
-  .forkmeMobile {
-  position: relative;
-  top:0;
-  left: 0px;
-  z-index: 10;
-  padding: 3px 10px 3px 50px;
-  background: url('../images/blacktocat.png') #ff6f00 /*#0090ff*/ no-repeat 5% 50%;
-  }
-  .resumeMobile {
-    top: 15px;
-  }
-  .mobileHeader {
-    padding: 0px 0 0px 0;
-
-  }
-  .mobileTitle {
-    position: relative;
-    padding: 25px 0px 0px 10px;
-    top: -40px;
-  }
-  .mobileTagline {
-    position: relative;
-    top: -40px;
-    }
-  .mobileInner {
-    padding: 20px 0px 0px 0px;
-    }
-  .projectImage {
-    width: 95% !important;
-  }
-  .smallAccordion {
-  width: 80%;
-  }
-  .md-padding {
-    min-height:300px;
-  }
+#title {
+  margin: 10px;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow: #111 0px 0px 10px;
 }
 
+#tagline {
+  color: #fff;
+  margin: 5px;
+  font-size: 24px;
+  font-weight: 300;
+  background: none;
+  text-shadow: #111 0px 0px 10px;
+}
+
+a.button {
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;                     
+  border-radius: 30px;
+  border-top: solid 1px #cbcbcb;
+  border-left: solid 1px #b7b7b7;
+  border-right: solid 1px #b7b7b7;
+  border-bottom: solid 1px #b3b3b3;
+  color: #303030;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 12px 8px 12px 8px;
+  display: block;
+  float: left;
+  width: 179px;
+  margin-right: 14px;  
+  background: #fdfdfd; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fdfdfd 0%, #f2f2f2 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #fdfdfd 0%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #fdfdfd 0%,#f2f2f2 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #fdfdfd 0%,#f2f2f2 100%); /* IE10+ */
+  background: linear-gradient(top,  #fdfdfd 0%,#f2f2f2 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+  -webkit-box-shadow: 10px 10px 5px #888;
+  -moz-box-shadow: 10px 10px 5px #888;
+  box-shadow: 0px 1px 5px #e8e8e8;
+}
+a.button:hover {
+  color: #2196F3;
+  border-top: solid 1px #2096F2;
+  border-left: solid 1px #2196F3;
+  border-right: solid 1px #2196F3;
+  border-bottom: solid 1px #2196F3;
+  background: #fafafa; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fdfdfd 0%, #f6f6f6 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#f6f6f6)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #fdfdfd 0%,#f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #fdfdfd 0%,#f6f6f6 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #fdfdfd 0%,#f6f6f6 100%); /* IE10+ */
+  background: linear-gradient(top,  #fdfdfd 0%,#f6f6f6, 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+}
+
+a.button span {
+  padding-left: 50px;
+  display: block;
+  height: 23px;
+}
+
+#download-pdf span {
+  background: transparent url(../images/adobe-icon.png) 12px 50% no-repeat;
+}
+#download-zip span {
+  background: transparent url(../images/zip-icon.png) 12px 50% no-repeat;
+}
+#download-tar-gz span {
+  background: transparent url(../images/tar-gz-icon.png) 12px 50% no-repeat;
+}
+#view-on-github span {
+  background: transparent url(../images/octocat-icon.png) 12px 50% no-repeat;
+}
+#view-on-github {
+  margin-right: 0;
+}

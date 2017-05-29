@@ -34,3 +34,4 @@ app.controller('personCtrl', function($scope) {
         $scope.myVar = !$scope.myVar;
     };
 });
+
