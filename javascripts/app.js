@@ -9,7 +9,7 @@
       $scope.panesA = [
         {
           id: 'pane-1a',
-          header: 'UNIX Development',
+          header: 'Linux Development',
           content: 'wget seanwallace.info/vimrc && wget seanwallace.info/bashrc && wget seanwallace.info/testbench',
         },
         {
@@ -32,7 +32,6 @@
               content: 'Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non.'
             }
           ]
-
         },
         {
           id: 'pane-2b',
@@ -79,12 +78,28 @@
           id: 'pane-1c',
           header: 'The RAT MCU',
           content: 'Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi.',
-          isExpanded: false
+          isExpanded: false,
+          subpanes: [
+            {
+              id: 'subpane-1b',
+              header: 'More Content',
+              content: 'Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non.'
+            }
+          ]
+
         },
         {
           id: 'pane-2c',
           header: 'Power Supply',
-          content: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.'
+          content: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
+          subpanes: [
+            {
+              id: 'subpane-1b',
+              header: 'More Content',
+              content: 'Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non.'
+            }
+          ]
+
         },
       ];
 
@@ -121,7 +136,7 @@
         {
           id: 1,
           title: 'About',
-          content: '<h4>About</h4><p>Welcome! Here you will find my project portfolio during my time at university.</p><h4>Resources</h4><p>If you\'re a peer and want my terminal resources, here they are!</p>'
+          content: '<h4>About</h4><p>Welcome! Here you will find my project portfolio during my time at university.</p><h4>Resources</h4><p>If you\'re a peer and want my development resources, here they are!</p>'
         },
         {
           id: 2,

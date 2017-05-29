@@ -44,7 +44,6 @@
           <a href="https://github.com/heatsink" id="view-on-github" class="button"><span>View on GitHub</span></a>
       </div>
       </div>
-   </div>
    <div class="u-wideWrapper u-paddingHm u-paddingTl animated fadeIn easyBackground" ng-controller="MainController">
         <div class="u-marginBl">
         <section class="u-paddingBl">
@@ -56,18 +55,18 @@
               <div class="u-formatedText" ng-bind-html="page.content"></div>
               <label ng-init ="val = page.id">
                <div ng-if="val == 1">
-                  <div ng-cloak class="u-wideWrapper" ng-controller="MainController">
-                   <v-accordion id="accordionA" class="vAccordion--default" control="accordionA" onexpand="expandCallback(index, id)" oncollapse="collapseCallback(index, id)">
+                  <div class="Grid-cell u-marginBl">
+                   <v-accordion id="accordionA" class="vAccordion--default" multiple control="accordionA">
                      <v-pane id="{{ ::pane.id }}" ng-repeat="pane in panesA" expanded="pane.isExpanded">
-                       <v-pane-header id="{{ ::pane.id }}-header" aria-controls="{{ ::pane.id }}-content">
+                       <v-pane-header id="{{ ::pane.id }}-header" aria-controls="{{ ::pane.id }}-header">
                          <h5>{{ ::pane.header }}</h5>
                        </v-pane-header>
-                       <v-pane-content id="{{ ::pane.id }}-content" aria-labelledby="{{ ::pane.id }}-header">
+                       <v-pane-content id="{{ ::pane.id }}-content" aria-labelledby="{{ ::pane.id }}-content">
                          <p>{{ ::pane.content }}</p>
                        </v-pane-content>
                      </v-pane>
                    </v-accordion>
-                   </div>
+                  </div>
                </div>
                <div ng-if="val == 2">
                     <div class="Grid-cell u-marginBl">
