@@ -36,12 +36,12 @@
         {
           id: 'pane-2b',
           header: 'The Nucleo Bot',
-          content: 'This robot competed in Roborodentia (2017), Cal Poly\'s local robotics competition.',
+          content: 'The Nucleo bot autonomously retrieved and scored PVC rings for Roborodentia, Cal Poly\'s annual robotics competition. Using an STM32F446RE Nucleo dev board, this project was where I vastly improved my ability to write firmware for STM32 microcontrollers.',
           subpanes: [
             {
               id: 'subpane-1b',
               header: 'More Content',
-              content: 'Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non.'
+              content: 'Infrared Line tracking stuff. Encoder stuff. Stuff. Pictures. More stuff.'
             }
           ]
         },

@@ -50,7 +50,8 @@
           <v-tabs class="vTabs--default" horizontal control="horizontalTabs" active="horizontalTabs.active">
             <v-tab id="tabH_{{ ::page.id }}" aria-controls="pageV_{{ ::page.id }}" ng-repeat="page in pages" ng-bind="page.title"></v-tab>
           </v-tabs>
-          <v-pages class="vPages--default" active="horizontalTabs.active" ng-swipe-left="horizontalTabs.next()" ng-swipe-right="horizontalTabs.previous()">
+          <!v-pages class="vPages--default" active="horizontalTabs.active" ng-swipe-left="horizontalTabs.next()" ng-swipe-right="horizontalTabs.previous()"-->
+          <v-pages class="vPages--default" active="horizontalTabs.active">
             <v-page id="pageH_{{ ::page.id }}" aria-labelledby="tabH_{{ ::page.id }}" ng-repeat="page in pages">
               <div class="u-formatedText" ng-bind-html="page.content"></div>
               <label ng-init ="val = page.id">
