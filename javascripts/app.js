@@ -23,7 +23,7 @@
         {
           id: 'pane-1b',
           header: 'The Autonomous Golf Cart',
-          content: 'Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi.',
+          content: 'A project I worked on with the Cal Poly Robotics Club, it is being refactored into a (physically) smaller, trash-can sized vehicle.',
           isExpanded: false,
           subpanes: [
             {
@@ -36,7 +36,7 @@
         {
           id: 'pane-2b',
           header: 'The Nucleo Bot',
-          content: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.',
+          content: 'This robot competed in Roborodentia (2017), Cal Poly\'s local robotics competition.',
           subpanes: [
             {
               id: 'subpane-1b',
@@ -48,7 +48,7 @@
         {
           id: 'pane-3b',
           header: 'The Chess AI v2.0',
-          content: 'Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non.',
+          content: 'This was originally a project written in Java during my Freshman year, but is currently being rewritten in C to be vastly improved in difficulty.',
 
           subpanes: [
             {
