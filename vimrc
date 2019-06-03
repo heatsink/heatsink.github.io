@@ -46,7 +46,7 @@ set viminfo+=<500
 :map <F9> :set cul!<cr>
 
 " Filetype Specifics "
-autocmd Filetype python setlocal tabstop=3 shiftwidth=3
+autocmd Filetype python setlocal tabstop=4 shiftwidth=4
 autocmd Filetype c setlocal tabstop=4 shiftwidth=4
 autocmd Filetype java setlocal tabstop=4 shiftwidth=4
 
@@ -65,6 +65,9 @@ let @l='5w.'
 
 " Insert Mode "
 imap jk <ESC>
+
+" Dup Function "
+xnoremap jz yO<ESC>wf(i1<ESC>O*/<ESC>kpO<CR>/*<ESC>/*/n<ESC>jf)f)
 
 "Auto Close brackets"
 inoremap {J {<CR>}<Esc>ko
@@ -117,4 +120,9 @@ command! -bang Q quit<bang>
 command! Wq wq
 command! WQ wq
 
-set viminfo='20,<1000
+nnoremap <Leader>c :w !pbcopy<CR><CR>
+inoremap <Leader>c :w !pbcopy<CR><CR>
+
+nnoremap <Leader>v  !pbpaste<CR><CR>
+inoremap <Leader>v  !pbpaste<CR><CR>
+set viminfo='20,<15000

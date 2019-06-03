@@ -119,9 +119,38 @@ alias lvim="vim"
 alias evim="vim ~/.vimrc"
 alias ebash="vim ~/.bashrc"
 alias work=workfunc
+alias snetz=cdsnetzfunc
 alias workl=labfunc
 alias worka=assignfunc
+alias activate=activatefunc
 alias valgrind=valgrind --leak-check=yes
+
+# Exit aliases
+alias e="exit"
+alias ex="exit"
+alias exi="exit"
+alias exit="exit"
+
+alias c="clear"
+alias cl="clear"
+alias cle="clear"
+alias clear="clear"
+alias cdai=cdaifunc
+
+activatefunc() {
+   source /Users/sean/workspace/SNetZ/bin/activate
+}
+
+cdaifunc() {
+   cd ~/workspace/AI/Project3
+}
+
+cdsnetzfunc() {
+   cd ~/workspace/SNetZ
+   source bin/activate
+}
+
+
 workfunc() {
    cd ~/Workspace/357
 }
@@ -171,3 +200,37 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 #echo -e "\e]12;gray\a"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+alias rl='ssh sswallac@unix3.csc.calpoly.edu'
+alias gsync='unison /Users/sean/workspace/SNetZ ssh://35.197.114.120//home/snetz/SNetZ'
+#alias sync='unison /Users/sean/workspace/AI ssh://sswallac@unix3.csc.calpoly.edu//home/sswallac/workspace/AI'
+alias sync='sync calPoly'
+
+#export PATH=/Users/sean/workspace/flutter/bin:$PATH
+#export PATH="/usr/local/opt/bison/bin:$PATH"
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+#PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+#export PATH
+
+unset MAILCHECK
+
+
+
+# virtualenv and virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
+
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+#ln -s /System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc /usr/local/bin
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
+
+# virtualenv and virtualenvwrapper
+export WORKON_HOME=/Users/sean/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
+export PATH="/usr/local/opt/qt/bin:$PATH"
